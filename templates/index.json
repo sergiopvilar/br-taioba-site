@@ -114,8 +114,9 @@
       "blocks": {
         "af185e6f-857f-41bf-a713-462c440e7336": {
           "type": "caption",
+          "disabled": true,
           "settings": {
-            "caption": "TESTE TAL",
+            "caption": "curadoria minuciosa",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -123,15 +124,22 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Expertly curated, affordably priced to fit your every need.",
+            "heading": "A melhor Música Brasileira",
             "heading_size": "h1"
+          }
+        },
+        "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
+            "text_style": "body"
           }
         },
         "48f060b7-07ec-436a-a502-2629f13a3815": {
           "type": "button",
           "settings": {
-            "button_label": "Teste",
-            "button_link": "shopify:\/\/products\/a-espetacular-charanga-do-franca-nunca-nao-e-carnaval-disco-de-vinil-lp",
+            "button_label": "Confira os títulos",
+            "button_link": "shopify:\/\/collections\/discos-de-vinil",
             "button_style_secondary": false
           }
         }
@@ -139,13 +147,15 @@
       "block_order": [
         "af185e6f-857f-41bf-a713-462c440e7336",
         "heading",
+        "4499fc7d-7470-457a-8da9-8d31e471aeb2",
         "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
-        "height": "small",
+        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
+        "height": "medium",
         "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "background-1",
@@ -159,30 +169,48 @@
     "image-with-text-1": {
       "type": "image-with-text",
       "blocks": {
+        "a28065f2-bb32-45c6-a28c-279aa86530d6": {
+          "type": "caption",
+          "settings": {
+            "caption": "não perca esta chance",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Shop new arrivals",
-            "heading_size": "h2"
+            "heading": "Discos em Promoção",
+            "heading_size": "h1"
+          }
+        },
+        "8959909e-1bba-4c78-9e95-0b8a35c5c5f1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aumente sua coleção com estas ofertas imperdíveis!<\/p>",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Shop all",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_label": "Compre Agora",
+            "button_link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
+        "a28065f2-bb32-45c6-a28c-279aa86530d6",
         "heading",
+        "8959909e-1bba-4c78-9e95-0b8a35c5c5f1",
         "button"
       ],
       "settings": {
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
+        "image": "shopify:\/\/shop_images\/black_friday.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
