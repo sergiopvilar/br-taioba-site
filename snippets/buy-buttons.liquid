@@ -94,7 +94,9 @@
             {%- render 'loading-spinner' -%}
           </button>
           {%- if show_dynamic_checkout -%}
-            {{ form | payment_button }}
+            <div class="{% if product.selected_or_first_available_variant.available == false %} sold-out{% endif %}">
+              {{ form | payment_button }}
+            </div>
           {%- endif -%}
         </div>
       {%- endform -%}
