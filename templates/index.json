@@ -112,27 +112,45 @@
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
+        "af185e6f-857f-41bf-a713-462c440e7336": {
+          "type": "caption",
+          "settings": {
+            "caption": "TESTE TAL",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
             "heading": "Expertly curated, affordably priced to fit your every need.",
             "heading_size": "h1"
           }
+        },
+        "48f060b7-07ec-436a-a502-2629f13a3815": {
+          "type": "button",
+          "settings": {
+            "button_label": "Teste",
+            "button_link": "shopify:\/\/products\/a-espetacular-charanga-do-franca-nunca-nao-e-carnaval-disco-de-vinil-lp",
+            "button_style_secondary": false
+          }
         }
       },
       "block_order": [
-        "heading"
+        "af185e6f-857f-41bf-a713-462c440e7336",
+        "heading",
+        "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "background-1",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
+        "color_scheme": "accent-2",
+        "image_behavior": "zoom-in",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 0
@@ -169,7 +187,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "background-1",
-        "color_scheme": "inverse",
+        "color_scheme": "accent-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,

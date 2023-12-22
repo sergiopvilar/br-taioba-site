@@ -184,13 +184,13 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#18566c",
+          "background": "#fbc944",
           "background_gradient": "",
-          "text": "#fcfcfc",
-          "button": "#fcfcfc",
-          "button_label": "#18566c",
-          "secondary_button_label": "#fcfcfc",
-          "shadow": "#103948"
+          "text": "#ff9240",
+          "button": "#ff9240",
+          "button_label": "#fcfcfc",
+          "secondary_button_label": "#00752f",
+          "shadow": "#fbc944"
         }
       },
       "scheme-9d4286bc-9829-4027-940d-a36ca26c0e36": {
