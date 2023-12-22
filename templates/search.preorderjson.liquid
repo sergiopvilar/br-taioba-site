@@ -16,7 +16,7 @@
         {%- for variant in product.variants -%}
           {%- unless forloop.first -%},{%- endunless -%}
           {
-            "id":{{-variant.id-}}, 
+            "id":{{-variant.id-}},
             "title":{{-variant.title | json}},
             "price":{{-variant.price-}},
             "available":{{-variant.available-}},
