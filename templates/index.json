@@ -194,6 +194,34 @@
         "padding_bottom": 56
       }
     },
+    "bef47704-19ac-43ea-a3fa-4471acb7ded1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Música Brasileira para todos os gostos",
+        "heading_size": "h1",
+        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "discos-de-vinil",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
     "014d76be-b0fa-4c26-ba8f-acdec03fa31a": {
       "type": "collection-list",
       "blocks": {
@@ -252,8 +280,8 @@
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
+        "show_secondary_image": true,
+        "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
@@ -287,6 +315,7 @@
     "featured-collection",
     "image-with-text",
     "image-with-text-1",
+    "bef47704-19ac-43ea-a3fa-4471acb7ded1",
     "014d76be-b0fa-4c26-ba8f-acdec03fa31a",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "348133a0-e988-4d57-92dc-45f3507b241d"
