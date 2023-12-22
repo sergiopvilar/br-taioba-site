@@ -30,7 +30,7 @@
         "email-form"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "inverse",
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 84
