@@ -216,7 +216,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "background-1",
         "color_scheme": "inverse",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 56
