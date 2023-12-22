@@ -263,7 +263,7 @@
           "type": "button",
           "settings": {
             "button_label": "Confira os títulos",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil",
+            "button_link": "shopify:\/\/collections\/discos-de-vinil-mais-vendidos",
             "button_style_secondary": false
           }
         }
