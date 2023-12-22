@@ -38,6 +38,18 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "fb34fc51-b7d7-4367-b26d-fb60d0767441": {
+          "type": "brand_information",
+          "disabled": true,
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "fb34fc51-b7d7-4367-b26d-fb60d0767441"
+      ],
       "settings": {
         "color_scheme": "scheme-27168b15-58df-4cd7-be3d-4ec7ec764f68",
         "newsletter_enable": false,
