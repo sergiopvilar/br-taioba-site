@@ -38,11 +38,68 @@
             "color_scheme": "scheme-381e901e-9931-4e70-9888-e0fbf8fcabd3",
             "text_alignment_mobile": "center"
           }
+        },
+        "99fcfb0e-1a45-428a-86d9-75938d1f8550": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gilsons.jpg",
+            "heading": "Gilsons",
+            "heading_size": "h0",
+            "subheading": "Conseguimos a última cópia o \"Pra Gente Acordar\". Adicione esta raridade à sua coleção.",
+            "button_label": "Compre agora",
+            "link": "shopify:\/\/products\/gilsons-pra-gente-acordar-vinyl-lp",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 40,
+            "color_scheme": "scheme-381e901e-9931-4e70-9888-e0fbf8fcabd3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "a3eb1043-7387-4d7d-9785-443906fc4e47": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pethit_c28df8a4-66f9-47e5-b9bf-586ec3a73778.jpg",
+            "heading": "Thiago Pethit",
+            "heading_size": "h1",
+            "subheading": "\"Estrela Decadente\" e \"Berlim, Texas\" autografados em últimas unidades",
+            "button_label": "Garanta o Seu",
+            "link": "shopify:\/\/collections\/thiago-pethit",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 40,
+            "color_scheme": "scheme-381e901e-9931-4e70-9888-e0fbf8fcabd3",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "ae4298c2-af82-4a32-bd04-47c1045962ea": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felh_feb7e466-0d38-451b-9da7-3f18ae2c7f5e.png",
+            "heading": "Francisco, El Hombre",
+            "heading_size": "h1",
+            "subheading": "Comemore os 10 anos de banda com a edição especial de \"SOLTASBRUXA\"",
+            "button_label": "Compre Já",
+            "link": "shopify:\/\/products\/francisco-el-hombre-soltasbruxa-disco-de-vinil-lp",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 40,
+            "color_scheme": "scheme-381e901e-9931-4e70-9888-e0fbf8fcabd3",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "8d405be0-553b-44cc-8396-1694c99d1916",
-        "e776d71f-baa2-45e6-b782-03ea221a0ab2"
+        "e776d71f-baa2-45e6-b782-03ea221a0ab2",
+        "99fcfb0e-1a45-428a-86d9-75938d1f8550",
+        "a3eb1043-7387-4d7d-9785-443906fc4e47",
+        "ae4298c2-af82-4a32-bd04-47c1045962ea"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -192,7 +249,7 @@
         "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -322,7 +379,7 @@
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
-        "color_scheme": "scheme-27168b15-58df-4cd7-be3d-4ec7ec764f68",
+        "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -345,7 +402,7 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-27168b15-58df-4cd7-be3d-4ec7ec764f68",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
