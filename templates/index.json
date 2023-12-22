@@ -160,7 +160,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "background-1",
         "color_scheme": "accent-2",
-        "image_behavior": "zoom-in",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 0
