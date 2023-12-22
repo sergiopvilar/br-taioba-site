@@ -125,7 +125,7 @@
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
               >
-                {{- 'products.product.sold_out' | t -}}
+                {% render "card-product-state", record: card_product %}
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
               <span
@@ -288,11 +288,11 @@
                       {%- if card_product.selected_or_first_available_variant.available -%}
                         {{ 'products.product.add_to_cart' | t }}
                       {%- else -%}
-                        {{ 'products.product.sold_out' | t }}
+                        {% render "card-product-state", record: card_product %}
                       {%- endif -%}
                     </span>
                     <span class="sold-out-message hidden">
-                      {{ 'products.product.sold_out' | t }}
+                      {% render "card-product-state", record: card_product %}
                     </span>
                     {%- if horizontal_quick_add -%}
                       <span class="icon-wrap">{% render 'icon-plus' %}</span>
@@ -310,7 +310,7 @@
               id="Badge-{{ section_id }}-{{ card_product.id }}"
               class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
             >
-              {{- 'products.product.sold_out' | t -}}
+              {% render "card-product-state", record: card_product %}
             </span>
           {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
             <span
