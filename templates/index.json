@@ -23,6 +23,63 @@
         "padding_bottom": 52
       }
     },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "af185e6f-857f-41bf-a713-462c440e7336": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "curadoria minuciosa",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A melhor Música Brasileira",
+            "heading_size": "h1"
+          }
+        },
+        "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "48f060b7-07ec-436a-a502-2629f13a3815": {
+          "type": "button",
+          "settings": {
+            "button_label": "Confira os títulos",
+            "button_link": "shopify:\/\/collections\/discos-de-vinil",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "af185e6f-857f-41bf-a713-462c440e7336",
+        "heading",
+        "4499fc7d-7470-457a-8da9-8d31e471aeb2",
+        "48f060b7-07ec-436a-a502-2629f13a3815"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
+        "height": "medium",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "background-1",
+        "color_scheme": "accent-2",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -109,63 +166,6 @@
         "padding_bottom": 0
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "af185e6f-857f-41bf-a713-462c440e7336": {
-          "type": "caption",
-          "disabled": true,
-          "settings": {
-            "caption": "curadoria minuciosa",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "A melhor Música Brasileira",
-            "heading_size": "h1"
-          }
-        },
-        "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "48f060b7-07ec-436a-a502-2629f13a3815": {
-          "type": "button",
-          "settings": {
-            "button_label": "Confira os títulos",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "af185e6f-857f-41bf-a713-462c440e7336",
-        "heading",
-        "4499fc7d-7470-457a-8da9-8d31e471aeb2",
-        "48f060b7-07ec-436a-a502-2629f13a3815"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
-        "height": "medium",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "background-1",
-        "color_scheme": "accent-2",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
     "image-with-text-1": {
       "type": "image-with-text",
       "blocks": {
@@ -194,7 +194,7 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Compre Agora",
+            "button_label": "Confira todas promoções",
             "button_link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
             "button_style_secondary": false
           }
@@ -219,7 +219,35 @@
         "image_behavior": "ambient",
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 56
+        "padding_bottom": 0
+      }
+    },
+    "206f9da7-430f-4347-bce1-8b15a0ce03ea": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "discos-de-vinil-em-promocao",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "bef47704-19ac-43ea-a3fa-4471acb7ded1": {
@@ -338,11 +366,12 @@
   },
   "order": [
     "rich-text",
+    "image-with-text",
     "slideshow",
     "rich-text-1",
     "featured-collection",
-    "image-with-text",
     "image-with-text-1",
+    "206f9da7-430f-4347-bce1-8b15a0ce03ea",
     "bef47704-19ac-43ea-a3fa-4471acb7ded1",
     "014d76be-b0fa-4c26-ba8f-acdec03fa31a",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
