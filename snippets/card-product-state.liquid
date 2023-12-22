@@ -3,6 +3,5 @@
 {%- elsif record.tags contains 'chegando' -%}
   Em Breve
 {%- else -%}
-{{record.tags}}
-  aaa{{- 'products.product.sold_out' | t -}}
+  {{- 'products.product.sold_out' | t -}}
 {%- endif -%}
