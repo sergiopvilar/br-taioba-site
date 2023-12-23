@@ -1,5 +1,5 @@
 {% if template == "index" %}
-  <link rel="alternate" hreflang="x-default" href="https://taiobarecords.com/">
+  <link rel="alternate" hreflang="x-default" href="https://taiobadiscos.com.br/">
   <link rel="alternate" hreflang="pt-BR" href="https://taiobadiscos.com.br"/>
   <link rel="alternate" hreflang="es-ES" href="https://es.taiobarecords.com/">
   <link rel="alternate" hreflang="ja-JP" href="https://jp.taiobarecords.com/">
@@ -38,9 +38,10 @@
 {% endif %}
 
 {% if template == "product" %}
+  <link rel="alternate" hreflang="x-default" href="https://taiobadiscos.com.br/products/{{handle}}">
+  <link rel="alternate" hreflang="pt-BR" href="https://taiobadiscos.com.br/products/{{handle}}"/>
+
   {% unless product.metafields.seo.no_international_product %}
-    <link rel="alternate" hreflang="x-default" href="https://taiobarecords.com/products/{{handle}}">
-    <link rel="alternate" hreflang="pt-BR" href="https://taiobadiscos.com.br/products/{{handle}}"/>
     <link rel="alternate" hreflang="es-ES" href="https://es.taiobarecords.com/products/{{handle}}">
     <link rel="alternate" hreflang="ja-JP" href="https://jp.taiobarecords.com/products/{{handle}}">
     <link rel="alternate" hreflang="en-JP" href="https://jp.taiobarecords.com/en/products/{{handle}}">
@@ -79,9 +80,10 @@
 {% endif %}
 
 {% if template == "collection" %}
+  <link rel="alternate" hreflang="x-default" href="https://taiobadiscos.com.br/collections/{{handle}}">
+  <link rel="alternate" hreflang="pt-BR" href="https://taiobadiscos.com.br/collections/{{handle}}"/>
+
   {% if collection.metafields.custom.has_international_collection %}
-    <link rel="alternate" hreflang="x-default" href="https://taiobarecords.com/collections/{{handle}}">
-    <link rel="alternate" hreflang="pt-BR" href="https://taiobadiscos.com.br/collections/{{handle}}"/>
     <link rel="alternate" hreflang="es-ES" href="https://es.taiobarecords.com/collections/{{handle}}">
     <link rel="alternate" hreflang="ja-JP" href="https://jp.taiobarecords.com/collections/{{handle}}">
     <link rel="alternate" hreflang="en-JP" href="https://jp.taiobarecords.com/en/collections/{{handle}}">
@@ -118,8 +120,6 @@
     <link rel="alternate" hreflang="es-US" href="https://taiobarecords.com/es/collections/{{handle}}">
   {% endif %}
   {% if collection.metafields.custom.international_collection_path %}
-    <link rel="alternate" hreflang="x-default" href="https://taiobarecords.com/collections/{{collection.metafields.custom.international_collection_path}}">
-    <link rel="alternate" hreflang="pt-BR" href="https://taiobadiscos.com.br/collections/{{collection.metafields.custom.international_collection_path}}"/>
     <link rel="alternate" hreflang="es-ES" href="https://es.taiobarecords.com/collections/{{collection.metafields.custom.international_collection_path}}">
     <link rel="alternate" hreflang="ja-JP" href="https://jp.taiobarecords.com/collections/{{collection.metafields.custom.international_collection_path}}">
     <link rel="alternate" hreflang="en-JP" href="https://jp.taiobarecords.com/en/collections/{{collection.metafields.custom.international_collection_path}}">
