@@ -120,6 +120,9 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "background-1",
+    "checkout_logo_image": "shopify:\/\/shop_images\/taiobadeitada.png",
+    "checkout_body_background_color": "#fff",
+    "checkout_sidebar_background_color": "#ebeced",
     "checkout_accent_color": "#317337",
     "checkout_button_color": "#317337",
     "sections": {
