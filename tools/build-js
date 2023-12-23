@@ -1,7 +1,7 @@
 #!/bin/sh
 
-#cd js
-#for f in *.js; do short=${f%.js}; buble $f > ../assets/$short.js; done
-cd assets
-rm *.min.js; for f in *.js; do short=${f%.js}; uglifyjs $f > $short.min.js; done
+cd js
+for f in *.js; do short=${f%.js}; cp $f ../assets/; done
+cd ../assets
+rm *.minified.js; for f in *.js; do short=${f%.js}; uglifyjs $f > $short.minified.js; done
 cd ../

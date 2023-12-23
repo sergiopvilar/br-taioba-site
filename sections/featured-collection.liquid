@@ -10,8 +10,8 @@
 
 {%- if section.settings.enable_quick_add -%}
   {{ 'quick-add.min.css' | asset_url | stylesheet_tag }}
-  <script src="{{ 'quick-add.min.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'product-form.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-add.minified.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.minified.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
 {%- style -%}
