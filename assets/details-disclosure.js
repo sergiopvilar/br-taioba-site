@@ -1,68 +1,90 @@
-var DetailsDisclosure = /*@__PURE__*/(function (HTMLElement) {
-  function DetailsDisclosure() {
-    HTMLElement.call(this);
-    this.mainDetailsToggle = this.querySelector('details');
-    this.content = this.mainDetailsToggle.querySelector('summary').nextElementSibling;
+'use strict';
 
-    this.mainDetailsToggle.addEventListener('focusout', this.onFocusOut.bind(this));
-    this.mainDetailsToggle.addEventListener('toggle', this.onToggle.bind(this));
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DetailsDisclosure = function (_HTMLElement) {
+  _inherits(DetailsDisclosure, _HTMLElement);
+
+  function DetailsDisclosure() {
+    _classCallCheck(this, DetailsDisclosure);
+
+    var _this = _possibleConstructorReturn(this, (DetailsDisclosure.__proto__ || Object.getPrototypeOf(DetailsDisclosure)).call(this));
+
+    _this.mainDetailsToggle = _this.querySelector('details');
+    _this.content = _this.mainDetailsToggle.querySelector('summary').nextElementSibling;
+
+    _this.mainDetailsToggle.addEventListener('focusout', _this.onFocusOut.bind(_this));
+    _this.mainDetailsToggle.addEventListener('toggle', _this.onToggle.bind(_this));
+    return _this;
   }
 
-  if ( HTMLElement ) DetailsDisclosure.__proto__ = HTMLElement;
-  DetailsDisclosure.prototype = Object.create( HTMLElement && HTMLElement.prototype );
-  DetailsDisclosure.prototype.constructor = DetailsDisclosure;
+  _createClass(DetailsDisclosure, [{
+    key: 'onFocusOut',
+    value: function onFocusOut() {
+      var _this2 = this;
 
-  DetailsDisclosure.prototype.onFocusOut = function onFocusOut () {
-    var this$1 = this;
-
-    setTimeout(function () {
-      if (!this$1.contains(document.activeElement)) { this$1.close(); }
-    });
-  };
-
-  DetailsDisclosure.prototype.onToggle = function onToggle () {
-    if (!this.animations) { this.animations = this.content.getAnimations(); }
-
-    if (this.mainDetailsToggle.hasAttribute('open')) {
-      this.animations.forEach(function (animation) { return animation.play(); });
-    } else {
-      this.animations.forEach(function (animation) { return animation.cancel(); });
+      setTimeout(function () {
+        if (!_this2.contains(document.activeElement)) _this2.close();
+      });
     }
-  };
+  }, {
+    key: 'onToggle',
+    value: function onToggle() {
+      if (!this.animations) this.animations = this.content.getAnimations();
 
-  DetailsDisclosure.prototype.close = function close () {
-    this.mainDetailsToggle.removeAttribute('open');
-    this.mainDetailsToggle.querySelector('summary').setAttribute('aria-expanded', false);
-  };
+      if (this.mainDetailsToggle.hasAttribute('open')) {
+        this.animations.forEach(function (animation) {
+          return animation.play();
+        });
+      } else {
+        this.animations.forEach(function (animation) {
+          return animation.cancel();
+        });
+      }
+    }
+  }, {
+    key: 'close',
+    value: function close() {
+      this.mainDetailsToggle.removeAttribute('open');
+      this.mainDetailsToggle.querySelector('summary').setAttribute('aria-expanded', false);
+    }
+  }]);
 
   return DetailsDisclosure;
-}(HTMLElement));
+}(HTMLElement);
 
 customElements.define('details-disclosure', DetailsDisclosure);
 
-var HeaderMenu = /*@__PURE__*/(function (DetailsDisclosure) {
+var HeaderMenu = function (_DetailsDisclosure) {
+  _inherits(HeaderMenu, _DetailsDisclosure);
+
   function HeaderMenu() {
-    DetailsDisclosure.call(this);
-    this.header = document.querySelector('.header-wrapper');
+    _classCallCheck(this, HeaderMenu);
+
+    var _this3 = _possibleConstructorReturn(this, (HeaderMenu.__proto__ || Object.getPrototypeOf(HeaderMenu)).call(this));
+
+    _this3.header = document.querySelector('.header-wrapper');
+    return _this3;
   }
 
-  if ( DetailsDisclosure ) HeaderMenu.__proto__ = DetailsDisclosure;
-  HeaderMenu.prototype = Object.create( DetailsDisclosure && DetailsDisclosure.prototype );
-  HeaderMenu.prototype.constructor = HeaderMenu;
+  _createClass(HeaderMenu, [{
+    key: 'onToggle',
+    value: function onToggle() {
+      if (!this.header) return;
+      this.header.preventHide = this.mainDetailsToggle.open;
 
-  HeaderMenu.prototype.onToggle = function onToggle () {
-    if (!this.header) { return; }
-    this.header.preventHide = this.mainDetailsToggle.open;
-
-    if (document.documentElement.style.getPropertyValue('--header-bottom-position-desktop') !== '') { return; }
-    document.documentElement.style.setProperty(
-      '--header-bottom-position-desktop',
-      ((Math.floor(this.header.getBoundingClientRect().bottom)) + "px")
-    );
-  };
+      if (document.documentElement.style.getPropertyValue('--header-bottom-position-desktop') !== '') return;
+      document.documentElement.style.setProperty('--header-bottom-position-desktop', Math.floor(this.header.getBoundingClientRect().bottom) + 'px');
+    }
+  }]);
 
   return HeaderMenu;
-}(DetailsDisclosure));
+}(DetailsDisclosure);
 
 customElements.define('header-menu', HeaderMenu);
-

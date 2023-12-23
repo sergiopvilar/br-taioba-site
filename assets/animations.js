@@ -1,3 +1,5 @@
+'use strict';
+
 var SCROLL_ANIMATION_TRIGGER_CLASSNAME = 'scroll-trigger';
 var SCROLL_ANIMATION_OFFSCREEN_CLASSNAME = 'scroll-trigger--offscreen';
 var SCROLL_ZOOM_IN_TRIGGER_CLASSNAME = 'animate--zoom-in';
@@ -10,8 +12,7 @@ function onIntersection(elements, observer) {
       var elementTarget = element.target;
       if (elementTarget.classList.contains(SCROLL_ANIMATION_OFFSCREEN_CLASSNAME)) {
         elementTarget.classList.remove(SCROLL_ANIMATION_OFFSCREEN_CLASSNAME);
-        if (elementTarget.hasAttribute('data-cascade'))
-          { elementTarget.setAttribute('style', ("--animation-order: " + index + ";")); }
+        if (elementTarget.hasAttribute('data-cascade')) elementTarget.setAttribute('style', '--animation-order: ' + index + ';');
       }
       observer.unobserve(elementTarget);
     } else {
@@ -21,12 +22,12 @@ function onIntersection(elements, observer) {
   });
 }
 
-function initializeScrollAnimationTrigger(rootEl, isDesignModeEvent) {
-  if ( rootEl === void 0 ) rootEl = document;
-  if ( isDesignModeEvent === void 0 ) isDesignModeEvent = false;
+function initializeScrollAnimationTrigger() {
+  var rootEl = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+  var isDesignModeEvent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
   var animationTriggerElements = Array.from(rootEl.getElementsByClassName(SCROLL_ANIMATION_TRIGGER_CLASSNAME));
-  if (animationTriggerElements.length === 0) { return; }
+  if (animationTriggerElements.length === 0) return;
 
   if (isDesignModeEvent) {
     animationTriggerElements.forEach(function (element) {
@@ -36,18 +37,20 @@ function initializeScrollAnimationTrigger(rootEl, isDesignModeEvent) {
   }
 
   var observer = new IntersectionObserver(onIntersection, {
-    rootMargin: '0px 0px -50px 0px',
+    rootMargin: '0px 0px -50px 0px'
   });
-  animationTriggerElements.forEach(function (element) { return observer.observe(element); });
+  animationTriggerElements.forEach(function (element) {
+    return observer.observe(element);
+  });
 }
 
 // Zoom in animation logic
 function initializeScrollZoomAnimationTrigger() {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { return; }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   var animationTriggerElements = Array.from(document.getElementsByClassName(SCROLL_ZOOM_IN_TRIGGER_CLASSNAME));
 
-  if (animationTriggerElements.length === 0) { return; }
+  if (animationTriggerElements.length === 0) return;
 
   var scaleAmount = 0.2 / 100;
 
@@ -62,15 +65,11 @@ function initializeScrollZoomAnimationTrigger() {
 
     element.style.setProperty('--zoom-in-ratio', 1 + scaleAmount * percentageSeen(element));
 
-    window.addEventListener(
-      'scroll',
-      throttle(function () {
-        if (!elementIsVisible) { return; }
+    window.addEventListener('scroll', throttle(function () {
+      if (!elementIsVisible) return;
 
-        element.style.setProperty('--zoom-in-ratio', 1 + scaleAmount * percentageSeen(element));
-      }),
-      { passive: true }
-    );
+      element.style.setProperty('--zoom-in-ratio', 1 + scaleAmount * percentageSeen(element));
+    }), { passive: true });
   });
 }
 
@@ -100,7 +99,10 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 if (Shopify.designMode) {
-  document.addEventListener('shopify:section:load', function (event) { return initializeScrollAnimationTrigger(event.target, true); });
-  document.addEventListener('shopify:section:reorder', function () { return initializeScrollAnimationTrigger(document, true); });
+  document.addEventListener('shopify:section:load', function (event) {
+    return initializeScrollAnimationTrigger(event.target, true);
+  });
+  document.addEventListener('shopify:section:reorder', function () {
+    return initializeScrollAnimationTrigger(document, true);
+  });
 }
-
