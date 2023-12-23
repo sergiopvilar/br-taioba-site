@@ -246,6 +246,17 @@
           "secondary_button_label": "#ffffff",
           "shadow": "#fcfcfc"
         }
+      },
+      "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#fff",
+          "button_label": "#000000",
+          "secondary_button_label": "#317337",
+          "shadow": "#317337"
+        }
       }
     }
   },
