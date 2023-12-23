@@ -161,9 +161,9 @@ class QuantityInput extends HTMLElement {
     this.querySelectorAll('button').forEach((button) =>
       button.addEventListener('click', this.onButtonClick.bind(this))
     );
-  }
 
-  quantityUpdateUnsubscriber = undefined;
+    this.quantityUpdateUnsubscriber = undefined;
+  }
 
   connectedCallback() {
     this.validateQtyRules();
@@ -430,7 +430,7 @@ class MenuDrawer extends HTMLElement {
     removeTrapFocus(elementToFocus);
     this.closeAnimation(this.mainDetailsToggle);
 
-    if (event instanceof KeyboardEvent) elementToFocus?.setAttribute('aria-expanded', false);
+    if (event instanceof KeyboardEvent && elementToFocus) elementToFocus.setAttribute('aria-expanded', false);
   }
 
   onFocusOut() {
@@ -512,7 +512,7 @@ class HeaderDrawer extends MenuDrawer {
     window.removeEventListener('resize', this.onResize);
   }
 
-  onResize = () => {
+  onResize() {
     this.header &&
       document.documentElement.style.setProperty(
         '--header-bottom-position',

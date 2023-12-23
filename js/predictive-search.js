@@ -30,7 +30,7 @@ class PredictiveSearch extends SearchForm {
     if (!this.searchTerm || !newSearchTerm.startsWith(this.searchTerm)) {
       // Remove the results when they are no longer relevant for the new search term
       // so they don't show up when the dropdown opens again
-      this.querySelector('#predictive-search-results-groups-wrapper')?.remove();
+      if (this.querySelector('#predictive-search-results-groups-wrapper')) this.querySelector('#predictive-search-results-groups-wrapper').remove();
     }
 
     // Update the term asap, don't wait for the predictive search query to finish loading
@@ -107,7 +107,7 @@ class PredictiveSearch extends SearchForm {
 
   updateSearchForTerm(previousTerm, newTerm) {
     const searchForTextElement = this.querySelector('[data-predictive-search-search-for-text]');
-    const currentButtonText = searchForTextElement?.innerText;
+    const currentButtonText = searchForTextElement ? searchForTextElement.innerText : undefined;
     if (currentButtonText) {
       if (currentButtonText.match(new RegExp(previousTerm, 'g')).length > 1) {
         // The new term matches part of the button text and not just the search term, do not replace to avoid mistakes
@@ -199,7 +199,7 @@ class PredictiveSearch extends SearchForm {
         this.renderSearchResults(resultsMarkup);
       })
       .catch((error) => {
-        if (error?.code === 20) {
+        if (error && error.code === 20) {
           // Code 20 means the call was aborted
           return;
         }

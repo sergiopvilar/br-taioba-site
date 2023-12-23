@@ -1,9 +1,11 @@
 if (!customElements.get('localization-form')) {
   customElements.define(
     'localization-form',
-    class LocalizationForm extends HTMLElement {
-      constructor() {
-        super();
+    /*@__PURE__*/(function (HTMLElement) {
+    function LocalizationForm() {
+        var this$1 = this;
+
+        HTMLElement.call(this);
         this.elements = {
           input: this.querySelector('input[name="locale_code"], input[name="country_code"]'),
           button: this.querySelector('button'),
@@ -13,46 +15,53 @@ if (!customElements.get('localization-form')) {
         this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
         this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
 
-        this.querySelectorAll('a').forEach((item) => item.addEventListener('click', this.onItemClick.bind(this)));
+        this.querySelectorAll('a').forEach(function (item) { return item.addEventListener('click', this$1.onItemClick.bind(this$1)); });
       }
 
-      hidePanel() {
+    if ( HTMLElement ) LocalizationForm.__proto__ = HTMLElement;
+    LocalizationForm.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+    LocalizationForm.prototype.constructor = LocalizationForm;
+
+      LocalizationForm.prototype.hidePanel = function hidePanel () {
         this.elements.button.setAttribute('aria-expanded', 'false');
         this.elements.panel.setAttribute('hidden', true);
-      }
+      };
 
-      onContainerKeyUp(event) {
-        if (event.code.toUpperCase() !== 'ESCAPE') return;
+      LocalizationForm.prototype.onContainerKeyUp = function onContainerKeyUp (event) {
+        if (event.code.toUpperCase() !== 'ESCAPE') { return; }
 
-        if (this.elements.button.getAttribute('aria-expanded') == 'false') return;
+        if (this.elements.button.getAttribute('aria-expanded') == 'false') { return; }
         this.hidePanel();
         event.stopPropagation();
         this.elements.button.focus();
-      }
+      };
 
-      onItemClick(event) {
+      LocalizationForm.prototype.onItemClick = function onItemClick (event) {
         event.preventDefault();
-        const form = this.querySelector('form');
+        var form = this.querySelector('form');
         this.elements.input.value = event.currentTarget.dataset.value;
-        if (form) form.submit();
-      }
+        if (form) { form.submit(); }
+      };
 
-      openSelector() {
+      LocalizationForm.prototype.openSelector = function openSelector () {
         this.elements.button.focus();
         this.elements.panel.toggleAttribute('hidden');
         this.elements.button.setAttribute(
           'aria-expanded',
           (this.elements.button.getAttribute('aria-expanded') === 'false').toString()
         );
-      }
+      };
 
-      closeSelector(event) {
-        const isChild =
+      LocalizationForm.prototype.closeSelector = function closeSelector (event) {
+        var isChild =
           this.elements.panel.contains(event.relatedTarget) || this.elements.button.contains(event.relatedTarget);
         if (!event.relatedTarget || !isChild) {
           this.hidePanel();
         }
-      }
-    }
+      };
+
+    return LocalizationForm;
+  }(HTMLElement))
   );
 }
+

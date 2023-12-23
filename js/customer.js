@@ -66,18 +66,18 @@ class CustomerAddresses {
     target.setAttribute(attributes.expanded, (target.getAttribute(attributes.expanded) === 'false').toString());
   }
 
-  _handleAddEditButtonClick = ({ currentTarget }) => {
-    this._toggleExpanded(currentTarget);
+  _handleAddEditButtonClick(args) {
+    this._toggleExpanded(args.currentTarget);
   };
 
-  _handleCancelButtonClick = ({ currentTarget }) => {
-    this._toggleExpanded(currentTarget.closest(selectors.addressContainer).querySelector(`[${attributes.expanded}]`));
+  _handleCancelButtonClick(args) {
+    this._toggleExpanded(args.currentTarget.closest(selectors.addressContainer).querySelector(`[${attributes.expanded}]`));
   };
 
-  _handleDeleteButtonClick = ({ currentTarget }) => {
+  _handleDeleteButtonClick(args) {
     // eslint-disable-next-line no-alert
-    if (confirm(currentTarget.getAttribute(attributes.confirmMessage))) {
-      Shopify.postLink(currentTarget.dataset.target, {
+    if (confirm(args.currentTarget.getAttribute(attributes.confirmMessage))) {
+      Shopify.postLink(args.currentTarget.dataset.target, {
         parameters: { _method: 'delete' },
       });
     }

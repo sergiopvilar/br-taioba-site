@@ -11,10 +11,10 @@ if (!customElements.get('price-per-item')) {
         }
 
         this.getVolumePricingArray();
-      }
 
-      updatePricePerItemUnsubscriber = undefined;
-      variantIdChangedUnsubscriber = undefined;
+        this.updatePricePerItemUnsubscriber = undefined;
+        this.variantIdChangedUnsubscriber = undefined;
+      }
 
       connectedCallback() {
         // Update variantId if variant is switched on product page
@@ -72,7 +72,7 @@ if (!customElements.get('price-per-item')) {
         if (this.classList.contains('variant-item__price-per-item')) {
           this.currentQtyForVolumePricing = this.getCartQuantity(updatedCartQuantity);
         }
-        for (let pair of this.qtyPricePairs) {
+        for (var pair in this.qtyPricePairs) {
           if (this.currentQtyForVolumePricing >= pair[0]) {
             const pricePerItemCurrent = document.querySelector(`price-per-item[id^="Price-Per-Item-${this.dataset.sectionId || this.dataset.variantId}"] .price-per-item span`);
             this.classList.contains('variant-item__price-per-item') ? pricePerItemCurrent.innerHTML = window.quickOrderListStrings.each.replace('[money]', pair[1]) : pricePerItemCurrent.innerHTML = pair[1];

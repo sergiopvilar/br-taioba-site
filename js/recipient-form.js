@@ -17,17 +17,17 @@ if (!customElements.get('recipient-form')) {
         if (this.offsetProperty) this.offsetProperty.value = new Date().getTimezoneOffset().toString();
 
         this.errorMessageWrapper = this.querySelector('.product-form__recipient-error-message-wrapper');
-        this.errorMessageList = this.errorMessageWrapper?.querySelector('ul');
-        this.errorMessage = this.errorMessageWrapper?.querySelector('.error-message');
-        this.defaultErrorHeader = this.errorMessage?.innerText;
+        this.errorMessageList = this.errorMessageWrapper ? this.errorMessageWrapper.querySelector('ul') : undefined;
+        this.errorMessage = this.errorMessageWrapper ? this.errorMessageWrapper.querySelector('.error-message') : undefined;
+        this.defaultErrorHeader = this.errorMessage ? this.errorMessage.innerText : undefined;
         this.currentProductVariantId = this.dataset.productVariantId;
         this.addEventListener('change', this.onChange.bind(this));
         this.onChange();
-      }
 
-      cartUpdateUnsubscriber = undefined;
-      variantChangeUnsubscriber = undefined;
-      cartErrorUnsubscriber = undefined;
+        this.cartUpdateUnsubscriber = undefined;
+        this.variantChangeUnsubscriber = undefined;
+        this.cartErrorUnsubscriber = undefined;
+      }
 
       connectedCallback() {
         this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
@@ -105,7 +105,7 @@ if (!customElements.get('recipient-form')) {
             const fieldSelector = `#Recipient-${key}-${this.dataset.sectionId}`;
             const message = `${value.join(', ')}`;
             const errorMessageElement = this.querySelector(`#${errorMessageId}`);
-            const errorTextElement = errorMessageElement?.querySelector('.error-message');
+            const errorTextElement = errorMessageElement ? errorMessageElement.querySelector('.error-message') : undefined;
             if (!errorTextElement) return;
 
             if (this.errorMessageList) {

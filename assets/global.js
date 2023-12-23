@@ -6,7 +6,7 @@ function getFocusableElements(container) {
   );
 }
 
-document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
+document.querySelectorAll('[id^="Details-"] summary').forEach(function (summary) {
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
 
@@ -14,25 +14,27 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
 
-  summary.addEventListener('click', (event) => {
+  summary.addEventListener('click', function (event) {
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
   });
 
-  if (summary.closest('header-drawer, menu-drawer')) return;
+  if (summary.closest('header-drawer, menu-drawer')) { return; }
   summary.parentElement.addEventListener('keyup', onKeyUpEscape);
 });
 
-const trapFocusHandlers = {};
+var trapFocusHandlers = {};
 
-function trapFocus(container, elementToFocus = container) {
+function trapFocus(container, elementToFocus) {
+  if ( elementToFocus === void 0 ) elementToFocus = container;
+
   var elements = getFocusableElements(container);
   var first = elements[0];
   var last = elements[elements.length - 1];
 
   removeTrapFocus();
 
-  trapFocusHandlers.focusin = (event) => {
-    if (event.target !== container && event.target !== last && event.target !== first) return;
+  trapFocusHandlers.focusin = function (event) {
+    if (event.target !== container && event.target !== last && event.target !== first) { return; }
 
     document.addEventListener('keydown', trapFocusHandlers.keydown);
   };
@@ -42,7 +44,7 @@ function trapFocus(container, elementToFocus = container) {
   };
 
   trapFocusHandlers.keydown = function (event) {
-    if (event.code.toUpperCase() !== 'TAB') return; // If not TAB key
+    if (event.code.toUpperCase() !== 'TAB') { return; } // If not TAB key
     // On the last focusable element and tab forward, focus the first element.
     if (event.target === last && !event.shiftKey) {
       event.preventDefault();
@@ -78,7 +80,7 @@ try {
 }
 
 function focusVisiblePolyfill() {
-  const navKeys = [
+  var navKeys = [
     'ARROWUP',
     'ARROWDOWN',
     'ARROWLEFT',
@@ -90,27 +92,26 @@ function focusVisiblePolyfill() {
     'HOME',
     'END',
     'PAGEUP',
-    'PAGEDOWN',
-  ];
-  let currentFocusedElement = null;
-  let mouseClick = null;
+    'PAGEDOWN' ];
+  var currentFocusedElement = null;
+  var mouseClick = null;
 
-  window.addEventListener('keydown', (event) => {
+  window.addEventListener('keydown', function (event) {
     if (navKeys.includes(event.code.toUpperCase())) {
       mouseClick = false;
     }
   });
 
-  window.addEventListener('mousedown', (event) => {
+  window.addEventListener('mousedown', function (event) {
     mouseClick = true;
   });
 
   window.addEventListener(
     'focus',
-    () => {
-      if (currentFocusedElement) currentFocusedElement.classList.remove('focused');
+    function () {
+      if (currentFocusedElement) { currentFocusedElement.classList.remove('focused'); }
 
-      if (mouseClick) return;
+      if (mouseClick) { return; }
 
       currentFocusedElement = document.activeElement;
       currentFocusedElement.classList.add('focused');
@@ -120,115 +121,134 @@ function focusVisiblePolyfill() {
 }
 
 function pauseAllMedia() {
-  document.querySelectorAll('.js-youtube').forEach((video) => {
+  document.querySelectorAll('.js-youtube').forEach(function (video) {
     video.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
   });
-  document.querySelectorAll('.js-vimeo').forEach((video) => {
+  document.querySelectorAll('.js-vimeo').forEach(function (video) {
     video.contentWindow.postMessage('{"method":"pause"}', '*');
   });
-  document.querySelectorAll('video').forEach((video) => video.pause());
-  document.querySelectorAll('product-model').forEach((model) => {
-    if (model.modelViewerUI) model.modelViewerUI.pause();
+  document.querySelectorAll('video').forEach(function (video) { return video.pause(); });
+  document.querySelectorAll('product-model').forEach(function (model) {
+    if (model.modelViewerUI) { model.modelViewerUI.pause(); }
   });
 }
 
-function removeTrapFocus(elementToFocus = null) {
+function removeTrapFocus(elementToFocus) {
+  if ( elementToFocus === void 0 ) elementToFocus = null;
+
   document.removeEventListener('focusin', trapFocusHandlers.focusin);
   document.removeEventListener('focusout', trapFocusHandlers.focusout);
   document.removeEventListener('keydown', trapFocusHandlers.keydown);
 
-  if (elementToFocus) elementToFocus.focus();
+  if (elementToFocus) { elementToFocus.focus(); }
 }
 
 function onKeyUpEscape(event) {
-  if (event.code.toUpperCase() !== 'ESCAPE') return;
+  if (event.code.toUpperCase() !== 'ESCAPE') { return; }
 
-  const openDetailsElement = event.target.closest('details[open]');
-  if (!openDetailsElement) return;
+  var openDetailsElement = event.target.closest('details[open]');
+  if (!openDetailsElement) { return; }
 
-  const summaryElement = openDetailsElement.querySelector('summary');
+  var summaryElement = openDetailsElement.querySelector('summary');
   openDetailsElement.removeAttribute('open');
   summaryElement.setAttribute('aria-expanded', false);
   summaryElement.focus();
 }
 
-class QuantityInput extends HTMLElement {
-  constructor() {
-    super();
+var QuantityInput = /*@__PURE__*/(function (HTMLElement) {
+  function QuantityInput() {
+    var this$1 = this;
+
+    HTMLElement.call(this);
     this.input = this.querySelector('input');
     this.changeEvent = new Event('change', { bubbles: true });
     this.input.addEventListener('change', this.onInputChange.bind(this));
-    this.querySelectorAll('button').forEach((button) =>
-      button.addEventListener('click', this.onButtonClick.bind(this))
+    this.querySelectorAll('button').forEach(function (button) { return button.addEventListener('click', this$1.onButtonClick.bind(this$1)); }
     );
+
+    this.quantityUpdateUnsubscriber = undefined;
   }
 
-  quantityUpdateUnsubscriber = undefined;
+  if ( HTMLElement ) QuantityInput.__proto__ = HTMLElement;
+  QuantityInput.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  QuantityInput.prototype.constructor = QuantityInput;
 
-  connectedCallback() {
+  QuantityInput.prototype.connectedCallback = function connectedCallback () {
     this.validateQtyRules();
     this.quantityUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.quantityUpdate, this.validateQtyRules.bind(this));
-  }
+  };
 
-  disconnectedCallback() {
+  QuantityInput.prototype.disconnectedCallback = function disconnectedCallback () {
     if (this.quantityUpdateUnsubscriber) {
       this.quantityUpdateUnsubscriber();
     }
-  }
+  };
 
-  onInputChange(event) {
+  QuantityInput.prototype.onInputChange = function onInputChange (event) {
     this.validateQtyRules();
-  }
+  };
 
-  onButtonClick(event) {
+  QuantityInput.prototype.onButtonClick = function onButtonClick (event) {
     event.preventDefault();
-    const previousValue = this.input.value;
+    var previousValue = this.input.value;
 
     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
-    if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
-  }
+    if (previousValue !== this.input.value) { this.input.dispatchEvent(this.changeEvent); }
+  };
 
-  validateQtyRules() {
-    const value = parseInt(this.input.value);
+  QuantityInput.prototype.validateQtyRules = function validateQtyRules () {
+    var value = parseInt(this.input.value);
     if (this.input.min) {
-      const min = parseInt(this.input.min);
-      const buttonMinus = this.querySelector(".quantity__button[name='minus']");
+      var min = parseInt(this.input.min);
+      var buttonMinus = this.querySelector(".quantity__button[name='minus']");
       buttonMinus.classList.toggle('disabled', value <= min);
     }
     if (this.input.max) {
-      const max = parseInt(this.input.max);
-      const buttonPlus = this.querySelector(".quantity__button[name='plus']");
+      var max = parseInt(this.input.max);
+      var buttonPlus = this.querySelector(".quantity__button[name='plus']");
       buttonPlus.classList.toggle('disabled', value >= max);
     }
-  }
-}
+  };
+
+  return QuantityInput;
+}(HTMLElement));
 
 customElements.define('quantity-input', QuantityInput);
 
 function debounce(fn, wait) {
-  let t;
-  return (...args) => {
+  var this$1 = this;
+
+  var t;
+  return function () {
+    var args = [], len = arguments.length;
+    while ( len-- ) args[ len ] = arguments[ len ];
+
     clearTimeout(t);
-    t = setTimeout(() => fn.apply(this, args), wait);
+    t = setTimeout(function () { return fn.apply(this$1, args); }, wait);
   };
 }
 
 function throttle(fn, delay) {
-  let lastCall = 0;
-  return function (...args) {
-    const now = new Date().getTime();
+  var lastCall = 0;
+  return function () {
+    var args = [], len = arguments.length;
+    while ( len-- ) args[ len ] = arguments[ len ];
+
+    var now = new Date().getTime();
     if (now - lastCall < delay) {
       return;
     }
     lastCall = now;
-    return fn(...args);
+    return fn.apply(void 0, args);
   };
 }
 
-function fetchConfig(type = 'json') {
+function fetchConfig(type) {
+  if ( type === void 0 ) type = 'json';
+
   return {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+    headers: { 'Content-Type': 'application/json', Accept: ("application/" + type) },
   };
 }
 
@@ -344,9 +364,9 @@ Shopify.CountryProvinceSelector.prototype = {
   },
 };
 
-class MenuDrawer extends HTMLElement {
-  constructor() {
-    super();
+var MenuDrawer = /*@__PURE__*/(function (HTMLElement) {
+  function MenuDrawer() {
+    HTMLElement.call(this);
 
     this.mainDetailsToggle = this.querySelector('details');
 
@@ -355,32 +375,36 @@ class MenuDrawer extends HTMLElement {
     this.bindEvents();
   }
 
-  bindEvents() {
-    this.querySelectorAll('summary').forEach((summary) =>
-      summary.addEventListener('click', this.onSummaryClick.bind(this))
-    );
-    this.querySelectorAll('button:not(.localization-selector)').forEach((button) =>
-      button.addEventListener('click', this.onCloseButtonClick.bind(this))
-    );
-  }
+  if ( HTMLElement ) MenuDrawer.__proto__ = HTMLElement;
+  MenuDrawer.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  MenuDrawer.prototype.constructor = MenuDrawer;
 
-  onKeyUp(event) {
-    if (event.code.toUpperCase() !== 'ESCAPE') return;
+  MenuDrawer.prototype.bindEvents = function bindEvents () {
+    var this$1 = this;
 
-    const openDetailsElement = event.target.closest('details[open]');
-    if (!openDetailsElement) return;
+    this.querySelectorAll('summary').forEach(function (summary) { return summary.addEventListener('click', this$1.onSummaryClick.bind(this$1)); }
+    );
+    this.querySelectorAll('button:not(.localization-selector)').forEach(function (button) { return button.addEventListener('click', this$1.onCloseButtonClick.bind(this$1)); }
+    );
+  };
+
+  MenuDrawer.prototype.onKeyUp = function onKeyUp (event) {
+    if (event.code.toUpperCase() !== 'ESCAPE') { return; }
+
+    var openDetailsElement = event.target.closest('details[open]');
+    if (!openDetailsElement) { return; }
 
     openDetailsElement === this.mainDetailsToggle
       ? this.closeMenuDrawer(event, this.mainDetailsToggle.querySelector('summary'))
       : this.closeSubmenu(openDetailsElement);
-  }
+  };
 
-  onSummaryClick(event) {
-    const summaryElement = event.currentTarget;
-    const detailsElement = summaryElement.parentNode;
-    const parentMenuElement = detailsElement.closest('.has-submenu');
-    const isOpen = detailsElement.hasAttribute('open');
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  MenuDrawer.prototype.onSummaryClick = function onSummaryClick (event) {
+    var summaryElement = event.currentTarget;
+    var detailsElement = summaryElement.parentNode;
+    var parentMenuElement = detailsElement.closest('.has-submenu');
+    var isOpen = detailsElement.hasAttribute('open');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     function addTrapFocus() {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
@@ -388,14 +412,14 @@ class MenuDrawer extends HTMLElement {
     }
 
     if (detailsElement === this.mainDetailsToggle) {
-      if (isOpen) event.preventDefault();
+      if (isOpen) { event.preventDefault(); }
       isOpen ? this.closeMenuDrawer(event, summaryElement) : this.openMenuDrawer(summaryElement);
 
       if (window.matchMedia('(max-width: 990px)')) {
-        document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
+        document.documentElement.style.setProperty('--viewport-height', ((window.innerHeight) + "px"));
       }
     } else {
-      setTimeout(() => {
+      setTimeout(function () {
         detailsElement.classList.add('menu-opening');
         summaryElement.setAttribute('aria-expanded', true);
         parentMenuElement && parentMenuElement.classList.add('submenu-open');
@@ -404,65 +428,71 @@ class MenuDrawer extends HTMLElement {
           : summaryElement.nextElementSibling.addEventListener('transitionend', addTrapFocus);
       }, 100);
     }
-  }
+  };
 
-  openMenuDrawer(summaryElement) {
-    setTimeout(() => {
-      this.mainDetailsToggle.classList.add('menu-opening');
+  MenuDrawer.prototype.openMenuDrawer = function openMenuDrawer (summaryElement) {
+    var this$1 = this;
+
+    setTimeout(function () {
+      this$1.mainDetailsToggle.classList.add('menu-opening');
     });
     summaryElement.setAttribute('aria-expanded', true);
     trapFocus(this.mainDetailsToggle, summaryElement);
-    document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
-  }
+    document.body.classList.add(("overflow-hidden-" + (this.dataset.breakpoint)));
+  };
 
-  closeMenuDrawer(event, elementToFocus = false) {
-    if (event === undefined) return;
+  MenuDrawer.prototype.closeMenuDrawer = function closeMenuDrawer (event, elementToFocus) {
+    if ( elementToFocus === void 0 ) elementToFocus = false;
+
+    if (event === undefined) { return; }
 
     this.mainDetailsToggle.classList.remove('menu-opening');
-    this.mainDetailsToggle.querySelectorAll('details').forEach((details) => {
+    this.mainDetailsToggle.querySelectorAll('details').forEach(function (details) {
       details.removeAttribute('open');
       details.classList.remove('menu-opening');
     });
-    this.mainDetailsToggle.querySelectorAll('.submenu-open').forEach((submenu) => {
+    this.mainDetailsToggle.querySelectorAll('.submenu-open').forEach(function (submenu) {
       submenu.classList.remove('submenu-open');
     });
-    document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
+    document.body.classList.remove(("overflow-hidden-" + (this.dataset.breakpoint)));
     removeTrapFocus(elementToFocus);
     this.closeAnimation(this.mainDetailsToggle);
 
-    if (event instanceof KeyboardEvent) elementToFocus?.setAttribute('aria-expanded', false);
-  }
+    if (event instanceof KeyboardEvent && elementToFocus) { elementToFocus.setAttribute('aria-expanded', false); }
+  };
 
-  onFocusOut() {
-    setTimeout(() => {
-      if (this.mainDetailsToggle.hasAttribute('open') && !this.mainDetailsToggle.contains(document.activeElement))
-        this.closeMenuDrawer();
+  MenuDrawer.prototype.onFocusOut = function onFocusOut () {
+    var this$1 = this;
+
+    setTimeout(function () {
+      if (this$1.mainDetailsToggle.hasAttribute('open') && !this$1.mainDetailsToggle.contains(document.activeElement))
+        { this$1.closeMenuDrawer(); }
     });
-  }
+  };
 
-  onCloseButtonClick(event) {
-    const detailsElement = event.currentTarget.closest('details');
+  MenuDrawer.prototype.onCloseButtonClick = function onCloseButtonClick (event) {
+    var detailsElement = event.currentTarget.closest('details');
     this.closeSubmenu(detailsElement);
-  }
+  };
 
-  closeSubmenu(detailsElement) {
-    const parentMenuElement = detailsElement.closest('.submenu-open');
+  MenuDrawer.prototype.closeSubmenu = function closeSubmenu (detailsElement) {
+    var parentMenuElement = detailsElement.closest('.submenu-open');
     parentMenuElement && parentMenuElement.classList.remove('submenu-open');
     detailsElement.classList.remove('menu-opening');
     detailsElement.querySelector('summary').setAttribute('aria-expanded', false);
     removeTrapFocus(detailsElement.querySelector('summary'));
     this.closeAnimation(detailsElement);
-  }
+  };
 
-  closeAnimation(detailsElement) {
-    let animationStart;
+  MenuDrawer.prototype.closeAnimation = function closeAnimation (detailsElement) {
+    var animationStart;
 
-    const handleAnimation = (time) => {
+    var handleAnimation = function (time) {
       if (animationStart === undefined) {
         animationStart = time;
       }
 
-      const elapsedTime = time - animationStart;
+      var elapsedTime = time - animationStart;
 
       if (elapsedTime < 400) {
         window.requestAnimationFrame(handleAnimation);
@@ -475,144 +505,180 @@ class MenuDrawer extends HTMLElement {
     };
 
     window.requestAnimationFrame(handleAnimation);
-  }
-}
+  };
+
+  return MenuDrawer;
+}(HTMLElement));
 
 customElements.define('menu-drawer', MenuDrawer);
 
-class HeaderDrawer extends MenuDrawer {
-  constructor() {
-    super();
+var HeaderDrawer = /*@__PURE__*/(function (MenuDrawer) {
+  function HeaderDrawer() {
+    MenuDrawer.call(this);
   }
 
-  openMenuDrawer(summaryElement) {
+  if ( MenuDrawer ) HeaderDrawer.__proto__ = MenuDrawer;
+  HeaderDrawer.prototype = Object.create( MenuDrawer && MenuDrawer.prototype );
+  HeaderDrawer.prototype.constructor = HeaderDrawer;
+
+  HeaderDrawer.prototype.openMenuDrawer = function openMenuDrawer (summaryElement) {
+    var this$1 = this;
+
     this.header = this.header || document.querySelector('.section-header');
     this.borderOffset =
       this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
     document.documentElement.style.setProperty(
       '--header-bottom-position',
-      `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`
+      ((parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)) + "px")
     );
     this.header.classList.add('menu-open');
 
-    setTimeout(() => {
-      this.mainDetailsToggle.classList.add('menu-opening');
+    setTimeout(function () {
+      this$1.mainDetailsToggle.classList.add('menu-opening');
     });
 
     summaryElement.setAttribute('aria-expanded', true);
     window.addEventListener('resize', this.onResize);
     trapFocus(this.mainDetailsToggle, summaryElement);
-    document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
-  }
+    document.body.classList.add(("overflow-hidden-" + (this.dataset.breakpoint)));
+  };
 
-  closeMenuDrawer(event, elementToFocus) {
-    if (!elementToFocus) return;
-    super.closeMenuDrawer(event, elementToFocus);
+  HeaderDrawer.prototype.closeMenuDrawer = function closeMenuDrawer (event, elementToFocus) {
+    if (!elementToFocus) { return; }
+    MenuDrawer.prototype.closeMenuDrawer.call(this, event, elementToFocus);
     this.header.classList.remove('menu-open');
     window.removeEventListener('resize', this.onResize);
-  }
+  };
 
-  onResize = () => {
+  HeaderDrawer.prototype.onResize = function onResize () {
     this.header &&
       document.documentElement.style.setProperty(
         '--header-bottom-position',
-        `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`
+        ((parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)) + "px")
       );
-    document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
+    document.documentElement.style.setProperty('--viewport-height', ((window.innerHeight) + "px"));
   };
-}
+
+  return HeaderDrawer;
+}(MenuDrawer));
 
 customElements.define('header-drawer', HeaderDrawer);
 
-class ModalDialog extends HTMLElement {
-  constructor() {
-    super();
+var ModalDialog = /*@__PURE__*/(function (HTMLElement) {
+  function ModalDialog() {
+    var this$1 = this;
+
+    HTMLElement.call(this);
     this.querySelector('[id^="ModalClose-"]').addEventListener('click', this.hide.bind(this, false));
-    this.addEventListener('keyup', (event) => {
-      if (event.code.toUpperCase() === 'ESCAPE') this.hide();
+    this.addEventListener('keyup', function (event) {
+      if (event.code.toUpperCase() === 'ESCAPE') { this$1.hide(); }
     });
     if (this.classList.contains('media-modal')) {
-      this.addEventListener('pointerup', (event) => {
-        if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model')) this.hide();
+      this.addEventListener('pointerup', function (event) {
+        if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model')) { this$1.hide(); }
       });
     } else {
-      this.addEventListener('click', (event) => {
-        if (event.target === this) this.hide();
+      this.addEventListener('click', function (event) {
+        if (event.target === this$1) { this$1.hide(); }
       });
     }
   }
 
-  connectedCallback() {
-    if (this.moved) return;
+  if ( HTMLElement ) ModalDialog.__proto__ = HTMLElement;
+  ModalDialog.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  ModalDialog.prototype.constructor = ModalDialog;
+
+  ModalDialog.prototype.connectedCallback = function connectedCallback () {
+    if (this.moved) { return; }
     this.moved = true;
     document.body.appendChild(this);
-  }
+  };
 
-  show(opener) {
+  ModalDialog.prototype.show = function show (opener) {
     this.openedBy = opener;
-    const popup = this.querySelector('.template-popup');
+    var popup = this.querySelector('.template-popup');
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
-    if (popup) popup.loadContent();
+    if (popup) { popup.loadContent(); }
     trapFocus(this, this.querySelector('[role="dialog"]'));
     window.pauseAllMedia();
-  }
+  };
 
-  hide() {
+  ModalDialog.prototype.hide = function hide () {
     document.body.classList.remove('overflow-hidden');
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
     this.removeAttribute('open');
     removeTrapFocus(this.openedBy);
     window.pauseAllMedia();
-  }
-}
+  };
+
+  return ModalDialog;
+}(HTMLElement));
 customElements.define('modal-dialog', ModalDialog);
 
-class ModalOpener extends HTMLElement {
-  constructor() {
-    super();
+var ModalOpener = /*@__PURE__*/(function (HTMLElement) {
+  function ModalOpener() {
+    var this$1 = this;
 
-    const button = this.querySelector('button');
+    HTMLElement.call(this);
 
-    if (!button) return;
-    button.addEventListener('click', () => {
-      const modal = document.querySelector(this.getAttribute('data-modal'));
-      if (modal) modal.show(button);
+    var button = this.querySelector('button');
+
+    if (!button) { return; }
+    button.addEventListener('click', function () {
+      var modal = document.querySelector(this$1.getAttribute('data-modal'));
+      if (modal) { modal.show(button); }
     });
   }
-}
+
+  if ( HTMLElement ) ModalOpener.__proto__ = HTMLElement;
+  ModalOpener.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  ModalOpener.prototype.constructor = ModalOpener;
+
+  return ModalOpener;
+}(HTMLElement));
 customElements.define('modal-opener', ModalOpener);
 
-class DeferredMedia extends HTMLElement {
-  constructor() {
-    super();
-    const poster = this.querySelector('[id^="Deferred-Poster-"]');
-    if (!poster) return;
+var DeferredMedia = /*@__PURE__*/(function (HTMLElement) {
+  function DeferredMedia() {
+    HTMLElement.call(this);
+    var poster = this.querySelector('[id^="Deferred-Poster-"]');
+    if (!poster) { return; }
     poster.addEventListener('click', this.loadContent.bind(this));
   }
 
-  loadContent(focus = true) {
+  if ( HTMLElement ) DeferredMedia.__proto__ = HTMLElement;
+  DeferredMedia.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  DeferredMedia.prototype.constructor = DeferredMedia;
+
+  DeferredMedia.prototype.loadContent = function loadContent (focus) {
+    if ( focus === void 0 ) focus = true;
+
     window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
-      const content = document.createElement('div');
+      var content = document.createElement('div');
       content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
 
       this.setAttribute('loaded', true);
-      const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
-      if (focus) deferredElement.focus();
+      var deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
+      if (focus) { deferredElement.focus(); }
       if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
         // force autoplay for safari
         deferredElement.play();
       }
     }
-  }
-}
+  };
+
+  return DeferredMedia;
+}(HTMLElement));
 
 customElements.define('deferred-media', DeferredMedia);
 
-class SliderComponent extends HTMLElement {
-  constructor() {
-    super();
+var SliderComponent = /*@__PURE__*/(function (HTMLElement) {
+  function SliderComponent() {
+    var this$1 = this;
+
+    HTMLElement.call(this);
     this.slider = this.querySelector('[id^="Slider-"]');
     this.sliderItems = this.querySelectorAll('[id^="Slide-"]');
     this.enableSliderLooping = false;
@@ -621,10 +687,10 @@ class SliderComponent extends HTMLElement {
     this.prevButton = this.querySelector('button[name="previous"]');
     this.nextButton = this.querySelector('button[name="next"]');
 
-    if (!this.slider || !this.nextButton) return;
+    if (!this.slider || !this.nextButton) { return; }
 
     this.initPages();
-    const resizeObserver = new ResizeObserver((entries) => this.initPages());
+    var resizeObserver = new ResizeObserver(function (entries) { return this$1.initPages(); });
     resizeObserver.observe(this.slider);
 
     this.slider.addEventListener('scroll', this.update.bind(this));
@@ -632,28 +698,32 @@ class SliderComponent extends HTMLElement {
     this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
   }
 
-  initPages() {
-    this.sliderItemsToShow = Array.from(this.sliderItems).filter((element) => element.clientWidth > 0);
-    if (this.sliderItemsToShow.length < 2) return;
+  if ( HTMLElement ) SliderComponent.__proto__ = HTMLElement;
+  SliderComponent.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  SliderComponent.prototype.constructor = SliderComponent;
+
+  SliderComponent.prototype.initPages = function initPages () {
+    this.sliderItemsToShow = Array.from(this.sliderItems).filter(function (element) { return element.clientWidth > 0; });
+    if (this.sliderItemsToShow.length < 2) { return; }
     this.sliderItemOffset = this.sliderItemsToShow[1].offsetLeft - this.sliderItemsToShow[0].offsetLeft;
     this.slidesPerPage = Math.floor(
       (this.slider.clientWidth - this.sliderItemsToShow[0].offsetLeft) / this.sliderItemOffset
     );
     this.totalPages = this.sliderItemsToShow.length - this.slidesPerPage + 1;
     this.update();
-  }
+  };
 
-  resetPages() {
+  SliderComponent.prototype.resetPages = function resetPages () {
     this.sliderItems = this.querySelectorAll('[id^="Slide-"]');
     this.initPages();
-  }
+  };
 
-  update() {
+  SliderComponent.prototype.update = function update () {
     // Temporarily prevents unneeded updates resulting from variant changes
     // This should be refactored as part of https://github.com/Shopify/dawn/issues/2057
-    if (!this.slider || !this.nextButton) return;
+    if (!this.slider || !this.nextButton) { return; }
 
-    const previousPage = this.currentPage;
+    var previousPage = this.currentPage;
     this.currentPage = Math.round(this.slider.scrollLeft / this.sliderItemOffset) + 1;
 
     if (this.currentPageElement && this.pageTotalElement) {
@@ -672,7 +742,7 @@ class SliderComponent extends HTMLElement {
       );
     }
 
-    if (this.enableSliderLooping) return;
+    if (this.enableSliderLooping) { return; }
 
     if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollLeft === 0) {
       this.prevButton.setAttribute('disabled', 'disabled');
@@ -685,49 +755,55 @@ class SliderComponent extends HTMLElement {
     } else {
       this.nextButton.removeAttribute('disabled');
     }
-  }
+  };
 
-  isSlideVisible(element, offset = 0) {
-    const lastVisibleSlide = this.slider.clientWidth + this.slider.scrollLeft - offset;
+  SliderComponent.prototype.isSlideVisible = function isSlideVisible (element, offset) {
+    if ( offset === void 0 ) offset = 0;
+
+    var lastVisibleSlide = this.slider.clientWidth + this.slider.scrollLeft - offset;
     return element.offsetLeft + element.clientWidth <= lastVisibleSlide && element.offsetLeft >= this.slider.scrollLeft;
-  }
+  };
 
-  onButtonClick(event) {
+  SliderComponent.prototype.onButtonClick = function onButtonClick (event) {
     event.preventDefault();
-    const step = event.currentTarget.dataset.step || 1;
+    var step = event.currentTarget.dataset.step || 1;
     this.slideScrollPosition =
       event.currentTarget.name === 'next'
         ? this.slider.scrollLeft + step * this.sliderItemOffset
         : this.slider.scrollLeft - step * this.sliderItemOffset;
     this.setSlidePosition(this.slideScrollPosition);
-  }
+  };
 
-  setSlidePosition(position) {
+  SliderComponent.prototype.setSlidePosition = function setSlidePosition (position) {
     this.slider.scrollTo({
       left: position,
     });
-  }
-}
+  };
+
+  return SliderComponent;
+}(HTMLElement));
 
 customElements.define('slider-component', SliderComponent);
 
-class SlideshowComponent extends SliderComponent {
-  constructor() {
-    super();
+var SlideshowComponent = /*@__PURE__*/(function (SliderComponent) {
+  function SlideshowComponent() {
+    var this$1 = this;
+
+    SliderComponent.call(this);
     this.sliderControlWrapper = this.querySelector('.slider-buttons');
     this.enableSliderLooping = true;
 
-    if (!this.sliderControlWrapper) return;
+    if (!this.sliderControlWrapper) { return; }
 
     this.sliderFirstItemNode = this.slider.querySelector('.slideshow__slide');
-    if (this.sliderItemsToShow.length > 0) this.currentPage = 1;
+    if (this.sliderItemsToShow.length > 0) { this.currentPage = 1; }
 
     this.announcementBarSlider = this.querySelector('.announcement-bar-slider');
     // Value below should match --duration-announcement-bar CSS value
     this.announcerBarAnimationDelay = this.announcementBarSlider ? 250 : 0;
 
     this.sliderControlLinksArray = Array.from(this.sliderControlWrapper.querySelectorAll('.slider-counter__link'));
-    this.sliderControlLinksArray.forEach((link) => link.addEventListener('click', this.linkToSlide.bind(this)));
+    this.sliderControlLinksArray.forEach(function (link) { return link.addEventListener('click', this$1.linkToSlide.bind(this$1)); });
     this.slider.addEventListener('scroll', this.setSlideVisibility.bind(this));
     this.setSlideVisibility();
 
@@ -735,25 +811,29 @@ class SlideshowComponent extends SliderComponent {
       this.announcementBarArrowButtonWasClicked = false;
 
       this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-      this.reducedMotion.addEventListener('change', () => {
-        if (this.slider.getAttribute('data-autoplay') === 'true') this.setAutoPlay();
+      this.reducedMotion.addEventListener('change', function () {
+        if (this$1.slider.getAttribute('data-autoplay') === 'true') { this$1.setAutoPlay(); }
       });
 
-      [this.prevButton, this.nextButton].forEach((button) => {
+      [this.prevButton, this.nextButton].forEach(function (button) {
         button.addEventListener(
           'click',
-          () => {
-            this.announcementBarArrowButtonWasClicked = true;
+          function () {
+            this$1.announcementBarArrowButtonWasClicked = true;
           },
           { once: true }
         );
       });
     }
 
-    if (this.slider.getAttribute('data-autoplay') === 'true') this.setAutoPlay();
+    if (this.slider.getAttribute('data-autoplay') === 'true') { this.setAutoPlay(); }
   }
 
-  setAutoPlay() {
+  if ( SliderComponent ) SlideshowComponent.__proto__ = SliderComponent;
+  SlideshowComponent.prototype = Object.create( SliderComponent && SliderComponent.prototype );
+  SlideshowComponent.prototype.constructor = SlideshowComponent;
+
+  SlideshowComponent.prototype.setAutoPlay = function setAutoPlay () {
     this.autoplaySpeed = this.slider.dataset.speed * 1000;
     this.addEventListener('mouseover', this.focusInHandling.bind(this));
     this.addEventListener('mouseleave', this.focusOutHandling.bind(this));
@@ -770,14 +850,14 @@ class SlideshowComponent extends SliderComponent {
         ? this.pause()
         : this.play();
     }
-  }
+  };
 
-  onButtonClick(event) {
-    super.onButtonClick(event);
+  SlideshowComponent.prototype.onButtonClick = function onButtonClick (event) {
+    SliderComponent.prototype.onButtonClick.call(this, event);
     this.wasClicked = true;
 
-    const isFirstSlide = this.currentPage === 1;
-    const isLastSlide = this.currentPage === this.sliderItemsToShow.length;
+    var isFirstSlide = this.currentPage === 1;
+    var isLastSlide = this.currentPage === this.sliderItemsToShow.length;
 
     if (!isFirstSlide && !isLastSlide) {
       this.applyAnimationToAnnouncementBar(event.currentTarget.name);
@@ -794,43 +874,45 @@ class SlideshowComponent extends SliderComponent {
     this.setSlidePosition(this.slideScrollPosition);
 
     this.applyAnimationToAnnouncementBar(event.currentTarget.name);
-  }
+  };
 
-  setSlidePosition(position) {
-    if (this.setPositionTimeout) clearTimeout(this.setPositionTimeout);
-    this.setPositionTimeout = setTimeout(() => {
-      this.slider.scrollTo({
+  SlideshowComponent.prototype.setSlidePosition = function setSlidePosition (position) {
+    var this$1 = this;
+
+    if (this.setPositionTimeout) { clearTimeout(this.setPositionTimeout); }
+    this.setPositionTimeout = setTimeout(function () {
+      this$1.slider.scrollTo({
         left: position,
       });
     }, this.announcerBarAnimationDelay);
-  }
+  };
 
-  update() {
-    super.update();
+  SlideshowComponent.prototype.update = function update () {
+    SliderComponent.prototype.update.call(this);
     this.sliderControlButtons = this.querySelectorAll('.slider-counter__link');
     this.prevButton.removeAttribute('disabled');
 
-    if (!this.sliderControlButtons.length) return;
+    if (!this.sliderControlButtons.length) { return; }
 
-    this.sliderControlButtons.forEach((link) => {
+    this.sliderControlButtons.forEach(function (link) {
       link.classList.remove('slider-counter__link--active');
       link.removeAttribute('aria-current');
     });
     this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
     this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
-  }
+  };
 
-  autoPlayToggle() {
+  SlideshowComponent.prototype.autoPlayToggle = function autoPlayToggle () {
     this.togglePlayButtonState(this.autoplayButtonIsSetToPlay);
     this.autoplayButtonIsSetToPlay ? this.pause() : this.play();
     this.autoplayButtonIsSetToPlay = !this.autoplayButtonIsSetToPlay;
-  }
+  };
 
-  focusOutHandling(event) {
+  SlideshowComponent.prototype.focusOutHandling = function focusOutHandling (event) {
     if (this.sliderAutoplayButton) {
-      const focusedOnAutoplayButton =
+      var focusedOnAutoplayButton =
         event.target === this.sliderAutoplayButton || this.sliderAutoplayButton.contains(event.target);
-      if (!this.autoplayButtonIsSetToPlay || focusedOnAutoplayButton) return;
+      if (!this.autoplayButtonIsSetToPlay || focusedOnAutoplayButton) { return; }
       this.play();
     } else if (
       !this.reducedMotion.matches &&
@@ -838,11 +920,11 @@ class SlideshowComponent extends SliderComponent {
     ) {
       this.play();
     }
-  }
+  };
 
-  focusInHandling(event) {
+  SlideshowComponent.prototype.focusInHandling = function focusInHandling (event) {
     if (this.sliderAutoplayButton) {
-      const focusedOnAutoplayButton =
+      var focusedOnAutoplayButton =
         event.target === this.sliderAutoplayButton || this.sliderAutoplayButton.contains(event.target);
       if (focusedOnAutoplayButton && this.autoplayButtonIsSetToPlay) {
         this.play();
@@ -852,20 +934,20 @@ class SlideshowComponent extends SliderComponent {
     } else if (this.announcementBarSlider.contains(event.target)) {
       this.pause();
     }
-  }
+  };
 
-  play() {
+  SlideshowComponent.prototype.play = function play () {
     this.slider.setAttribute('aria-live', 'off');
     clearInterval(this.autoplay);
     this.autoplay = setInterval(this.autoRotateSlides.bind(this), this.autoplaySpeed);
-  }
+  };
 
-  pause() {
+  SlideshowComponent.prototype.pause = function pause () {
     this.slider.setAttribute('aria-live', 'polite');
     clearInterval(this.autoplay);
-  }
+  };
 
-  togglePlayButtonState(pauseAutoplay) {
+  SlideshowComponent.prototype.togglePlayButtonState = function togglePlayButtonState (pauseAutoplay) {
     if (pauseAutoplay) {
       this.sliderAutoplayButton.classList.add('slideshow__autoplay--paused');
       this.sliderAutoplayButton.setAttribute('aria-label', window.accessibilityStrings.playSlideshow);
@@ -873,92 +955,102 @@ class SlideshowComponent extends SliderComponent {
       this.sliderAutoplayButton.classList.remove('slideshow__autoplay--paused');
       this.sliderAutoplayButton.setAttribute('aria-label', window.accessibilityStrings.pauseSlideshow);
     }
-  }
+  };
 
-  autoRotateSlides() {
-    const slideScrollPosition =
+  SlideshowComponent.prototype.autoRotateSlides = function autoRotateSlides () {
+    var slideScrollPosition =
       this.currentPage === this.sliderItems.length
         ? 0
         : this.slider.scrollLeft + this.sliderItemOffset;
 
     this.setSlidePosition(slideScrollPosition);
     this.applyAnimationToAnnouncementBar();
-  }
+  };
 
-  setSlideVisibility(event) {
-    this.sliderItemsToShow.forEach((item, index) => {
-      const linkElements = item.querySelectorAll('a');
-      if (index === this.currentPage - 1) {
+  SlideshowComponent.prototype.setSlideVisibility = function setSlideVisibility (event) {
+    var this$1 = this;
+
+    this.sliderItemsToShow.forEach(function (item, index) {
+      var linkElements = item.querySelectorAll('a');
+      if (index === this$1.currentPage - 1) {
         if (linkElements.length)
-          linkElements.forEach((button) => {
+          { linkElements.forEach(function (button) {
             button.removeAttribute('tabindex');
-          });
+          }); }
         item.setAttribute('aria-hidden', 'false');
         item.removeAttribute('tabindex');
       } else {
         if (linkElements.length)
-          linkElements.forEach((button) => {
+          { linkElements.forEach(function (button) {
             button.setAttribute('tabindex', '-1');
-          });
+          }); }
         item.setAttribute('aria-hidden', 'true');
         item.setAttribute('tabindex', '-1');
       }
     });
     this.wasClicked = false;
-  }
+  };
 
-  applyAnimationToAnnouncementBar(button = 'next') {
-    if (!this.announcementBarSlider) return;
+  SlideshowComponent.prototype.applyAnimationToAnnouncementBar = function applyAnimationToAnnouncementBar (button) {
+    if ( button === void 0 ) button = 'next';
 
-    const itemsCount = this.sliderItems.length;
-    const increment = button === 'next' ? 1 : -1;
+    if (!this.announcementBarSlider) { return; }
 
-    const currentIndex = this.currentPage - 1;
-    let nextIndex = (currentIndex + increment) % itemsCount;
+    var itemsCount = this.sliderItems.length;
+    var increment = button === 'next' ? 1 : -1;
+
+    var currentIndex = this.currentPage - 1;
+    var nextIndex = (currentIndex + increment) % itemsCount;
     nextIndex = nextIndex === -1 ? itemsCount - 1 : nextIndex;
 
-    const nextSlide = this.sliderItems[nextIndex];
-    const currentSlide = this.sliderItems[currentIndex];
+    var nextSlide = this.sliderItems[nextIndex];
+    var currentSlide = this.sliderItems[currentIndex];
 
-    const animationClassIn = 'announcement-bar-slider--fade-in';
-    const animationClassOut = 'announcement-bar-slider--fade-out';
+    var animationClassIn = 'announcement-bar-slider--fade-in';
+    var animationClassOut = 'announcement-bar-slider--fade-out';
 
-    const isFirstSlide = currentIndex === 0;
-    const isLastSlide = currentIndex === itemsCount - 1;
+    var isFirstSlide = currentIndex === 0;
+    var isLastSlide = currentIndex === itemsCount - 1;
 
-    const shouldMoveNext = (button === 'next' && !isLastSlide) || (button === 'previous' && isFirstSlide);
-    const direction = shouldMoveNext ? 'next' : 'previous';
+    var shouldMoveNext = (button === 'next' && !isLastSlide) || (button === 'previous' && isFirstSlide);
+    var direction = shouldMoveNext ? 'next' : 'previous';
 
-    currentSlide.classList.add(`${animationClassOut}-${direction}`);
-    nextSlide.classList.add(`${animationClassIn}-${direction}`);
+    currentSlide.classList.add((animationClassOut + "-" + direction));
+    nextSlide.classList.add((animationClassIn + "-" + direction));
 
-    setTimeout(() => {
-      currentSlide.classList.remove(`${animationClassOut}-${direction}`);
-      nextSlide.classList.remove(`${animationClassIn}-${direction}`);
+    setTimeout(function () {
+      currentSlide.classList.remove((animationClassOut + "-" + direction));
+      nextSlide.classList.remove((animationClassIn + "-" + direction));
     }, this.announcerBarAnimationDelay * 2);
-  }
+  };
 
-  linkToSlide(event) {
+  SlideshowComponent.prototype.linkToSlide = function linkToSlide (event) {
     event.preventDefault();
-    const slideScrollPosition =
+    var slideScrollPosition =
       this.slider.scrollLeft +
       this.sliderFirstItemNode.clientWidth *
       (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
     this.slider.scrollTo({
       left: slideScrollPosition,
     });
-  }
-}
+  };
+
+  return SlideshowComponent;
+}(SliderComponent));
 
 customElements.define('slideshow-component', SlideshowComponent);
 
-class VariantSelects extends HTMLElement {
-  constructor() {
-    super();
+var VariantSelects = /*@__PURE__*/(function (HTMLElement) {
+  function VariantSelects() {
+    HTMLElement.call(this);
     this.addEventListener('change', this.onVariantChange);
   }
 
-  onVariantChange() {
+  if ( HTMLElement ) VariantSelects.__proto__ = HTMLElement;
+  VariantSelects.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  VariantSelects.prototype.constructor = VariantSelects;
+
+  VariantSelects.prototype.onVariantChange = function onVariantChange () {
     this.updateOptions();
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
@@ -976,88 +1068,95 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
       this.updateShareUrl();
     }
-  }
+  };
 
-  updateOptions() {
-    this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
-  }
+  VariantSelects.prototype.updateOptions = function updateOptions () {
+    this.options = Array.from(this.querySelectorAll('select'), function (select) { return select.value; });
+  };
 
-  updateMasterId() {
-    this.currentVariant = this.getVariantData().find((variant) => {
+  VariantSelects.prototype.updateMasterId = function updateMasterId () {
+    var this$1 = this;
+
+    this.currentVariant = this.getVariantData().find(function (variant) {
       return !variant.options
-        .map((option, index) => {
-          return this.options[index] === option;
+        .map(function (option, index) {
+          return this$1.options[index] === option;
         })
         .includes(false);
     });
-  }
+  };
 
-  updateMedia() {
-    if (!this.currentVariant) return;
-    if (!this.currentVariant.featured_media) return;
+  VariantSelects.prototype.updateMedia = function updateMedia () {
+    var this$1 = this;
 
-    const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
-    mediaGalleries.forEach((mediaGallery) =>
-      mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true)
+    if (!this.currentVariant) { return; }
+    if (!this.currentVariant.featured_media) { return; }
+
+    var mediaGalleries = document.querySelectorAll(("[id^=\"MediaGallery-" + (this.dataset.section) + "\"]"));
+    mediaGalleries.forEach(function (mediaGallery) { return mediaGallery.setActiveMedia(((this$1.dataset.section) + "-" + (this$1.currentVariant.featured_media.id)), true); }
     );
 
-    const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
-    if (!modalContent) return;
-    const newMediaModal = modalContent.querySelector(`[data-media-id="${this.currentVariant.featured_media.id}"]`);
+    var modalContent = document.querySelector(("#ProductModal-" + (this.dataset.section) + " .product-media-modal__content"));
+    if (!modalContent) { return; }
+    var newMediaModal = modalContent.querySelector(("[data-media-id=\"" + (this.currentVariant.featured_media.id) + "\"]"));
     modalContent.prepend(newMediaModal);
-  }
+  };
 
-  updateURL() {
-    if (!this.currentVariant || this.dataset.updateUrl === 'false') return;
-    window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
-  }
+  VariantSelects.prototype.updateURL = function updateURL () {
+    if (!this.currentVariant || this.dataset.updateUrl === 'false') { return; }
+    window.history.replaceState({}, '', ((this.dataset.url) + "?variant=" + (this.currentVariant.id)));
+  };
 
-  updateShareUrl() {
-    const shareButton = document.getElementById(`Share-${this.dataset.section}`);
-    if (!shareButton || !shareButton.updateUrl) return;
-    shareButton.updateUrl(`${window.shopUrl}${this.dataset.url}?variant=${this.currentVariant.id}`);
-  }
+  VariantSelects.prototype.updateShareUrl = function updateShareUrl () {
+    var shareButton = document.getElementById(("Share-" + (this.dataset.section)));
+    if (!shareButton || !shareButton.updateUrl) { return; }
+    shareButton.updateUrl(("" + (window.shopUrl) + (this.dataset.url) + "?variant=" + (this.currentVariant.id)));
+  };
 
-  updateVariantInput() {
-    const productForms = document.querySelectorAll(
-      `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`
+  VariantSelects.prototype.updateVariantInput = function updateVariantInput () {
+    var this$1 = this;
+
+    var productForms = document.querySelectorAll(
+      ("#product-form-" + (this.dataset.section) + ", #product-form-installment-" + (this.dataset.section))
     );
-    productForms.forEach((productForm) => {
-      const input = productForm.querySelector('input[name="id"]');
-      input.value = this.currentVariant.id;
+    productForms.forEach(function (productForm) {
+      var input = productForm.querySelector('input[name="id"]');
+      input.value = this$1.currentVariant.id;
       input.dispatchEvent(new Event('change', { bubbles: true }));
     });
-  }
+  };
 
-  updateVariantStatuses() {
-    const selectedOptionOneVariants = this.variantData.filter(
-      (variant) => this.querySelector(':checked').value === variant.option1
+  VariantSelects.prototype.updateVariantStatuses = function updateVariantStatuses () {
+    var this$1 = this;
+
+    var selectedOptionOneVariants = this.variantData.filter(
+      function (variant) { return this$1.querySelector(':checked').value === variant.option1; }
     );
-    const inputWrappers = [...this.querySelectorAll('.product-form__input')];
-    inputWrappers.forEach((option, index) => {
-      if (index === 0) return;
-      const optionInputs = [...option.querySelectorAll('input[type="radio"], option')];
-      const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
-      const availableOptionInputsValue = selectedOptionOneVariants
-        .filter((variant) => variant.available && variant[`option${index}`] === previousOptionSelected)
-        .map((variantOption) => variantOption[`option${index + 1}`]);
-      this.setInputAvailability(optionInputs, availableOptionInputsValue);
+    var inputWrappers = [].concat( this.querySelectorAll('.product-form__input') );
+    inputWrappers.forEach(function (option, index) {
+      if (index === 0) { return; }
+      var optionInputs = [].concat( option.querySelectorAll('input[type="radio"], option') );
+      var previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
+      var availableOptionInputsValue = selectedOptionOneVariants
+        .filter(function (variant) { return variant.available && variant[("option" + index)] === previousOptionSelected; })
+        .map(function (variantOption) { return variantOption[("option" + (index + 1))]; });
+      this$1.setInputAvailability(optionInputs, availableOptionInputsValue);
     });
-  }
+  };
 
-  setInputAvailability(listOfOptions, listOfAvailableOptions) {
-    listOfOptions.forEach((input) => {
+  VariantSelects.prototype.setInputAvailability = function setInputAvailability (listOfOptions, listOfAvailableOptions) {
+    listOfOptions.forEach(function (input) {
       if (listOfAvailableOptions.includes(input.getAttribute('value'))) {
         input.innerText = input.getAttribute('value');
       } else {
         input.innerText = window.variantStrings.unavailable_with_option.replace('[value]', input.getAttribute('value'));
       }
     });
-  }
+  };
 
-  updatePickupAvailability() {
-    const pickUpAvailability = document.querySelector('pickup-availability');
-    if (!pickUpAvailability) return;
+  VariantSelects.prototype.updatePickupAvailability = function updatePickupAvailability () {
+    var pickUpAvailability = document.querySelector('pickup-availability');
+    if (!pickUpAvailability) { return; }
 
     if (this.currentVariant && this.currentVariant.available) {
       pickUpAvailability.fetchAvailability(this.currentVariant.id);
@@ -1065,60 +1164,61 @@ class VariantSelects extends HTMLElement {
       pickUpAvailability.removeAttribute('available');
       pickUpAvailability.innerHTML = '';
     }
-  }
+  };
 
-  removeErrorMessage() {
-    const section = this.closest('section');
-    if (!section) return;
+  VariantSelects.prototype.removeErrorMessage = function removeErrorMessage () {
+    var section = this.closest('section');
+    if (!section) { return; }
 
-    const productForm = section.querySelector('product-form');
-    if (productForm) productForm.handleErrorMessage();
-  }
+    var productForm = section.querySelector('product-form');
+    if (productForm) { productForm.handleErrorMessage(); }
+  };
 
-  renderProductInfo() {
-    const requestedVariantId = this.currentVariant.id;
-    const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
+  VariantSelects.prototype.renderProductInfo = function renderProductInfo () {
+    var this$1 = this;
+
+    var requestedVariantId = this.currentVariant.id;
+    var sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
 
     fetch(
-      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section
-      }`
+      ((this.dataset.url) + "?variant=" + requestedVariantId + "&section_id=" + (this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section))
     )
-      .then((response) => response.text())
-      .then((responseText) => {
+      .then(function (response) { return response.text(); })
+      .then(function (responseText) {
         // prevent unnecessary ui changes from abandoned selections
-        if (this.currentVariant.id !== requestedVariantId) return;
+        if (this$1.currentVariant.id !== requestedVariantId) { return; }
 
-        const html = new DOMParser().parseFromString(responseText, 'text/html');
-        const destination = document.getElementById(`price-${this.dataset.section}`);
-        const source = html.getElementById(
-          `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+        var html = new DOMParser().parseFromString(responseText, 'text/html');
+        var destination = document.getElementById(("price-" + (this$1.dataset.section)));
+        var source = html.getElementById(
+          ("price-" + (this$1.dataset.originalSection ? this$1.dataset.originalSection : this$1.dataset.section))
         );
-        const skuSource = html.getElementById(
-          `Sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+        var skuSource = html.getElementById(
+          ("Sku-" + (this$1.dataset.originalSection ? this$1.dataset.originalSection : this$1.dataset.section))
         );
-        const skuDestination = document.getElementById(`Sku-${this.dataset.section}`);
-        const inventorySource = html.getElementById(
-          `Inventory-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+        var skuDestination = document.getElementById(("Sku-" + (this$1.dataset.section)));
+        var inventorySource = html.getElementById(
+          ("Inventory-" + (this$1.dataset.originalSection ? this$1.dataset.originalSection : this$1.dataset.section))
         );
-        const inventoryDestination = document.getElementById(`Inventory-${this.dataset.section}`);
+        var inventoryDestination = document.getElementById(("Inventory-" + (this$1.dataset.section)));
 
-        const volumePricingSource = html.getElementById(
-          `Volume-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+        var volumePricingSource = html.getElementById(
+          ("Volume-" + (this$1.dataset.originalSection ? this$1.dataset.originalSection : this$1.dataset.section))
         );
 
-        const pricePerItemDestination = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
-        const pricePerItemSource = html.getElementById(`Price-Per-Item-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+        var pricePerItemDestination = document.getElementById(("Price-Per-Item-" + (this$1.dataset.section)));
+        var pricePerItemSource = html.getElementById(("Price-Per-Item-" + (this$1.dataset.originalSection ? this$1.dataset.originalSection : this$1.dataset.section)));
 
-        const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
-        const qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
-        const volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
+        var volumePricingDestination = document.getElementById(("Volume-" + (this$1.dataset.section)));
+        var qtyRules = document.getElementById(("Quantity-Rules-" + (this$1.dataset.section)));
+        var volumeNote = document.getElementById(("Volume-Note-" + (this$1.dataset.section)));
 
-        if (volumeNote) volumeNote.classList.remove('hidden');
-        if (volumePricingDestination) volumePricingDestination.classList.remove('hidden');
-        if (qtyRules) qtyRules.classList.remove('hidden');
+        if (volumeNote) { volumeNote.classList.remove('hidden'); }
+        if (volumePricingDestination) { volumePricingDestination.classList.remove('hidden'); }
+        if (qtyRules) { qtyRules.classList.remove('hidden'); }
 
-        if (source && destination) destination.innerHTML = source.innerHTML;
-        if (inventorySource && inventoryDestination) inventoryDestination.innerHTML = inventorySource.innerHTML;
+        if (source && destination) { destination.innerHTML = source.innerHTML; }
+        if (inventorySource && inventoryDestination) { inventoryDestination.innerHTML = inventorySource.innerHTML; }
         if (skuSource && skuDestination) {
           skuDestination.innerHTML = skuSource.innerHTML;
           skuDestination.classList.toggle('hidden', skuSource.classList.contains('hidden'));
@@ -1133,139 +1233,159 @@ class VariantSelects extends HTMLElement {
           pricePerItemDestination.classList.toggle('hidden', pricePerItemSource.classList.contains('hidden'));
         }
 
-        const price = document.getElementById(`price-${this.dataset.section}`);
+        var price = document.getElementById(("price-" + (this$1.dataset.section)));
 
-        if (price) price.classList.remove('hidden');
+        if (price) { price.classList.remove('hidden'); }
 
         if (inventoryDestination)
-          inventoryDestination.classList.toggle('hidden', inventorySource.innerText === '');
+          { inventoryDestination.classList.toggle('hidden', inventorySource.innerText === ''); }
 
-        const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
-        this.toggleAddButton(
+        var addButtonUpdated = html.getElementById(("ProductSubmitButton-" + sectionId));
+        this$1.toggleAddButton(
           addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true,
           window.variantStrings.soldOut
         );
 
         publish(PUB_SUB_EVENTS.variantChange, {
           data: {
-            sectionId,
-            html,
-            variant: this.currentVariant,
+            sectionId: sectionId,
+            html: html,
+            variant: this$1.currentVariant,
           },
         });
       });
-  }
+  };
 
-  toggleAddButton(disable = true, text, modifyClass = true) {
-    const productForm = document.getElementById(`product-form-${this.dataset.section}`);
-    if (!productForm) return;
-    const addButton = productForm.querySelector('[name="add"]');
-    const addButtonText = productForm.querySelector('[name="add"] > span');
-    if (!addButton) return;
+  VariantSelects.prototype.toggleAddButton = function toggleAddButton (disable, text, modifyClass) {
+    if ( disable === void 0 ) disable = true;
+    if ( modifyClass === void 0 ) modifyClass = true;
+
+    var productForm = document.getElementById(("product-form-" + (this.dataset.section)));
+    if (!productForm) { return; }
+    var addButton = productForm.querySelector('[name="add"]');
+    var addButtonText = productForm.querySelector('[name="add"] > span');
+    if (!addButton) { return; }
 
     if (disable) {
       addButton.setAttribute('disabled', 'disabled');
-      if (text) addButtonText.textContent = text;
+      if (text) { addButtonText.textContent = text; }
     } else {
       addButton.removeAttribute('disabled');
       addButtonText.textContent = window.variantStrings.addToCart;
     }
 
-    if (!modifyClass) return;
-  }
+    if (!modifyClass) { return; }
+  };
 
-  setUnavailable() {
-    const button = document.getElementById(`product-form-${this.dataset.section}`);
-    const addButton = button.querySelector('[name="add"]');
-    const addButtonText = button.querySelector('[name="add"] > span');
-    const price = document.getElementById(`price-${this.dataset.section}`);
-    const inventory = document.getElementById(`Inventory-${this.dataset.section}`);
-    const sku = document.getElementById(`Sku-${this.dataset.section}`);
-    const pricePerItem = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
-    const volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
-    const volumeTable = document.getElementById(`Volume-${this.dataset.section}`);
-    const qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
+  VariantSelects.prototype.setUnavailable = function setUnavailable () {
+    var button = document.getElementById(("product-form-" + (this.dataset.section)));
+    var addButton = button.querySelector('[name="add"]');
+    var addButtonText = button.querySelector('[name="add"] > span');
+    var price = document.getElementById(("price-" + (this.dataset.section)));
+    var inventory = document.getElementById(("Inventory-" + (this.dataset.section)));
+    var sku = document.getElementById(("Sku-" + (this.dataset.section)));
+    var pricePerItem = document.getElementById(("Price-Per-Item-" + (this.dataset.section)));
+    var volumeNote = document.getElementById(("Volume-Note-" + (this.dataset.section)));
+    var volumeTable = document.getElementById(("Volume-" + (this.dataset.section)));
+    var qtyRules = document.getElementById(("Quantity-Rules-" + (this.dataset.section)));
 
-    if (!addButton) return;
+    if (!addButton) { return; }
     addButtonText.textContent = window.variantStrings.unavailable;
-    if (price) price.classList.add('hidden');
-    if (inventory) inventory.classList.add('hidden');
-    if (sku) sku.classList.add('hidden');
-    if (pricePerItem) pricePerItem.classList.add('hidden');
-    if (volumeNote) volumeNote.classList.add('hidden');
-    if (volumeTable) volumeTable.classList.add('hidden');
-    if (qtyRules) qtyRules.classList.add('hidden');
-  }
+    if (price) { price.classList.add('hidden'); }
+    if (inventory) { inventory.classList.add('hidden'); }
+    if (sku) { sku.classList.add('hidden'); }
+    if (pricePerItem) { pricePerItem.classList.add('hidden'); }
+    if (volumeNote) { volumeNote.classList.add('hidden'); }
+    if (volumeTable) { volumeTable.classList.add('hidden'); }
+    if (qtyRules) { qtyRules.classList.add('hidden'); }
+  };
 
-  getVariantData() {
+  VariantSelects.prototype.getVariantData = function getVariantData () {
     this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return this.variantData;
-  }
-}
+  };
+
+  return VariantSelects;
+}(HTMLElement));
 
 customElements.define('variant-selects', VariantSelects);
 
-class VariantRadios extends VariantSelects {
-  constructor() {
-    super();
+var VariantRadios = /*@__PURE__*/(function (VariantSelects) {
+  function VariantRadios() {
+    VariantSelects.call(this);
   }
 
-  setInputAvailability(listOfOptions, listOfAvailableOptions) {
-    listOfOptions.forEach((input) => {
+  if ( VariantSelects ) VariantRadios.__proto__ = VariantSelects;
+  VariantRadios.prototype = Object.create( VariantSelects && VariantSelects.prototype );
+  VariantRadios.prototype.constructor = VariantRadios;
+
+  VariantRadios.prototype.setInputAvailability = function setInputAvailability (listOfOptions, listOfAvailableOptions) {
+    listOfOptions.forEach(function (input) {
       if (listOfAvailableOptions.includes(input.getAttribute('value'))) {
         input.classList.remove('disabled');
       } else {
         input.classList.add('disabled');
       }
     });
-  }
+  };
 
-  updateOptions() {
-    const fieldsets = Array.from(this.querySelectorAll('fieldset'));
-    this.options = fieldsets.map((fieldset) => {
-      return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
+  VariantRadios.prototype.updateOptions = function updateOptions () {
+    var fieldsets = Array.from(this.querySelectorAll('fieldset'));
+    this.options = fieldsets.map(function (fieldset) {
+      return Array.from(fieldset.querySelectorAll('input')).find(function (radio) { return radio.checked; }).value;
     });
-  }
-}
+  };
+
+  return VariantRadios;
+}(VariantSelects));
 
 customElements.define('variant-radios', VariantRadios);
 
-class ProductRecommendations extends HTMLElement {
-  constructor() {
-    super();
+var ProductRecommendations = /*@__PURE__*/(function (HTMLElement) {
+  function ProductRecommendations() {
+    HTMLElement.call(this);
   }
 
-  connectedCallback() {
-    const handleIntersection = (entries, observer) => {
-      if (!entries[0].isIntersecting) return;
-      observer.unobserve(this);
+  if ( HTMLElement ) ProductRecommendations.__proto__ = HTMLElement;
+  ProductRecommendations.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  ProductRecommendations.prototype.constructor = ProductRecommendations;
 
-      fetch(this.dataset.url)
-        .then((response) => response.text())
-        .then((text) => {
-          const html = document.createElement('div');
+  ProductRecommendations.prototype.connectedCallback = function connectedCallback () {
+    var this$1 = this;
+
+    var handleIntersection = function (entries, observer) {
+      if (!entries[0].isIntersecting) { return; }
+      observer.unobserve(this$1);
+
+      fetch(this$1.dataset.url)
+        .then(function (response) { return response.text(); })
+        .then(function (text) {
+          var html = document.createElement('div');
           html.innerHTML = text;
-          const recommendations = html.querySelector('product-recommendations');
+          var recommendations = html.querySelector('product-recommendations');
 
           if (recommendations && recommendations.innerHTML.trim().length) {
-            this.innerHTML = recommendations.innerHTML;
+            this$1.innerHTML = recommendations.innerHTML;
           }
 
-          if (!this.querySelector('slideshow-component') && this.classList.contains('complementary-products')) {
-            this.remove();
+          if (!this$1.querySelector('slideshow-component') && this$1.classList.contains('complementary-products')) {
+            this$1.remove();
           }
 
           if (html.querySelector('.grid__item')) {
-            this.classList.add('product-recommendations--loaded');
+            this$1.classList.add('product-recommendations--loaded');
           }
         })
-        .catch((e) => {
+        .catch(function (e) {
           console.error(e);
         });
     };
 
     new IntersectionObserver(handleIntersection.bind(this), { rootMargin: '0px 0px 400px 0px' }).observe(this);
-  }
-}
+  };
+
+  return ProductRecommendations;
+}(HTMLElement));
 
 customElements.define('product-recommendations', ProductRecommendations);
+

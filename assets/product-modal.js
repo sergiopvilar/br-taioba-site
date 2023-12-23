@@ -1,33 +1,37 @@
 if (!customElements.get('product-modal')) {
   customElements.define(
     'product-modal',
-    class ProductModal extends ModalDialog {
-      constructor() {
-        super();
+    /*@__PURE__*/(function (ModalDialog) {
+    function ProductModal() {
+        ModalDialog.call(this);
       }
 
-      hide() {
-        super.hide();
-      }
+    if ( ModalDialog ) ProductModal.__proto__ = ModalDialog;
+    ProductModal.prototype = Object.create( ModalDialog && ModalDialog.prototype );
+    ProductModal.prototype.constructor = ProductModal;
 
-      show(opener) {
-        super.show(opener);
+      ProductModal.prototype.hide = function hide () {
+        ModalDialog.prototype.hide.call(this);
+      };
+
+      ProductModal.prototype.show = function show (opener) {
+        ModalDialog.prototype.show.call(this, opener);
         this.showActiveMedia();
-      }
+      };
 
-      showActiveMedia() {
+      ProductModal.prototype.showActiveMedia = function showActiveMedia () {
         this.querySelectorAll(
-          `[data-media-id]:not([data-media-id="${this.openedBy.getAttribute('data-media-id')}"])`
-        ).forEach((element) => {
+          ("[data-media-id]:not([data-media-id=\"" + (this.openedBy.getAttribute('data-media-id')) + "\"])")
+        ).forEach(function (element) {
           element.classList.remove('active');
         });
-        const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute('data-media-id')}"]`);
-        const activeMediaTemplate = activeMedia.querySelector('template');
-        const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
+        var activeMedia = this.querySelector(("[data-media-id=\"" + (this.openedBy.getAttribute('data-media-id')) + "\"]"));
+        var activeMediaTemplate = activeMedia.querySelector('template');
+        var activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
         activeMedia.classList.add('active');
         activeMedia.scrollIntoView();
 
-        const container = this.querySelector('[role="document"]');
+        var container = this.querySelector('[role="document"]');
         container.scrollLeft = (activeMedia.width - container.clientWidth) / 2;
 
         if (
@@ -35,8 +39,11 @@ if (!customElements.get('product-modal')) {
           activeMediaContent &&
           activeMediaContent.querySelector('.js-youtube')
         )
-          activeMedia.loadContent();
-      }
-    }
+          { activeMedia.loadContent(); }
+      };
+
+    return ProductModal;
+  }(ModalDialog))
   );
 }
+

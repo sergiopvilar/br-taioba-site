@@ -77,9 +77,8 @@ class QuickOrderList extends HTMLElement {
       this.onChange(event);
     }, ON_CHANGE_DEBOUNCE_TIMER);
     this.addEventListener('change', debouncedOnChange.bind(this));
+    this.cartUpdateUnsubscriber = undefined;
   }
-
-  cartUpdateUnsubscriber = undefined;
 
   onSubmit(event) {
     event.preventDefault();
@@ -190,8 +189,9 @@ class QuickOrderList extends HTMLElement {
 
     this.updateMessage();
     this.setErrorMessage();
+    var options = Object.assign(...fetchConfig(), ...{ body });
 
-    fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } })
+    fetch(`${routes.cart_update_url}`, options)
       .then((response) => {
         return response.text();
       })
@@ -234,8 +234,8 @@ class QuickOrderList extends HTMLElement {
 
     this.updateMessage();
     this.setErrorMessage();
-
-    fetch(`${routeUrl}`, { ...fetchConfig(fetchConfigType), ...{ body } })
+    var options = Object.assign(...fetchConfig(fetchConfigType), ...{ body });
+    fetch(`${routeUrl}`, options)
       .then((response) => {
         return response.text();
       })
@@ -296,12 +296,12 @@ class QuickOrderList extends HTMLElement {
   }
 
   resetQuantityInput(id, quantityElement) {
-    const input = quantityElement ?? document.getElementById(`Quantity-${id}`);
+    const input = quantityElement ? quantityElement : document.getElementById(`Quantity-${id}`);
     input.value = input.getAttribute('value');
   }
 
   setErrorMessage(message = null) {
-    this.errorMessageTemplate = this.errorMessageTemplate ?? document.getElementById(`QuickOrderListErrorTemplate-${this.sectionId}`).cloneNode(true);
+    this.errorMessageTemplate = this.errorMessageTemplate ? this.errorMessageTemplate : document.getElementById(`QuickOrderListErrorTemplate-${this.sectionId}`).cloneNode(true);
     const errorElements = document.querySelectorAll('.quick-order-list-error');
 
     errorElements.forEach((errorElement) => {

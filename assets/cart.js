@@ -23,9 +23,8 @@ class CartItems extends HTMLElement {
     }, ON_CHANGE_DEBOUNCE_TIMER);
 
     this.addEventListener('change', debouncedOnChange.bind(this));
+    this.cartUpdateUnsubscriber = undefined;
   }
-
-  cartUpdateUnsubscriber = undefined;
 
   connectedCallback() {
     this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
@@ -237,7 +236,8 @@ if (!customElements.get('cart-note')) {
           'change',
           debounce((event) => {
             const body = JSON.stringify({ note: event.target.value });
-            fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
+            var options = Object.assign(...fetchConfig(), ...{ body });
+            fetch(`${routes.cart_update_url}`, options);
           }, ON_CHANGE_DEBOUNCE_TIMER)
         );
       }

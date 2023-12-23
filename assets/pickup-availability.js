@@ -1,53 +1,59 @@
 if (!customElements.get('pickup-availability')) {
   customElements.define(
     'pickup-availability',
-    class PickupAvailability extends HTMLElement {
-      constructor() {
-        super();
+    /*@__PURE__*/(function (HTMLElement) {
+    function PickupAvailability() {
+        HTMLElement.call(this);
 
-        if (!this.hasAttribute('available')) return;
+        if (!this.hasAttribute('available')) { return; }
 
         this.errorHtml = this.querySelector('template').content.firstElementChild.cloneNode(true);
         this.onClickRefreshList = this.onClickRefreshList.bind(this);
         this.fetchAvailability(this.dataset.variantId);
       }
 
-      fetchAvailability(variantId) {
-        let rootUrl = this.dataset.rootUrl;
+    if ( HTMLElement ) PickupAvailability.__proto__ = HTMLElement;
+    PickupAvailability.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+    PickupAvailability.prototype.constructor = PickupAvailability;
+
+      PickupAvailability.prototype.fetchAvailability = function fetchAvailability (variantId) {
+        var this$1 = this;
+
+        var rootUrl = this.dataset.rootUrl;
         if (!rootUrl.endsWith('/')) {
           rootUrl = rootUrl + '/';
         }
-        const variantSectionUrl = `${rootUrl}variants/${variantId}/?section_id=pickup-availability`;
+        var variantSectionUrl = rootUrl + "variants/" + variantId + "/?section_id=pickup-availability";
 
         fetch(variantSectionUrl)
-          .then((response) => response.text())
-          .then((text) => {
-            const sectionInnerHTML = new DOMParser()
+          .then(function (response) { return response.text(); })
+          .then(function (text) {
+            var sectionInnerHTML = new DOMParser()
               .parseFromString(text, 'text/html')
               .querySelector('.shopify-section');
-            this.renderPreview(sectionInnerHTML);
+            this$1.renderPreview(sectionInnerHTML);
           })
-          .catch((e) => {
-            const button = this.querySelector('button');
-            if (button) button.removeEventListener('click', this.onClickRefreshList);
-            this.renderError();
+          .catch(function (e) {
+            var button = this$1.querySelector('button');
+            if (button) { button.removeEventListener('click', this$1.onClickRefreshList); }
+            this$1.renderError();
           });
-      }
+      };
 
-      onClickRefreshList(evt) {
+      PickupAvailability.prototype.onClickRefreshList = function onClickRefreshList (evt) {
         this.fetchAvailability(this.dataset.variantId);
-      }
+      };
 
-      renderError() {
+      PickupAvailability.prototype.renderError = function renderError () {
         this.innerHTML = '';
         this.appendChild(this.errorHtml);
 
         this.querySelector('button').addEventListener('click', this.onClickRefreshList);
-      }
+      };
 
-      renderPreview(sectionInnerHTML) {
-        const drawer = document.querySelector('pickup-availability-drawer');
-        if (drawer) drawer.remove();
+      PickupAvailability.prototype.renderPreview = function renderPreview (sectionInnerHTML) {
+        var drawer = document.querySelector('pickup-availability-drawer');
+        if (drawer) { drawer.remove(); }
         if (!sectionInnerHTML.querySelector('pickup-availability-preview')) {
           this.innerHTML = '';
           this.removeAttribute('available');
@@ -58,41 +64,49 @@ if (!customElements.get('pickup-availability')) {
         this.setAttribute('available', '');
 
         document.body.appendChild(sectionInnerHTML.querySelector('pickup-availability-drawer'));
-        const colorClassesToApply = this.dataset.productPageColorScheme.split(' ');
-        colorClassesToApply.forEach((colorClass) => {
+        var colorClassesToApply = this.dataset.productPageColorScheme.split(' ');
+        colorClassesToApply.forEach(function (colorClass) {
           document.querySelector('pickup-availability-drawer').classList.add(colorClass);
         });
 
-        const button = this.querySelector('button');
+        var button = this.querySelector('button');
         if (button)
-          button.addEventListener('click', (evt) => {
+          { button.addEventListener('click', function (evt) {
             document.querySelector('pickup-availability-drawer').show(evt.target);
-          });
-      }
-    }
+          }); }
+      };
+
+    return PickupAvailability;
+  }(HTMLElement))
   );
 }
 
 if (!customElements.get('pickup-availability-drawer')) {
   customElements.define(
     'pickup-availability-drawer',
-    class PickupAvailabilityDrawer extends HTMLElement {
-      constructor() {
-        super();
+    /*@__PURE__*/(function (HTMLElement) {
+    function PickupAvailabilityDrawer() {
+        var this$1 = this;
+
+        HTMLElement.call(this);
 
         this.onBodyClick = this.handleBodyClick.bind(this);
 
-        this.querySelector('button').addEventListener('click', () => {
-          this.hide();
+        this.querySelector('button').addEventListener('click', function () {
+          this$1.hide();
         });
 
-        this.addEventListener('keyup', (event) => {
-          if (event.code.toUpperCase() === 'ESCAPE') this.hide();
+        this.addEventListener('keyup', function (event) {
+          if (event.code.toUpperCase() === 'ESCAPE') { this$1.hide(); }
         });
       }
 
-      handleBodyClick(evt) {
-        const target = evt.target;
+    if ( HTMLElement ) PickupAvailabilityDrawer.__proto__ = HTMLElement;
+    PickupAvailabilityDrawer.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+    PickupAvailabilityDrawer.prototype.constructor = PickupAvailabilityDrawer;
+
+      PickupAvailabilityDrawer.prototype.handleBodyClick = function handleBodyClick (evt) {
+        var target = evt.target;
         if (
           target != this &&
           !target.closest('pickup-availability-drawer') &&
@@ -100,22 +114,25 @@ if (!customElements.get('pickup-availability-drawer')) {
         ) {
           this.hide();
         }
-      }
+      };
 
-      hide() {
+      PickupAvailabilityDrawer.prototype.hide = function hide () {
         this.removeAttribute('open');
         document.body.removeEventListener('click', this.onBodyClick);
         document.body.classList.remove('overflow-hidden');
         removeTrapFocus(this.focusElement);
-      }
+      };
 
-      show(focusElement) {
+      PickupAvailabilityDrawer.prototype.show = function show (focusElement) {
         this.focusElement = focusElement;
         this.setAttribute('open', '');
         document.body.addEventListener('click', this.onBodyClick);
         document.body.classList.add('overflow-hidden');
         trapFocus(this);
-      }
-    }
+      };
+
+    return PickupAvailabilityDrawer;
+  }(HTMLElement))
   );
 }
+

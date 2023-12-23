@@ -8,10 +8,9 @@ if (!customElements.get('product-info')) {
         this.currentVariant = this.querySelector('.product-variant-id');
         this.variantSelects = this.querySelector('variant-radios');
         this.submitButton = this.querySelector('[type="submit"]');
+        this.cartUpdateUnsubscriber = undefined;
+        this.variantChangeUnsubscriber = undefined;
       }
-
-      cartUpdateUnsubscriber = undefined;
-      variantChangeUnsubscriber = undefined;
 
       connectedCallback() {
         if (!this.input) return;
@@ -80,13 +79,13 @@ if (!customElements.get('product-info')) {
       updateQuantityRules(sectionId, html) {
         const quantityFormUpdated = html.getElementById(`Quantity-Form-${sectionId}`);
         const selectors = ['.quantity__input', '.quantity__rules', '.quantity__label'];
-        for (let selector of selectors) {
+        for (var selector in selectors) {
           const current = this.quantityForm.querySelector(selector);
           const updated = quantityFormUpdated.querySelector(selector);
           if (!current || !updated) continue;
           if (selector === '.quantity__input') {
             const attributes = ['data-cart-quantity', 'data-min', 'data-max', 'step'];
-            for (let attribute of attributes) {
+            for (var attribute in attributes) {
               const valueUpdated = updated.getAttribute(attribute);
               if (valueUpdated !== null) current.setAttribute(attribute, valueUpdated);
             }

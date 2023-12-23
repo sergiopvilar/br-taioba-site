@@ -1,65 +1,71 @@
 if (!customElements.get('price-per-item')) {
   customElements.define(
     'price-per-item',
-    class PricePerItem extends HTMLElement {
-      constructor() {
-        super();
+    /*@__PURE__*/(function (HTMLElement) {
+    function PricePerItem() {
+        HTMLElement.call(this);
         this.variantId = this.dataset.variantId;
-        this.input = document.getElementById(`Quantity-${this.dataset.sectionId || this.dataset.variantId}`);
+        this.input = document.getElementById(("Quantity-" + (this.dataset.sectionId || this.dataset.variantId)));
         if (this.input) {
           this.input.addEventListener('change', this.onInputChange.bind(this));
         }
 
         this.getVolumePricingArray();
+
+        this.updatePricePerItemUnsubscriber = undefined;
+        this.variantIdChangedUnsubscriber = undefined;
       }
 
-      updatePricePerItemUnsubscriber = undefined;
-      variantIdChangedUnsubscriber = undefined;
+    if ( HTMLElement ) PricePerItem.__proto__ = HTMLElement;
+    PricePerItem.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+    PricePerItem.prototype.constructor = PricePerItem;
 
-      connectedCallback() {
+      PricePerItem.prototype.connectedCallback = function connectedCallback () {
+        var this$1 = this;
+
         // Update variantId if variant is switched on product page
-        this.variantIdChangedUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
-          this.variantId = event.data.variant.id.toString();
-          this.getVolumePricingArray();
+        this.variantIdChangedUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, function (event) {
+          this$1.variantId = event.data.variant.id.toString();
+          this$1.getVolumePricingArray();
         });
 
-        this.updatePricePerItemUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (response) => {
-          if (!response.cartData) return;
+        this.updatePricePerItemUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, function (response) {
+          if (!response.cartData) { return; }
 
           // Item was added to cart via product page
           if (response.cartData['variant_id'] !== undefined) {
-            if (response.productVariantId === this.variantId) this.updatePricePerItem(response.cartData.quantity);
+            if (response.productVariantId === this$1.variantId) { this$1.updatePricePerItem(response.cartData.quantity); }
             // Qty was updated in cart
           } else if (response.cartData.item_count !== 0) {
-            const isVariant = response.cartData.items.find((item) => item.variant_id.toString() === this.variantId);
-            if (isVariant && isVariant.id.toString() === this.variantId) {
+            var isVariant = response.cartData.items.find(function (item) { return item.variant_id.toString() === this$1.variantId; });
+            if (isVariant && isVariant.id.toString() === this$1.variantId) {
               // The variant is still in cart
-              this.updatePricePerItem(isVariant.quantity);
+              this$1.updatePricePerItem(isVariant.quantity);
             } else {
               // The variant was removed from cart, qty is 0
-              this.updatePricePerItem(0);
+              this$1.updatePricePerItem(0);
             }
             // All items were removed from cart
           } else {
-            this.updatePricePerItem(0);
+            this$1.updatePricePerItem(0);
           }
         });
-      }
+      };
 
-      disconnectedCallback() {
+      PricePerItem.prototype.disconnectedCallback = function disconnectedCallback () {
         if (this.updatePricePerItemUnsubscriber) {
           this.updatePricePerItemUnsubscriber();
         }
         if (this.variantIdChangedUnsubscriber) {
           this.variantIdChangedUnsubscriber();
         }
-      }
+      };
 
-      onInputChange() {
+      PricePerItem.prototype.onInputChange = function onInputChange () {
         this.updatePricePerItem();
-      }
+      };
 
-      updatePricePerItem(updatedCartQuantity) {
+      PricePerItem.prototype.updatePricePerItem = function updatePricePerItem (updatedCartQuantity) {
         if (this.input) {
           this.enteredQty = parseInt(this.input.value);
           this.step = parseInt(this.input.step)
@@ -72,32 +78,37 @@ if (!customElements.get('price-per-item')) {
         if (this.classList.contains('variant-item__price-per-item')) {
           this.currentQtyForVolumePricing = this.getCartQuantity(updatedCartQuantity);
         }
-        for (let pair of this.qtyPricePairs) {
+        for (var pair in this.qtyPricePairs) {
           if (this.currentQtyForVolumePricing >= pair[0]) {
-            const pricePerItemCurrent = document.querySelector(`price-per-item[id^="Price-Per-Item-${this.dataset.sectionId || this.dataset.variantId}"] .price-per-item span`);
+            var pricePerItemCurrent = document.querySelector(("price-per-item[id^=\"Price-Per-Item-" + (this.dataset.sectionId || this.dataset.variantId) + "\"] .price-per-item span"));
             this.classList.contains('variant-item__price-per-item') ? pricePerItemCurrent.innerHTML = window.quickOrderListStrings.each.replace('[money]', pair[1]) : pricePerItemCurrent.innerHTML = pair[1];
             break;
           }
         }
-      }
+      };
 
-      getCartQuantity(updatedCartQuantity) {
+      PricePerItem.prototype.getCartQuantity = function getCartQuantity (updatedCartQuantity) {
         return (updatedCartQuantity || updatedCartQuantity === 0) ? updatedCartQuantity : parseInt(this.input.dataset.cartQuantity);
-      }
+      };
 
-      getVolumePricingArray() {
-        const volumePricing = document.getElementById(`Volume-${this.dataset.sectionId || this.dataset.variantId}`);
+      PricePerItem.prototype.getVolumePricingArray = function getVolumePricingArray () {
+        var this$1 = this;
+
+        var volumePricing = document.getElementById(("Volume-" + (this.dataset.sectionId || this.dataset.variantId)));
         this.qtyPricePairs = [];
 
         if (volumePricing) {
-          volumePricing.querySelectorAll('li').forEach(li => {
-            const qty = parseInt(li.querySelector('span:first-child').textContent);
-            const price = (li.querySelector('span:not(:first-child):last-child').dataset.text);
-            this.qtyPricePairs.push([qty, price]);
+          volumePricing.querySelectorAll('li').forEach(function (li) {
+            var qty = parseInt(li.querySelector('span:first-child').textContent);
+            var price = (li.querySelector('span:not(:first-child):last-child').dataset.text);
+            this$1.qtyPricePairs.push([qty, price]);
           });
         }
         this.qtyPricePairs.reverse();
-      }
-    }
+      };
+
+    return PricePerItem;
+  }(HTMLElement))
   );
 }
+

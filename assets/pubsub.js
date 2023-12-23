@@ -1,14 +1,14 @@
-let subscribers = {};
+var subscribers = {};
 
 function subscribe(eventName, callback) {
   if (subscribers[eventName] === undefined) {
     subscribers[eventName] = [];
   }
 
-  subscribers[eventName] = [...subscribers[eventName], callback];
+  subscribers[eventName] = ( subscribers[eventName] ).concat( [callback]);
 
   return function unsubscribe() {
-    subscribers[eventName] = subscribers[eventName].filter((cb) => {
+    subscribers[eventName] = subscribers[eventName].filter(function (cb) {
       return cb !== callback;
     });
   };
@@ -16,8 +16,9 @@ function subscribe(eventName, callback) {
 
 function publish(eventName, data) {
   if (subscribers[eventName]) {
-    subscribers[eventName].forEach((callback) => {
+    subscribers[eventName].forEach(function (callback) {
       callback(data);
     });
   }
 }
+

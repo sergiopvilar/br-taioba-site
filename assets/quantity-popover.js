@@ -1,9 +1,9 @@
 if (!customElements.get('quantity-popover')) {
   customElements.define(
     'quantity-popover',
-    class QuantityPopover extends HTMLElement {
-      constructor() {
-        super();
+    /*@__PURE__*/(function (HTMLElement) {
+    function QuantityPopover() {
+        HTMLElement.call(this);
         this.mql = window.matchMedia('(min-width: 990px)');
         this.mqlTablet = window.matchMedia('(min-width: 750px)');
         this.infoButtonDesktop = this.querySelector('.quantity-popover__info-button--icon-only');
@@ -37,35 +37,39 @@ if (!customElements.get('quantity-popover')) {
         }
       }
 
-      togglePopover(event) {
+    if ( HTMLElement ) QuantityPopover.__proto__ = HTMLElement;
+    QuantityPopover.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+    QuantityPopover.prototype.constructor = QuantityPopover;
+
+      QuantityPopover.prototype.togglePopover = function togglePopover (event) {
         event.preventDefault();
         if (event.type === 'mouseenter') {
           this.eventMouseEnterHappened = true;
         }
 
-        if (event.type === 'click' && this.eventMouseEnterHappened) return;
+        if (event.type === 'click' && this.eventMouseEnterHappened) { return; }
 
-        const button = this.infoButtonDesktop && this.mql.matches ? this.infoButtonDesktop : this.infoButtonMobile;
-        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        var button = this.infoButtonDesktop && this.mql.matches ? this.infoButtonDesktop : this.infoButtonMobile;
+        var isExpanded = button.getAttribute('aria-expanded') === 'true';
 
         button.setAttribute('aria-expanded', !isExpanded);
 
         this.popoverInfo.toggleAttribute('hidden');
 
-        const isOpen = button.getAttribute('aria-expanded') === 'true';
+        var isOpen = button.getAttribute('aria-expanded') === 'true';
 
         button.classList.toggle('quantity-popover__info-button--open');
 
         if (isOpen && event.type !== 'mouseenter') {
           button.focus();
         }
-      }
+      };
 
-      closePopover(event) {
+      QuantityPopover.prototype.closePopover = function closePopover (event) {
         event.preventDefault();
-        const isChild = this.variantInfo.contains(event.relatedTarget);
+        var isChild = this.variantInfo.contains(event.relatedTarget);
 
-        const button = this.infoButtonDesktop && this.mql.matches ? this.infoButtonDesktop : this.infoButtonMobile;
+        var button = this.infoButtonDesktop && this.mql.matches ? this.infoButtonDesktop : this.infoButtonMobile;
 
         if (!event.relatedTarget || !isChild) {
           button.setAttribute('aria-expanded', 'false');
@@ -74,7 +78,10 @@ if (!customElements.get('quantity-popover')) {
         }
 
         this.eventMouseEnterHappened = false;
-      }
-    }
+      };
+
+    return QuantityPopover;
+  }(HTMLElement))
   );
 }
+
