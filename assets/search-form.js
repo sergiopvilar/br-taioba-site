@@ -1,6 +1,8 @@
-class SearchForm extends HTMLElement {
-  constructor() {
-    super();
+var SearchForm = /*@__PURE__*/(function (HTMLElement) {
+  function SearchForm() {
+    var this$1 = this;
+
+    HTMLElement.call(this);
     this.input = this.querySelector('input[type="search"]');
     this.resetButton = this.querySelector('button[type="reset"]');
 
@@ -8,31 +10,35 @@ class SearchForm extends HTMLElement {
       this.input.form.addEventListener('reset', this.onFormReset.bind(this));
       this.input.addEventListener(
         'input',
-        debounce((event) => {
-          this.onChange(event);
+        debounce(function (event) {
+          this$1.onChange(event);
         }, 300).bind(this)
       );
     }
   }
 
-  toggleResetButton() {
-    const resetIsHidden = this.resetButton.classList.contains('hidden');
+  if ( HTMLElement ) SearchForm.__proto__ = HTMLElement;
+  SearchForm.prototype = Object.create( HTMLElement && HTMLElement.prototype );
+  SearchForm.prototype.constructor = SearchForm;
+
+  SearchForm.prototype.toggleResetButton = function toggleResetButton () {
+    var resetIsHidden = this.resetButton.classList.contains('hidden');
     if (this.input.value.length > 0 && resetIsHidden) {
       this.resetButton.classList.remove('hidden');
     } else if (this.input.value.length === 0 && !resetIsHidden) {
       this.resetButton.classList.add('hidden');
     }
-  }
+  };
 
-  onChange() {
+  SearchForm.prototype.onChange = function onChange () {
     this.toggleResetButton();
-  }
+  };
 
-  shouldResetForm() {
+  SearchForm.prototype.shouldResetForm = function shouldResetForm () {
     return !document.querySelector('[aria-selected="true"] a');
-  }
+  };
 
-  onFormReset(event) {
+  SearchForm.prototype.onFormReset = function onFormReset (event) {
     // Prevent default so the form reset doesn't set the value gotten from the url on page load
     event.preventDefault();
     // Don't reset if the user has selected an element on the predictive search dropdown
@@ -41,7 +47,10 @@ class SearchForm extends HTMLElement {
       this.input.focus();
       this.toggleResetButton();
     }
-  }
-}
+  };
+
+  return SearchForm;
+}(HTMLElement));
 
 customElements.define('search-form', SearchForm);
+
