@@ -1,6 +1,6 @@
 #!/bin/sh
 
 cd assets
-rm *.build.js; for f in *.js; do short=${f%.js}; npx tsc $f --target ES5 --allowJs --outFile $short.build.js; done
-rm *.min.js; for f in *.build.js; do short=${f%.build.js}; uglifyjs $f > $short.min.js; done
+#rm *.build.js; for f in *.js; do short=${f%.js}; npx tsc $f --target ES5 --allowJs --outFile $short.build.js; done
+rm *.min.js; for f in *.js; do short=${f%.js}; uglifyjs $f > $short.min.js; done
 cd ../
