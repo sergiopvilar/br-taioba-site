@@ -22,8 +22,14 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
+    {% if template == 'list-collections' %}
+      <meta name="description" content="Navegue pela nossa extensa lista de coleções de discos de vinil e LPs, abrangendo uma ampla gama de gêneros e artistas. De clássicos atemporais a lançamentos contemporâneos, nossa seleção é ideal para colecionadores e entusiastas da música.">
+    {% elsif template == 'blog' %}
+      <meta name="description" content="Visite nosso blog para as últimas novidades sobre discos de vinil e LPs. Com foco no apaixonante mundo do vinil, oferecemos dicas sobre como cuidar da sua coleção, além de atualizações sobre novos lançamentos. Ideal para colecionadores e entusiastas.">
+    {% else %}
+      {% if page_description %}
+        <meta name="description" content="{{ page_description | escape }}">
+      {% endif %}
     {% endif %}
 
     {% render 'meta-tags' %}
