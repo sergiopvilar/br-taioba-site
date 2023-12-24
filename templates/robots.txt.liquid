@@ -3,9 +3,6 @@
 # Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
 {% endcomment %}
 
-User-agent: *
-Allow: /checkouts/internal/preloads.js
-
 {% for group in robots.default_groups %}
   {{- group.user_agent -}}
 
