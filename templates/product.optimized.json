@@ -76,6 +76,29 @@
         "padding_bottom": 0
       }
     },
+    "503e7435-0751-470d-9a09-469ded50def1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21824862093629__503e7435-0751-470d-9a09-469ded50def1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Saiba mais sobre {{ product.metafields.optimized.nome_da_obra.value }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--21824862093629__503e7435-0751-470d-9a09-469ded50def1-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 0
+      }
+    },
     "d3adf2c9-0c29-4999-9235-d1b5d00ddf01": {
       "type": "image-with-text",
       "blocks": {
@@ -110,7 +133,7 @@
         "color_scheme": "accent-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 72,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -135,6 +158,7 @@
   },
   "order": [
     "main",
+    "503e7435-0751-470d-9a09-469ded50def1",
     "d3adf2c9-0c29-4999-9235-d1b5d00ddf01",
     "related-products"
   ]
