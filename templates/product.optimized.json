@@ -79,7 +79,7 @@
     "cb795812-ea30-481d-8653-aaebdf994258": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ product.metafields.custom.descricao_de_destaque }}",
+        "custom_liquid": "{{ product.metafields.custom.descricao_de_destaque | metafield_tag }}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
