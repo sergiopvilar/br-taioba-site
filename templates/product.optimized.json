@@ -76,13 +76,42 @@
         "padding_bottom": 0
       }
     },
-    "cb795812-ea30-481d-8653-aaebdf994258": {
-      "type": "custom-liquid",
+    "eeb557eb-d04b-458f-93c3-2f7c16686e48": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21824862093629__eeb557eb-d04b-458f-93c3-2f7c16686e48-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--21824862093629__eeb557eb-d04b-458f-93c3-2f7c16686e48-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.descricao_de_destaque | metafield_tag }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21824862093629__eeb557eb-d04b-458f-93c3-2f7c16686e48-heading-1",
+        "template--21824862093629__eeb557eb-d04b-458f-93c3-2f7c16686e48-text-1"
+      ],
       "settings": {
-        "custom_liquid": "{% assign image_url = product.metafields.seo.imagem_de_destaque%}\n\n<div class=\"page-width\">{% if image_url != blank %} \n <img src=\"{{ image_url.value | image_url }}\">\n{% endif %}\n<\/div>\n\n<div class=\"page-width\">{{ product.metafields.custom.descricao_de_destaque | metafield_tag }}<\/div>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "image": "{{ product.metafields.seo.imagem_de_destaque.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "background-1",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "related-products": {
@@ -106,7 +135,7 @@
   },
   "order": [
     "main",
-    "cb795812-ea30-481d-8653-aaebdf994258",
+    "eeb557eb-d04b-458f-93c3-2f7c16686e48",
     "related-products"
   ]
 }
