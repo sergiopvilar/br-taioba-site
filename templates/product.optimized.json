@@ -79,7 +79,7 @@
     "cb795812-ea30-481d-8653-aaebdf994258": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">{{ product.metafields.custom.descricao_de_destaque | metafield_tag }}<\/div>",
+        "custom_liquid": "{% assign image_url = product.metafields.seo.imagem_de_destaque%}\n\n<div class=\"page-width\">{% if image_url != blank %} \n <img src=\"{{ image_url.value | image_url }}\">\n{% endif %}\n<\/div>\n\n<div class=\"page-width\">{{ product.metafields.custom.descricao_de_destaque | metafield_tag }}<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
