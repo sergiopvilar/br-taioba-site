@@ -76,6 +76,15 @@
         "padding_bottom": 0
       }
     },
+    "cb795812-ea30-481d-8653-aaebdf994258": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ product.metafields.custom.descricao_de_destaque }}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -97,6 +106,7 @@
   },
   "order": [
     "main",
+    "cb795812-ea30-481d-8653-aaebdf994258",
     "related-products"
   ]
 }
