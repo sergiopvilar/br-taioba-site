@@ -96,7 +96,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 84,
-        "padding_bottom": 0
+        "padding_bottom": 16
       }
     },
     "d3adf2c9-0c29-4999-9235-d1b5d00ddf01": {
@@ -125,7 +125,7 @@
         "image": "{{ product.metafields.custom.imagem_bloco_1.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -163,7 +163,7 @@
         "image": "{{ product.metafields.custom.bloco_2_imagem.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -201,7 +201,7 @@
         "image": "{{ product.metafields.custom.bloco_3_imagem.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
