@@ -82,7 +82,7 @@
         "template--21824862093629__eeb557eb-d04b-458f-93c3-2f7c16686e48-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "{{ product.metafields.custom.titulo_de_destaque.value }}",
             "heading_size": "h1"
           }
         },
