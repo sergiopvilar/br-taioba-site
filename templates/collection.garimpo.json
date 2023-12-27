@@ -14,7 +14,7 @@
         "template--21826481029437__1c77355c-00f6-49e2-866b-a065454d2614-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Entendemos que o mundo dos discos de vinil vai muito além dos mais novos lançamentos, por isso, introduzimos a seção Garimpo em nossa loja contendo apenas <strong>discos usados<\/strong> em diferentes estados de conservação.<br\/><br\/>Com uma curadoria minuciosa, trazemos diversos discos de música brasileira e internacional higienizados com cuidado e prontos para irem à vitrola.<\/p>",
+            "text": "<p>Entendemos que o mundo dos discos de vinil vai muito além dos mais novos lançamentos, por isso, introduzimos a seção Garimpo em nossa loja contendo apenas <strong>discos usados<\/strong> em diferentes estados de conservação.<br\/><br\/>Com curadoria e avaliações minuciosas, trazemos diversos discos de música brasileira e internacional higienizados com cuidado e prontos para irem à vitrola.<\/p>",
             "text_style": "body"
           }
         }
@@ -24,9 +24,9 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/rpm5.webp",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "small",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
