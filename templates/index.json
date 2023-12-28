@@ -170,7 +170,7 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-button-1": {
           "type": "button",
           "settings": {
-            "button_label": "Veja Mais",
+            "button_label": "Garimpar Agora",
             "button_link": "shopify:\/\/collections\/garimpo",
             "button_style_secondary": false
           }
