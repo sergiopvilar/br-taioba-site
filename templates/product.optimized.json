@@ -44,6 +44,13 @@
             "share_label": "Compartilhar"
           }
         },
+        "928c4bf2-93f8-4093-94da-74ca18f8bb05": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Condição Capa\/Disco:<\/strong> M\/M <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">(?)<\/a>",
+            "text_style": "body"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -58,6 +65,7 @@
         "quantity_selector",
         "buy_buttons",
         "share",
+        "928c4bf2-93f8-4093-94da-74ca18f8bb05",
         "description"
       ],
       "settings": {
