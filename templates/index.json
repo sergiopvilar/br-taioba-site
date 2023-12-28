@@ -163,14 +163,14 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Confira nossa seção de discos usados, minuciosamente higienizados e avaliados. Prontinhos para irem à vitrola.<\/p>",
+            "text": "<p>Confira nossa seção de discos usados, minuciosamente higienizados e avaliados. Com curadoria detalhista, nossos discos usados são prontinhos para irem à vitrola.<\/p>",
             "text_style": "body"
           }
         },
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-button-1": {
           "type": "button",
           "settings": {
-            "button_label": "Garimpar Agora",
+            "button_label": "Veja Mais",
             "button_link": "shopify:\/\/collections\/garimpo",
             "button_style_secondary": false
           }
