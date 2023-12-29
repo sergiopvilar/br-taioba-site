@@ -36,7 +36,7 @@
           "settings": {
             "text_style": "body",
             "inventory_threshold": 4,
-            "show_inventory_quantity": false
+            "show_inventory_quantity": true
           }
         },
         "buy_buttons": {
