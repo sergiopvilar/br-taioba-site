@@ -3,6 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "2ccd889e-972e-469c-9341-6b659b4cc8e5": {
+          "type": "text",
+          "settings": {
+            "text": "Garimpo",
+            "text_style": "uppercase"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -59,6 +66,7 @@
         }
       },
       "block_order": [
+        "2ccd889e-972e-469c-9341-6b659b4cc8e5",
         "title",
         "price",
         "variant_picker",
