@@ -59,6 +59,12 @@
             "text_style": "body"
           }
         },
+        "28274a8d-c3fd-46cb-bfe5-9671dd3857c8": {
+          "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/reviewbit-main-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
+          "settings": {
+            "seo_snippet": true
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -75,6 +81,7 @@
         "buy_buttons",
         "share",
         "760323e2-cafc-4265-9b65-29b0493d110a",
+        "28274a8d-c3fd-46cb-bfe5-9671dd3857c8",
         "description"
       ],
       "settings": {
