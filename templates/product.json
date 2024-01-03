@@ -15,6 +15,12 @@
           "settings": {
           }
         },
+        "188cdecb-369f-41a1-8f76-ee154276965f": {
+          "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/star-rating\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
+          "settings": {
+            "show_count": "left"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -63,16 +69,12 @@
           "type": "description",
           "settings": {
           }
-        },
-        "6291c32e-2e82-4284-84f6-76e7a061f6b3": {
-          "type": "rating",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "188cdecb-369f-41a1-8f76-ee154276965f",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -80,8 +82,7 @@
         "buy_buttons",
         "share",
         "760323e2-cafc-4265-9b65-29b0493d110a",
-        "description",
-        "6291c32e-2e82-4284-84f6-76e7a061f6b3"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
