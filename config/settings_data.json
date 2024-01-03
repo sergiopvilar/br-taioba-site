@@ -480,7 +480,8 @@
       ".gBackInStock-Button {max-width: 44rem;}",
       ".BarMessageContainer {color: #317337 !important;}",
       ".BarMessageContainer > .money {color: #fe9148 !important;}",
-      ".badge.color-inverse:not(.price__badge-sold-out) {background-color: #317337 !important;}"
+      ".badge.color-inverse:not(.price__badge-sold-out) {background-color: #317337 !important;}",
+      ".installments-plugin-snippet {font-size:14px; }"
     ]
   }
 }
