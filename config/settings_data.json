@@ -172,6 +172,12 @@
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Olá. Em caso de dúvidas, envie uma mensagem. Estamos à disposição para ajudar."
         }
+      },
+      "7856480075841494758": {
+        "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/floating-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
@@ -481,7 +487,7 @@
       ".BarMessageContainer {color: #317337 !important;}",
       ".BarMessageContainer > .money {color: #fe9148 !important;}",
       ".badge.color-inverse:not(.price__badge-sold-out) {background-color: #317337 !important;}",
-      ".installments-plugin-snippet {font-size:14px; }"
+      ".installments-plugin-snippet {font-size: 14px;}"
     ]
   }
 }
