@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "🌎 Looking for international shipping? Go to our international store",
+            "text": "🌎 Está fora do Brasil? Confira nossa loja internacional",
             "link": "https:\/\/taiobarecords.com"
           }
         }
@@ -31,6 +31,7 @@
       "blocks": {
         "sections--21803059740989__fb9e02cb-a231-43f4-b606-176aa4bff5e3-announcement-1": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Estamos em recesso de carnaval, os envios retornam no dia 19\/02\/2023",
             "link": ""
