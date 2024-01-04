@@ -26,6 +26,30 @@
         "enable_language_selector": false
       }
     },
+    "fb9e02cb-a231-43f4-b606-176aa4bff5e3": {
+      "type": "announcement-bar",
+      "blocks": {
+        "sections--21803059740989__fb9e02cb-a231-43f4-b606-176aa4bff5e3-announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "Estamos em recesso de carnaval, os envios retornam no dia 19\/02\/2023",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "sections--21803059740989__fb9e02cb-a231-43f4-b606-176aa4bff5e3-announcement-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -47,6 +71,7 @@
   },
   "order": [
     "announcement-bar",
+    "fb9e02cb-a231-43f4-b606-176aa4bff5e3",
     "header"
   ]
 }
