@@ -15,12 +15,6 @@
           "settings": {
           }
         },
-        "188cdecb-369f-41a1-8f76-ee154276965f": {
-          "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/star-rating\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
-          "settings": {
-            "show_count": "left"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -37,7 +31,7 @@
           "settings": {
           }
         },
-        "1bf7cb1b-7064-44f4-aa98-25a7b65eb559": {
+        "28307398-4fa9-477b-a22f-90d7fb815c43": {
           "type": "inventory",
           "settings": {
             "text_style": "body",
@@ -45,7 +39,7 @@
             "show_inventory_quantity": true
           }
         },
-        "bb8159a3-b411-478a-8627-73c5e7f57bf8": {
+        "4aa4f1cd-6d52-45f3-a4b8-c01c87f0cb29": {
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
@@ -65,7 +59,7 @@
             "share_label": "Compartilhar"
           }
         },
-        "760323e2-cafc-4265-9b65-29b0493d110a": {
+        "928c4bf2-93f8-4093-94da-74ca18f8bb05": {
           "type": "text",
           "settings": {
             "text": "<strong>Condição Capa\/Disco:<\/strong> M\/M <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">(?)<\/a>",
@@ -81,15 +75,14 @@
       "block_order": [
         "vendor",
         "title",
-        "188cdecb-369f-41a1-8f76-ee154276965f",
         "price",
         "variant_picker",
         "quantity_selector",
-        "1bf7cb1b-7064-44f4-aa98-25a7b65eb559",
-        "bb8159a3-b411-478a-8627-73c5e7f57bf8",
+        "28307398-4fa9-477b-a22f-90d7fb815c43",
+        "4aa4f1cd-6d52-45f3-a4b8-c01c87f0cb29",
         "buy_buttons",
         "share",
-        "760323e2-cafc-4265-9b65-29b0493d110a",
+        "928c4bf2-93f8-4093-94da-74ca18f8bb05",
         "description"
       ],
       "settings": {
@@ -106,6 +99,143 @@
         "enable_video_looping": false,
         "padding_top": 40,
         "padding_bottom": 0
+      }
+    },
+    "503e7435-0751-470d-9a09-469ded50def1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21824862093629__503e7435-0751-470d-9a09-469ded50def1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Saiba mais sobre {{ product.metafields.optimized.nome_da_obra.value }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--21824862093629__503e7435-0751-470d-9a09-469ded50def1-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 84,
+        "padding_bottom": 16
+      }
+    },
+    "d3adf2c9-0c29-4999-9235-d1b5d00ddf01": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21824862093629__d3adf2c9-0c29-4999-9235-d1b5d00ddf01-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.titulo_bloco_1.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--21824862093629__d3adf2c9-0c29-4999-9235-d1b5d00ddf01-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.descricao_bloco_1 | metafield_tag }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21824862093629__d3adf2c9-0c29-4999-9235-d1b5d00ddf01-heading-1",
+        "template--21824862093629__d3adf2c9-0c29-4999-9235-d1b5d00ddf01-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.imagem_bloco_1.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "background-1",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "42953027-26d2-448e-86aa-5780cb92207e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21824862093629__42953027-26d2-448e-86aa-5780cb92207e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.bloco_2_titulo.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--21824862093629__42953027-26d2-448e-86aa-5780cb92207e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.bloco_2_descri_o | metafield_tag }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21824862093629__42953027-26d2-448e-86aa-5780cb92207e-heading-1",
+        "template--21824862093629__42953027-26d2-448e-86aa-5780cb92207e-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.bloco_2_imagem.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a1d27e5e-1258-4e17-907f-471cc9667f4c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21824862093629__a1d27e5e-1258-4e17-907f-471cc9667f4c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.bloco_3_t_tulo.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--21824862093629__a1d27e5e-1258-4e17-907f-471cc9667f4c-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.bloco_3_descri_o | metafield_tag }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21824862093629__a1d27e5e-1258-4e17-907f-471cc9667f4c-heading-1",
+        "template--21824862093629__a1d27e5e-1258-4e17-907f-471cc9667f4c-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.bloco_3_imagem.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "related-products": {
@@ -129,6 +259,10 @@
   },
   "order": [
     "main",
+    "503e7435-0751-470d-9a09-469ded50def1",
+    "d3adf2c9-0c29-4999-9235-d1b5d00ddf01",
+    "42953027-26d2-448e-86aa-5780cb92207e",
+    "a1d27e5e-1258-4e17-907f-471cc9667f4c",
     "related-products"
   ]
 }
