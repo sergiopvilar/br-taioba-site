@@ -26,19 +26,6 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "28307398-4fa9-477b-a22f-90d7fb815c43": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "body",
-            "inventory_threshold": 4,
-            "show_inventory_quantity": true
-          }
-        },
         "4aa4f1cd-6d52-45f3-a4b8-c01c87f0cb29": {
           "type": "custom_liquid",
           "disabled": true,
@@ -46,24 +33,27 @@
             "custom_liquid": "{% assign voltaFerias = '2024-02-19' %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n<p style=\"color:#e69148\">Este produto será enviado {{ diffDays }} dias após sua compra.<\/p>"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "f47ba397-8db9-48cf-8eff-29c156d5441e": {
+          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "form_id": "55333",
+            "text_color": "#40473c",
+            "button_background_color": "#00752f",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "left",
+            "form_alignment": "flex-start",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
           }
         },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Compartilhar"
-          }
-        },
-        "928c4bf2-93f8-4093-94da-74ca18f8bb05": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Condição Capa\/Disco:<\/strong> M\/M <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">(?)<\/a>",
-            "text_style": "body"
           }
         },
         "description": {
@@ -77,12 +67,9 @@
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
-        "28307398-4fa9-477b-a22f-90d7fb815c43",
         "4aa4f1cd-6d52-45f3-a4b8-c01c87f0cb29",
-        "buy_buttons",
+        "f47ba397-8db9-48cf-8eff-29c156d5441e",
         "share",
-        "928c4bf2-93f8-4093-94da-74ca18f8bb05",
         "description"
       ],
       "settings": {
