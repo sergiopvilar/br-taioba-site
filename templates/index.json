@@ -6,7 +6,6 @@
         "8d405be0-553b-44cc-8396-1694c99d1916": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/aos_vivos.jpg",
             "heading": "Aos Vivos",
             "heading_size": "h1",
             "subheading": "Primeiro disco de Chico César é relançado em Vinil",
@@ -24,7 +23,6 @@
         "e776d71f-baa2-45e6-b782-03ea221a0ab2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jagua.jpg",
             "heading": "Jaguatirica Print",
             "heading_size": "h1",
             "subheading": "O tecnobrega da potiguar de Luísa e os Alquimistas está de volta",
@@ -60,7 +58,6 @@
         "a3eb1043-7387-4d7d-9785-443906fc4e47": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pethit_c28df8a4-66f9-47e5-b9bf-586ec3a73778.jpg",
             "heading": "Thiago Pethit",
             "heading_size": "h1",
             "subheading": "\"Estrela Decadente\" e \"Berlim, Texas\" autografados em últimas unidades",
@@ -78,7 +75,6 @@
         "ae4298c2-af82-4a32-bd04-47c1045962ea": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/felh_feb7e466-0d38-451b-9da7-3f18ae2c7f5e.png",
             "heading": "Francisco, El Hombre",
             "heading_size": "h1",
             "subheading": "Comemore os 10 anos de banda com a edição especial de \"SOLTASBRUXA\"",
@@ -118,13 +114,13 @@
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "nova-musica-brasileira"
+            "collection": "brazilian-pop"
           }
         },
         "a9a031fa-b3aa-4841-a8f7-efd657a0c7ee": {
           "type": "collection",
           "settings": {
-            "collection": "brasileiros-no-grammy-latino-2023"
+            "collection": "brazilian-alternative"
           }
         },
         "b0aced97-7087-45d3-ba43-120e438d2ce5": {
@@ -182,7 +178,6 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/rpm5.webp",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -205,7 +200,7 @@
         "description": "<p>Direto da fábrica: confira o que acabou de chegar por aqui!<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "novidades",
+        "collection": "vinyl-records-new-arrivals",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
@@ -289,7 +284,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "discos-de-vinil-em-promocao",
+        "collection": "vinyl-records-on-sale",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -317,7 +312,7 @@
         "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "discos-de-vinil",
+        "collection": "brazilian-vinyl-records",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
@@ -379,7 +374,6 @@
         "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
         "height": "medium",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -442,7 +436,7 @@
         "description": "<p>Fique de olho no que está pra chegar nas próximas semanas<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "chegando-em-breve",
+        "collection": "coming-soon",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -467,7 +461,7 @@
       "settings": {
         "heading": "Confira nosso Blog",
         "heading_size": "h1",
-        "blog": "blog",
+        "blog": "music-from-brazil",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "",
