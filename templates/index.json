@@ -115,29 +115,30 @@
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c": {
       "type": "collage",
       "blocks": {
+        "b0aced97-7087-45d3-ba43-120e438d2ce5": {
+          "type": "collection",
+          "settings": {
+            "collection": "mpb"
+          }
+        },
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1": {
           "type": "collection",
           "settings": {
             "collection": "nova-musica-brasileira"
           }
         },
-        "a9a031fa-b3aa-4841-a8f7-efd657a0c7ee": {
-          "type": "collection",
+        "product_eLnjpC": {
+          "type": "product",
           "settings": {
-            "collection": "brasileiros-no-grammy-latino-2023"
-          }
-        },
-        "b0aced97-7087-45d3-ba43-120e438d2ce5": {
-          "type": "collection",
-          "settings": {
-            "collection": "mpb"
+            "product": "kit-de-limpeza-premium-para-discos-de-vinil-e-agulhas",
+            "second_image": false
           }
         }
       },
       "block_order": [
+        "b0aced97-7087-45d3-ba43-120e438d2ce5",
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1",
-        "a9a031fa-b3aa-4841-a8f7-efd657a0c7ee",
-        "b0aced97-7087-45d3-ba43-120e438d2ce5"
+        "product_eLnjpC"
       ],
       "settings": {
         "heading": "",
