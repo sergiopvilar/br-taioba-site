@@ -115,10 +115,11 @@
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c": {
       "type": "collage",
       "blocks": {
-        "b0aced97-7087-45d3-ba43-120e438d2ce5": {
-          "type": "collection",
+        "product_eLnjpC": {
+          "type": "product",
           "settings": {
-            "collection": "mpb"
+            "product": "kit-de-limpeza-premium-para-discos-de-vinil-e-agulhas",
+            "second_image": false
           }
         },
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1": {
@@ -127,18 +128,17 @@
             "collection": "nova-musica-brasileira"
           }
         },
-        "product_eLnjpC": {
-          "type": "product",
+        "b0aced97-7087-45d3-ba43-120e438d2ce5": {
+          "type": "collection",
           "settings": {
-            "product": "kit-de-limpeza-premium-para-discos-de-vinil-e-agulhas",
-            "second_image": false
+            "collection": "mpb"
           }
         }
       },
       "block_order": [
-        "b0aced97-7087-45d3-ba43-120e438d2ce5",
+        "product_eLnjpC",
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1",
-        "product_eLnjpC"
+        "b0aced97-7087-45d3-ba43-120e438d2ce5"
       ],
       "settings": {
         "heading": "",
