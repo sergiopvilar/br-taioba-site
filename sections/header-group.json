@@ -16,6 +16,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-2",
         "show_line_separator": true,
@@ -31,7 +32,6 @@
       "blocks": {
         "sections--21803059740989__fb9e02cb-a231-43f4-b606-176aa4bff5e3-announcement-1": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Estamos em recesso de Carnaval, envios serão retomados no dia 7 de Fevereiro.",
             "link": ""
