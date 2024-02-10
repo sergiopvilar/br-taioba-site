@@ -456,6 +456,7 @@
             "title": "",
             "title_color": "",
             "alignment": "center",
+            "margin_top": 20,
             "margin_bottom": 40,
             "html_area": ""
           }
