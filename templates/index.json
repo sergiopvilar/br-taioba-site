@@ -116,11 +116,10 @@
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c": {
       "type": "collage",
       "blocks": {
-        "product_eLnjpC": {
-          "type": "product",
+        "collection_NFtfpc": {
+          "type": "collection",
           "settings": {
-            "product": "kit-de-limpeza-premium-para-discos-de-vinil-e-agulhas",
-            "second_image": false
+            "collection": "acessorios"
           }
         },
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1": {
@@ -137,7 +136,7 @@
         }
       },
       "block_order": [
-        "product_eLnjpC",
+        "collection_NFtfpc",
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1",
         "b0aced97-7087-45d3-ba43-120e438d2ce5"
       ],
