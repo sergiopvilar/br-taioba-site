@@ -48,7 +48,7 @@
         "bb8159a3-b411-478a-8627-73c5e7f57bf8": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign voltaFerias = shop.metafields.vacation.return_date.value %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n\n\n{% if shop.metafields.vacation.show_warning.value%}\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n<p style=\"color:#e69148\">Este produto será enviado {{ diffDays }} dias após sua compra.<\/p>\n\n{% endif %}"
+            "custom_liquid": "{% assign voltaFerias = shop.metafields.vacation.return_date.value %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n\n{% if product.first_available_variant.inventory_quantity > 0 %}\n{% if shop.metafields.vacation.show_warning.value%}\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n<p style=\"color:#e69148\">Este produto será enviado {{ diffDays }} dias após sua compra.<\/p>\n\n{% endif %}{% endif %}"
           }
         },
         "buy_buttons": {
