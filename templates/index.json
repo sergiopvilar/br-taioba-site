@@ -376,6 +376,7 @@
         "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
         "height": "medium",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -396,19 +397,19 @@
         "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "para-ouvintes-exigentes"
+            "collection": "brazilian-jazz-psychedelic"
           }
         },
         "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lado-b-do-brasil"
+            "collection": "roots-of-brazil"
           }
         },
         "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-3": {
           "type": "featured_collection",
           "settings": {
-            "collection": "raizes-do-brasil"
+            "collection": "best-sellers"
           }
         }
       },
