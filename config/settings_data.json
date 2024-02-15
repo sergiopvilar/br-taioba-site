@@ -99,7 +99,7 @@
     "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "",
-    "brand_description": "<h5>ola@taiobadiscos.com.br<\/h5>",
+    "brand_description": "<h5>hello@taiobarecords.com<\/h5>",
     "brand_image": "shopify:\/\/shop_images\/taioba-logo-27_dbd23b59-defa-4094-a556-f8627df6b2c2.png",
     "brand_image_width": 100,
     "social_facebook_link": "",
@@ -171,12 +171,6 @@
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Olá. Em caso de dúvidas, envie uma mensagem. Estamos à disposição para ajudar."
-        }
-      },
-      "7856480075841494758": {
-        "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/floating-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
-        "disabled": false,
-        "settings": {
         }
       }
     },
