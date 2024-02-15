@@ -11,16 +11,24 @@
             "text": "🌎 Está fora do Brasil? Confira nossa loja internacional",
             "link": "https:\/\/taiobarecords.com"
           }
+        },
+        "announcement_XJhGbw": {
+          "type": "announcement",
+          "settings": {
+            "text": "🎵 Interessado em discos usados? Confira nosso Sebo do Vinil!",
+            "link": "https:\/\/sebodovinil.com.br"
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_XJhGbw"
       ],
       "settings": {
         "color_scheme": "background-2",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false
