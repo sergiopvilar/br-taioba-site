@@ -15,12 +15,6 @@
           "settings": {
           }
         },
-        "188cdecb-369f-41a1-8f76-ee154276965f": {
-          "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/star-rating\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
-          "settings": {
-            "show_count": "left"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -68,7 +62,7 @@
         "760323e2-cafc-4265-9b65-29b0493d110a": {
           "type": "text",
           "settings": {
-            "text": "<strong>Condição Capa\/Disco:<\/strong> M\/M <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">(?)<\/a>",
+            "text": "<strong>Cover\/Sleeve:<\/strong> M\/M",
             "text_style": "body"
           }
         },
@@ -81,7 +75,6 @@
       "block_order": [
         "vendor",
         "title",
-        "188cdecb-369f-41a1-8f76-ee154276965f",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -111,7 +104,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "Você também pode gostar",
+        "heading": "You might also like",
         "heading_size": "h1",
         "products_to_show": 4,
         "columns_desktop": 4,
