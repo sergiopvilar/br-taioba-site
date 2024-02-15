@@ -8,14 +8,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Seja o primeiro a saber",
+            "heading": "Be the first to know!",
             "heading_size": "h1"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Receba as novidades na sua caixa de entrada e ganhe R$20,00 de desconto na sua primeira compra!<\/p>"
+            "text": "<p>Get the latest updates in your inbox and enjoy a 10% discount on your first order!<\/p>"
           }
         },
         "email-form": {

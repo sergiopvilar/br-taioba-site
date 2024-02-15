@@ -97,6 +97,7 @@
         "a3eb1043-7387-4d7d-9785-443906fc4e47",
         "ae4298c2-af82-4a32-bd04-47c1045962ea"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -177,6 +178,7 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-text-1",
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-button-1"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "small",
@@ -195,9 +197,9 @@
     "358cb348-8eb4-406d-8106-7d3f2602dcd0": {
       "type": "featured-collection",
       "settings": {
-        "title": "Novidades",
+        "title": "New Arrivals",
         "heading_size": "h1",
-        "description": "<p>Direto da fábrica: confira o que acabou de chegar por aqui!<\/p>",
+        "description": "<p>Fresh off the press: Check out our latest arrivals!<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "vinyl-records-new-arrivals",
@@ -226,7 +228,7 @@
         "a28065f2-bb32-45c6-a28c-279aa86530d6": {
           "type": "caption",
           "settings": {
-            "caption": "não perca esta chance",
+            "caption": "Don't let this opportunity slip away!",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -234,21 +236,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Discos em Promoção",
+            "heading": "Records On Sale",
             "heading_size": "h1"
           }
         },
         "8959909e-1bba-4c78-9e95-0b8a35c5c5f1": {
           "type": "text",
           "settings": {
-            "text": "<p>Aumente sua coleção com estas ofertas imperdíveis!<\/p>",
+            "text": "<p>Expand your collection with these must-have deals!<\/p>",
             "text_style": "body"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Confira todas promoções",
+            "button_label": "Explore all our deals!",
             "button_link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
             "button_style_secondary": false
           }
@@ -307,9 +309,9 @@
     "bef47704-19ac-43ea-a3fa-4471acb7ded1": {
       "type": "featured-collection",
       "settings": {
-        "title": "Música Brasileira para todos os gostos",
+        "title": "Brazilian Music for every taste",
         "heading_size": "h1",
-        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados<\/p>",
+        "description": "<p>Dive into the vast diversity of Brazilian music with these meticulously selected records!<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "brazilian-vinyl-records",
@@ -347,21 +349,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "A melhor Música Brasileira",
+            "heading": "The Best of Brazilian Music",
             "heading_size": "h1"
           }
         },
         "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
           "type": "text",
           "settings": {
-            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
+            "text": "<p>Through a detailed process, we meticulously curate to bring you the best Brazilian music titles on vinyl.<\/p>",
             "text_style": "body"
           }
         },
         "48f060b7-07ec-436a-a502-2629f13a3815": {
           "type": "button",
           "settings": {
-            "button_label": "Confira os títulos",
+            "button_label": "Check out the titles!",
             "button_link": "shopify:\/\/collections\/discos-de-vinil-mais-vendidos",
             "button_style_secondary": false
           }
@@ -416,7 +418,7 @@
         "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-3"
       ],
       "settings": {
-        "title": "Explore nossas coleções",
+        "title": "Explore our collections!",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -431,9 +433,9 @@
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d": {
       "type": "featured-collection",
       "settings": {
-        "title": "Chegando em Breve",
+        "title": "Coming Soon",
         "heading_size": "h1",
-        "description": "<p>Fique de olho no que está pra chegar nas próximas semanas<\/p>",
+        "description": "<p>Keep an eye out for what's arriving in the coming weeks!<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "coming-soon",
@@ -459,7 +461,7 @@
     "348133a0-e988-4d57-92dc-45f3507b241d": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Confira nosso Blog",
+        "heading": "Check out our Blog",
         "heading_size": "h1",
         "blog": "music-from-brazil",
         "post_limit": 3,
