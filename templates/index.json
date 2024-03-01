@@ -3,6 +3,24 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slide_CcYUK4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/garimpo.jpg",
+            "heading": "Garimpe na Taioba!",
+            "heading_size": "h1",
+            "subheading": "Uma incrível seleção de música brasileira com discos de época prontos para irem à vitrola",
+            "button_label": "Confira agora",
+            "link": "shopify:\/\/collections\/garimpo",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "8d405be0-553b-44cc-8396-1694c99d1916": {
           "type": "slide",
           "disabled": true,
@@ -39,11 +57,31 @@
             "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_pcUfDF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/novos.jpg",
+            "heading": "Discos novos a partir de R$69,90",
+            "heading_size": "h1",
+            "subheading": "Confira já nossas promoções e não perca a chance de aumentar sua coleção pagando menos!",
+            "button_label": "Confira todas Promoções",
+            "link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
+        "slide_CcYUK4",
         "8d405be0-553b-44cc-8396-1694c99d1916",
-        "slide_PAHjtx"
+        "slide_PAHjtx",
+        "slide_pcUfDF"
       ],
       "settings": {
         "layout": "full_bleed",
