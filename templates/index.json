@@ -20,82 +20,27 @@
             "text_alignment_mobile": "center"
           }
         },
-        "e776d71f-baa2-45e6-b782-03ea221a0ab2": {
+        "slide_74cDwP": {
           "type": "slide",
           "settings": {
-            "heading": "Jaguatirica Print",
+            "heading": "Image slide",
             "heading_size": "h1",
-            "subheading": "O tecnobrega da potiguar de Luísa e os Alquimistas está de volta",
-            "button_label": "Compre agora",
-            "link": "shopify:\/\/products\/luisa-e-os-alquimistas-jaguatirica-print-vinil-lp",
-            "button_style_secondary": false,
-            "box_align": "middle-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "99fcfb0e-1a45-428a-86d9-75938d1f8550": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gilsons.jpg",
-            "heading": "Gilsons",
-            "heading_size": "h0",
-            "subheading": "Conseguimos a última cópia o \"Pra Gente Acordar\". Adicione esta raridade à sua coleção.",
-            "button_label": "Compre agora",
-            "link": "shopify:\/\/products\/gilsons-vinil-lp",
-            "button_style_secondary": false,
-            "box_align": "middle-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 40,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "a3eb1043-7387-4d7d-9785-443906fc4e47": {
-          "type": "slide",
-          "settings": {
-            "heading": "Thiago Pethit",
-            "heading_size": "h1",
-            "subheading": "\"Estrela Decadente\" e \"Berlim, Texas\" autografados em últimas unidades",
-            "button_label": "Garanta o Seu",
-            "link": "shopify:\/\/collections\/thiago-pethit",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 40,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "ae4298c2-af82-4a32-bd04-47c1045962ea": {
-          "type": "slide",
-          "settings": {
-            "heading": "Francisco, El Hombre",
-            "heading_size": "h1",
-            "subheading": "Comemore os 10 anos de banda com a edição especial de \"SOLTASBRUXA\"",
-            "button_label": "Compre Já",
-            "link": "shopify:\/\/products\/francisco-el-hombre-soltasbruxa-disco-de-vinil-lp",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 40,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
         "8d405be0-553b-44cc-8396-1694c99d1916",
-        "e776d71f-baa2-45e6-b782-03ea221a0ab2",
-        "99fcfb0e-1a45-428a-86d9-75938d1f8550",
-        "a3eb1043-7387-4d7d-9785-443906fc4e47",
-        "ae4298c2-af82-4a32-bd04-47c1045962ea"
+        "slide_74cDwP"
       ],
       "disabled": true,
       "settings": {
