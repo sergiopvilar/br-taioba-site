@@ -3,46 +3,47 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "8d405be0-553b-44cc-8396-1694c99d1916": {
+        "slide_74cDwP": {
           "type": "slide",
           "settings": {
-            "heading": "Aos Vivos",
+            "image": "shopify:\/\/shop_images\/garimpo.jpg",
+            "heading": "Crate Digging",
             "heading_size": "h1",
-            "subheading": "Primeiro disco de Chico César é relançado em Vinil",
-            "button_label": "Garanta o seu",
-            "link": "shopify:\/\/products\/chico-cesar-aos-vivos-disco-de-vinil-lp",
+            "subheading": "An incredible selection of Brazilian music with vintage records ready to go on the turntable",
+            "button_label": "Check out now",
+            "link": "shopify:\/\/collections\/crate-digging",
             "button_style_secondary": false,
-            "box_align": "middle-left",
+            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 50,
             "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
         },
-        "slide_74cDwP": {
+        "slide_iq7iAr": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify:\/\/shop_images\/novos.jpg",
+            "heading": "New records starting on $14.90",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
+            "subheading": "Check out our promotions now and don't miss the chance to expand your collection for less!",
+            "button_label": "Check out all records on sale",
+            "link": "shopify:\/\/collections\/vinyl-records-on-sale",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 60,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "8d405be0-553b-44cc-8396-1694c99d1916",
-        "slide_74cDwP"
+        "slide_74cDwP",
+        "slide_iq7iAr"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
