@@ -14,7 +14,7 @@
         "template--21826481029437__1c77355c-00f6-49e2-866b-a065454d2614-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Entendemos que o mundo dos discos de vinil vai muito além dos mais novos lançamentos, por isso, introduzimos a seção Garimpo em nossa loja contendo apenas <strong>discos usados<\/strong> em diferentes estados de conservação.<br\/><br\/>Com curadoria e avaliações minuciosas, trazemos diversos discos de música brasileira e internacional higienizados com cuidado e prontos para irem à vitrola.<\/p>",
+            "text": "<p>We understand that the world of vinyl records goes far beyond the newest releases, which is why we introduced the <strong>Crate Digging<\/strong> section in our store containing only used records in different states of preservation.<br\/><br\/>From the record sellers that present their products on the sidewalks of the Amazon cities to the great antiquarians of the largest city in Latin America, we bring to you the records that we believe to represent the huge cultural diversity of Brazil.<\/p>",
             "text_style": "body"
           }
         }
@@ -64,9 +64,9 @@
         "template--21826481029437__16c20a0a-16fc-4437-9a87-d557e5ec1fcd-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cleaning-2.webp",
-            "title": "Discos Higienizados",
-            "text": "<p>Nossos discos usados chegam prontos para irem à vitrola ou à prateleira. Com capas e mídias higienizadas, você só precisa se preocupar em curtir a experiência.<\/p>",
+            "image": "shopify:\/\/shop_images\/cleaning.jpg",
+            "title": "Records ready to be played",
+            "text": "<p>Our used records arrive at your doorstep ready to go to the turntable or shelf. With cleaned covers and media, you just need to worry about enjoying the experience.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -74,9 +74,9 @@
         "template--21826481029437__16c20a0a-16fc-4437-9a87-d557e5ec1fcd-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cleani22ng-2.png",
-            "title": "Curadoria Minuciosa",
-            "text": "<p>Para nós, cada vinil é uma história, uma jornada musical que desejamos compartilhar com entusiasmo e conhecimento com nossos clientes.<\/p>",
+            "image": "shopify:\/\/shop_images\/curadoria.jpg",
+            "title": "Thorough Curation",
+            "text": "<p>For us, each vinyl is a story, a musical journey that we wish to share with enthusiasm and knowledge with our customers.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -84,9 +84,9 @@
         "template--21826481029437__16c20a0a-16fc-4437-9a87-d557e5ec1fcd-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cleaning-2.png",
-            "title": "Satisfação Garantida",
-            "text": "<p>Se, por qualquer motivo, você mudar de ideia sobre sua compra, você tem até 7 dias úteis, a contar da data de recebimento, para fazer a devolução do seu pedido.<\/p>",
+            "image": "shopify:\/\/shop_images\/satisfacao.jpg",
+            "title": "Satisfaction Guaranteed",
+            "text": "<p>We guarantee that the records are evaluated and sanitized, bringing you greater confidence at the time of purchase.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -98,7 +98,7 @@
         "template--21826481029437__16c20a0a-16fc-4437-9a87-d557e5ec1fcd-column-3"
       ],
       "settings": {
-        "title": "Saiba mais sobre o nosso Garimpo",
+        "title": "Learn more about our records",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -120,22 +120,22 @@
         "template--21826481029437__3418b704-b0f7-4a61-9aed-b039896e7a4e-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Entenda como funciona a avaliação de discos usados",
+            "heading": "Understand how we grade our records",
             "heading_size": "h1"
           }
         },
         "template--21826481029437__3418b704-b0f7-4a61-9aed-b039896e7a4e-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Nós utilizamos o Sistema de Classificação da Goldmine Standards, o método mais aceito e respeitado na indústria de vinil.<\/p>",
+            "text": "<p>\"We use the Goldmine Standards Grading System, the most accepted and respected method in the vinyl industry.<\/p>",
             "text_style": "body"
           }
         },
         "template--21826481029437__3418b704-b0f7-4a61-9aed-b039896e7a4e-button-1": {
           "type": "button",
           "settings": {
-            "button_label": "Quero saber mais",
-            "button_link": "shopify:\/\/blogs\/blog\/guia-completo-para-classificar-discos-de-vinil-usados",
+            "button_label": "More details",
+            "button_link": "https:\/\/www.goldminemag.com\/collector-resources\/record-grading-101",
             "button_style_secondary": false
           }
         }
@@ -146,7 +146,7 @@
         "template--21826481029437__3418b704-b0f7-4a61-9aed-b039896e7a4e-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/selling-vinyl-records.jpg",
+        "image": "shopify:\/\/shop_images\/selling-vinyl-records.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
