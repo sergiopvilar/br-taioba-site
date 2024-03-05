@@ -1,7 +1,7 @@
 {%- if record.tags contains 'Chegando' -%}
-
+  <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">Em Breve</span>
 {%- elsif record.tags contains 'chegando' -%}
-
+  <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">Em Breve</span>
 {%- else -%}
   <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
 {%- endif -%}
