@@ -3,9 +3,26 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slide_mmrrip": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design.jpg",
+            "heading": "Várias Queixas - Gilsons",
+            "heading_size": "h1",
+            "subheading": "O novo disco dos Gilsons está chegando na Taioba! Seja notificado e não perca sua chance!",
+            "button_label": "Quero saber mais",
+            "link": "shopify:\/\/products\/gilsons-vinil-lp",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_CcYUK4": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/garimpo.jpg",
             "heading": "Garimpe na Taioba!",
@@ -43,7 +60,6 @@
         },
         "slide_PAHjtx": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/jagua_f4834e2c-2db0-45f4-b670-59e872d85dbd.jpg",
             "heading": "No Embalo do Carimbó",
@@ -62,7 +78,6 @@
         },
         "slide_pcUfDF": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/novos.jpg",
             "heading": "Discos novos a partir de R$69,90",
@@ -78,32 +93,14 @@
             "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_mmrrip": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design.jpg",
-            "heading": "Várias Queixas - Gilsons",
-            "heading_size": "h1",
-            "subheading": "O novo disco dos Gilsons está chegando na Taioba! Seja notificado e não perca sua chance!",
-            "button_label": "Quero saber mais",
-            "link": "shopify:\/\/products\/gilsons-vinil-lp",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 40,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
+        "slide_mmrrip",
         "slide_CcYUK4",
         "8d405be0-553b-44cc-8396-1694c99d1916",
         "slide_PAHjtx",
-        "slide_pcUfDF",
-        "slide_mmrrip"
+        "slide_pcUfDF"
       ],
       "settings": {
         "layout": "full_bleed",
