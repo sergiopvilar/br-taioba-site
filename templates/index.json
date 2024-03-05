@@ -3,9 +3,26 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slide_namRFt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design.jpg",
+            "heading": "Várias Queixas by Gilsons",
+            "heading_size": "h1",
+            "subheading": "The new Vinyl Record by Gilsons is coming soon to Taioba! Get notified when the record arrives and don't miss your chance!",
+            "button_label": "Notify me",
+            "link": "shopify:\/\/products\/gilsons-vinil-lp",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_74cDwP": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/garimpo.jpg",
             "heading": "Crate Digging",
@@ -24,7 +41,6 @@
         },
         "slide_iq7iAr": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/novos.jpg",
             "heading": "New records starting on $14.90",
@@ -40,30 +56,12 @@
             "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_namRFt": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design.jpg",
-            "heading": "Várias Queixas by Gilsons",
-            "heading_size": "h1",
-            "subheading": "The new Vinyl Record by Gilsons is coming soon to Taioba! Get notified when the record arrives and don't miss your chance!",
-            "button_label": "Notify me",
-            "link": "shopify:\/\/products\/gilsons-vinil-lp",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 50,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
+        "slide_namRFt",
         "slide_74cDwP",
-        "slide_iq7iAr",
-        "slide_namRFt"
+        "slide_iq7iAr"
       ],
       "settings": {
         "layout": "full_bleed",
