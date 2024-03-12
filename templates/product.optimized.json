@@ -36,7 +36,7 @@
           "settings": {
             "text_style": "body",
             "inventory_threshold": 4,
-            "show_inventory_quantity": true
+            "show_inventory_quantity": false
           }
         },
         "4aa4f1cd-6d52-45f3-a4b8-c01c87f0cb29": {
