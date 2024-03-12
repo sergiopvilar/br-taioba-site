@@ -141,7 +141,11 @@
                       {%- if block.settings.show_inventory_quantity -%}
                         {{- 'products.product.inventory_low_stock_show_count' | t: quantity: product.selected_or_first_available_variant.inventory_quantity -}}
                       {%- else -%}
-                        Últimas unidades!
+                        {%- if record.tags contains 'esgotado' -%}
+                          Última unidade, não haverá reposição.
+                        {%- else -%}
+                          Últimas unidades!
+                        {%- endif -%}
                       {%- endif -%}
                     {%- else -%}
                       <svg width="15" height="15" aria-hidden="true">
