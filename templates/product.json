@@ -42,7 +42,7 @@
           "settings": {
             "text_style": "body",
             "inventory_threshold": 4,
-            "show_inventory_quantity": true
+            "show_inventory_quantity": false
           }
         },
         "bb8159a3-b411-478a-8627-73c5e7f57bf8": {
