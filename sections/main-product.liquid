@@ -141,7 +141,7 @@
                       {%- if block.settings.show_inventory_quantity -%}
                         {{- 'products.product.inventory_low_stock_show_count' | t: quantity: product.selected_or_first_available_variant.inventory_quantity -}}
                       {%- else -%}
-                        {%- if record.tags contains 'esgotado' -%}
+                        {%- if product.tags contains 'esgotado' -%}
                           Última unidade, não haverá reposição.
                         {%- else -%}
                           Últimas unidades!
