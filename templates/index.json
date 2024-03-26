@@ -131,7 +131,7 @@
         "b0aced97-7087-45d3-ba43-120e438d2ce5": {
           "type": "collection",
           "settings": {
-            "collection": "musica-paraense"
+            "collection": "mpb"
           }
         }
       },
@@ -486,7 +486,7 @@
         "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-3": {
           "type": "featured_collection",
           "settings": {
-            "collection": "raizes-do-brasil"
+            "collection": "musica-paraense"
           }
         }
       },
