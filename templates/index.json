@@ -179,6 +179,34 @@
         "padding_bottom": 100
       }
     },
+    "a9e5db15-6a69-47db-a5fc-caaa88f9701d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Chegando em Breve",
+        "heading_size": "h1",
+        "description": "<p>Fique de olho no que está pra chegar nas próximas semanas<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "chegando-em-breve",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-27168b15-58df-4cd7-be3d-4ec7ec764f68",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e": {
       "type": "image-with-text",
       "blocks": {
@@ -508,34 +536,6 @@
         "padding_bottom": 36
       }
     },
-    "a9e5db15-6a69-47db-a5fc-caaa88f9701d": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Chegando em Breve",
-        "heading_size": "h1",
-        "description": "<p>Fique de olho no que está pra chegar nas próximas semanas<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "chegando-em-breve",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-27168b15-58df-4cd7-be3d-4ec7ec764f68",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 36
-      }
-    },
     "348133a0-e988-4d57-92dc-45f3507b241d": {
       "type": "featured-blog",
       "settings": {
@@ -558,6 +558,7 @@
     "slideshow",
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
+    "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
     "featured_collection_JmNfBF",
     "image-with-text-1",
@@ -567,7 +568,6 @@
     "rich_text_rhGURb",
     "17075788101be2c20d",
     "014d76be-b0fa-4c26-ba8f-acdec03fa31a",
-    "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "348133a0-e988-4d57-92dc-45f3507b241d"
   ]
 }
