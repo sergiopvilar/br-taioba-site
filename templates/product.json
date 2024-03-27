@@ -64,25 +64,18 @@
             "share_label": "Compartilhar"
           }
         },
-        "760323e2-cafc-4265-9b65-29b0493d110a": {
-          "type": "text",
+        "collapsible_tab_YpRLCM": {
+          "type": "collapsible_tab",
           "settings": {
-            "text": "<strong>Condição Capa\/Disco:<\/strong> {{ product.metafields.garimpo.estado_capa.value }}\/{{ product.metafields.garimpo.estado_midia.value }} <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">(?)<\/a>",
-            "text_style": "body"
+            "heading": "Estado de Conservação",
+            "icon": "box",
+            "content": "<ul><li><strong>Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>O que significa o estado de conservação? <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">Veja aqui<\/a>.<\/h6>",
+            "page": ""
           }
         },
         "description": {
           "type": "description",
           "settings": {
-          }
-        },
-        "collapsible_tab_YpRLCM": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Condição do disco",
-            "icon": "washing",
-            "content": "<p><strong>Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<strong><br\/>Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/p><p>O que significa a condição do disco?<\/p>",
-            "page": ""
           }
         },
         "complementary_4XtNmH": {
@@ -110,9 +103,8 @@
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
         "buy_buttons",
         "share",
-        "760323e2-cafc-4265-9b65-29b0493d110a",
-        "description",
         "collapsible_tab_YpRLCM",
+        "description",
         "complementary_4XtNmH"
       ],
       "settings": {
