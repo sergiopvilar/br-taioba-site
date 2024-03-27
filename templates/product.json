@@ -76,11 +76,20 @@
           "settings": {
           }
         },
+        "collapsible_tab_YpRLCM": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Condição do disco",
+            "icon": "washing",
+            "content": "<p><strong>Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<strong><br\/>Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/p><p><a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">(?)<\/a><\/p>",
+            "page": ""
+          }
+        },
         "complementary_4XtNmH": {
           "type": "complementary",
           "settings": {
             "block_heading": "Vai bem com",
-            "make_collapsible_row": true,
+            "make_collapsible_row": false,
             "icon": "price_tag",
             "product_list_limit": 1,
             "products_per_page": 1,
@@ -103,6 +112,7 @@
         "share",
         "760323e2-cafc-4265-9b65-29b0493d110a",
         "description",
+        "collapsible_tab_YpRLCM",
         "complementary_4XtNmH"
       ],
       "settings": {
