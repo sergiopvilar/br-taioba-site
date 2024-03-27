@@ -81,7 +81,7 @@
           "settings": {
             "heading": "Condição do disco",
             "icon": "washing",
-            "content": "<p><strong>Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<strong><br\/>Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/p><p><a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">(?)<\/a><\/p>",
+            "content": "<p><strong>Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<strong><br\/>Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/p><p>O que significa a condição do disco?<\/p>",
             "page": ""
           }
         },
