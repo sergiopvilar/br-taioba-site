@@ -58,6 +58,11 @@
             "show_gift_card_recipient": true
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "collapsible_tab_YpRLCM": {
           "type": "collapsible_tab",
           "settings": {
@@ -67,9 +72,13 @@
             "page": ""
           }
         },
-        "description": {
-          "type": "description",
+        "collapsible_tab_bacWeA": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Informações do disco",
+            "icon": "clipboard",
+            "content": "{{ product.metafields.vinyl.release_info | metafield_tag }}",
+            "page": ""
           }
         },
         "complementary_4XtNmH": {
@@ -102,8 +111,9 @@
         "1bf7cb1b-7064-44f4-aa98-25a7b65eb559",
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
         "buy_buttons",
-        "collapsible_tab_YpRLCM",
         "description",
+        "collapsible_tab_YpRLCM",
+        "collapsible_tab_bacWeA",
         "complementary_4XtNmH",
         "share"
       ],
