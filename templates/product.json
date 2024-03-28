@@ -66,16 +66,16 @@
             "page": ""
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
           }
         },
         "complementary_4XtNmH": {
@@ -103,8 +103,8 @@
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
         "share",
         "collapsible_tab_YpRLCM",
-        "description",
         "buy_buttons",
+        "description",
         "complementary_4XtNmH"
       ],
       "settings": {
