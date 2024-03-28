@@ -338,7 +338,7 @@
         class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
         style="--ratio-percent: 100%;"
       >
-        <div class="card__media">
+        <div class="{% if skip_card_media %}card_merdia{% else %}card__media{% endif %}">
           <div class="media media--transparent">
             {%- if placeholder_image -%}
               {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
