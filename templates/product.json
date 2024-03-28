@@ -81,7 +81,7 @@
         "complementary_4XtNmH": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Vai bem com",
+            "block_heading": "Este disco combina com:",
             "make_collapsible_row": false,
             "icon": "price_tag",
             "product_list_limit": 1,
