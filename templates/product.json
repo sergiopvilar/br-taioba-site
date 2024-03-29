@@ -66,7 +66,7 @@
         "collapsible_tab_YpRLCM": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Estado de Conservação",
+            "heading": "Condição do Disco",
             "icon": "box",
             "content": "<ul><li><strong>Condição:  <\/strong>{{ product.metafields.vinyl.state.value }}<\/li><li><strong>Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>O que significa o estado de conservação? <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">Veja aqui<\/a>.<\/h6>",
             "page": ""
@@ -75,7 +75,7 @@
         "collapsible_tab_bacWeA": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Informações do disco",
+            "heading": "Informações sobre o Disco",
             "icon": "clipboard",
             "content": "{{ product.metafields.vinyl.release_info | metafield_tag }}",
             "page": ""
