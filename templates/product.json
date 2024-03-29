@@ -76,6 +76,28 @@
           "type": "description",
           "settings": {
           }
+        },
+        "complementary_N6y9dW": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
+        "collapsible_tab_EbWwf8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Record State and Grading",
+            "icon": "box",
+            "content": "<ul><li><strong>State:<\/strong> {{ product.metafields.vinyl.state.value }}<\/li><li><strong>Sleeve Grading:<\/strong> {{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Record Grading: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>What does the Sleeve and Record grading mean? <a href=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\" target=\"_blank\" title=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\">Click here<\/a>.<\/h6>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -90,7 +112,9 @@
         "buy_buttons",
         "share",
         "760323e2-cafc-4265-9b65-29b0493d110a",
-        "description"
+        "description",
+        "complementary_N6y9dW",
+        "collapsible_tab_EbWwf8"
       ],
       "settings": {
         "enable_sticky_info": true,
