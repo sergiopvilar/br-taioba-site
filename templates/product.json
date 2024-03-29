@@ -98,6 +98,15 @@
             "content": "<ul><li><strong>State:<\/strong> {{ product.metafields.vinyl.state.value }}<\/li><li><strong>Sleeve Grading:<\/strong> {{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Record Grading: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>What does the Sleeve and Record grading mean? <a href=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\" target=\"_blank\" title=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\">Click here<\/a>.<\/h6>",
             "page": ""
           }
+        },
+        "collapsible_tab_Ci83tQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Release Information",
+            "icon": "clipboard",
+            "content": "{{ product.metafields.vinyl.release_info | metafield_tag }}",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -114,7 +123,8 @@
         "760323e2-cafc-4265-9b65-29b0493d110a",
         "description",
         "complementary_N6y9dW",
-        "collapsible_tab_EbWwf8"
+        "collapsible_tab_EbWwf8",
+        "collapsible_tab_Ci83tQ"
       ],
       "settings": {
         "enable_sticky_info": true,
