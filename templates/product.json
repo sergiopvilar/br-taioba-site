@@ -40,6 +40,7 @@
         },
         "1bf7cb1b-7064-44f4-aa98-25a7b65eb559": {
           "type": "inventory",
+          "disabled": true,
           "settings": {
             "text_style": "body",
             "inventory_threshold": 4,
