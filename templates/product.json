@@ -46,10 +46,22 @@
             "custom_liquid": "{% assign voltaFerias = '2024-02-19' %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n<p style=\"color:#e69148\">Este produto será enviado {{ diffDays }} dias após sua compra.<\/p>"
           }
         },
-        "custom_liquid_NDGTW6": {
-          "type": "custom_liquid",
+        "collapsible_tab_EbWwf8": {
+          "type": "collapsible_tab",
           "settings": {
-            "custom_liquid": "{% assign voltaFerias = shop.metafields.vacation.return_date.value %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n\n{% if product.first_available_variant.inventory_quantity > 0 %}\n{% if shop.metafields.vacation.show_warning.value%}\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n<p style=\"color:#e69148\">This product ships {{ diffDays }} days after your purchase.<\/p>\n\n{% endif %}{% endif %}"
+            "heading": "Record State and Grading",
+            "icon": "box",
+            "content": "<ul><li><strong>State:<\/strong> {{ product.metafields.vinyl.state.value }}<\/li><li><strong>Sleeve Grading:<\/strong> {{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Record Grading: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>What does the Sleeve and Record grading mean? <a href=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\" target=\"_blank\" title=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\">Click here<\/a>.<\/h6>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_Ci83tQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Release Information",
+            "icon": "clipboard",
+            "content": "{{ product.metafields.vinyl.release_info | metafield_tag }}",
+            "page": ""
           }
         },
         "buy_buttons": {
@@ -57,19 +69,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Compartilhar"
-          }
-        },
-        "760323e2-cafc-4265-9b65-29b0493d110a": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Sleeve \/ Record State:<\/strong> {{ product.metafields.garimpo.estado_capa.value }}\/{{ product.metafields.garimpo.estado_midia.value }} <a href=\"https:\/\/www.goldminemag.com\/collector-resources\/record-grading-101\" target=\"_blank\" title=\"https:\/\/www.goldminemag.com\/collector-resources\/record-grading-101\">(?)<\/a>",
-            "text_style": "body"
           }
         },
         "description": {
@@ -90,22 +89,10 @@
             "enable_quick_add": false
           }
         },
-        "collapsible_tab_EbWwf8": {
-          "type": "collapsible_tab",
+        "share": {
+          "type": "share",
           "settings": {
-            "heading": "Record State and Grading",
-            "icon": "box",
-            "content": "<ul><li><strong>State:<\/strong> {{ product.metafields.vinyl.state.value }}<\/li><li><strong>Sleeve Grading:<\/strong> {{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Record Grading: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>What does the Sleeve and Record grading mean? <a href=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\" target=\"_blank\" title=\"https:\/\/www.goldminemag.com\/collector-resources\/collecting-101-grading-your-records\">Click here<\/a>.<\/h6>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_Ci83tQ": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Release Information",
-            "icon": "clipboard",
-            "content": "{{ product.metafields.vinyl.release_info | metafield_tag }}",
-            "page": ""
+            "share_label": "Compartilhar"
           }
         }
       },
@@ -117,14 +104,12 @@
         "quantity_selector",
         "1bf7cb1b-7064-44f4-aa98-25a7b65eb559",
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
-        "custom_liquid_NDGTW6",
+        "collapsible_tab_EbWwf8",
+        "collapsible_tab_Ci83tQ",
         "buy_buttons",
-        "share",
-        "760323e2-cafc-4265-9b65-29b0493d110a",
         "description",
         "complementary_N6y9dW",
-        "collapsible_tab_EbWwf8",
-        "collapsible_tab_Ci83tQ"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
