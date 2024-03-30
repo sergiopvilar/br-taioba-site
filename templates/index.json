@@ -34,7 +34,7 @@
             "box_align": "middle-right",
             "show_text_box": false,
             "text_alignment": "right",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 20,
             "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
