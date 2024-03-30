@@ -21,6 +21,24 @@
             "text_alignment_mobile": "center"
           }
         },
+        "slide_GNAwQA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Site_header_1.jpg",
+            "heading": "Caetano Veloso",
+            "heading_size": "h1",
+            "subheading": "Torne sua coleção ainda mais incrível com o clássico \"Transa\" em capa tripla",
+            "button_label": "Conferir todos discos",
+            "link": "shopify:\/\/collections\/taioba-recomenda-caetano-veloso",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_JyfY8d": {
           "type": "slide",
           "settings": {
@@ -79,6 +97,7 @@
       },
       "block_order": [
         "slide_mmrrip",
+        "slide_GNAwQA",
         "slide_JyfY8d",
         "slide_CcYUK4",
         "slide_pcUfDF"
