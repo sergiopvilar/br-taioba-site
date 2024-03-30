@@ -156,7 +156,7 @@
       "settings": {
         "title": "Novidades",
         "heading_size": "h1",
-        "description": "<p>Direto da fábrica: confira o que acabou de chegar por aqui!<\/p>",
+        "description": "<p>Confira o que acabou de chegar por aqui!<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "novidades",
