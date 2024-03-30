@@ -21,6 +21,24 @@
             "text_alignment_mobile": "center"
           }
         },
+        "slide_JyfY8d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Site_header.jpg",
+            "heading": "Pipo Pegoraro",
+            "heading_size": "h1",
+            "subheading": "Os aclamados discos \"Táxi Imã\" e \"Mergulhar, Mergulhei\" já chegaram na Taioba!",
+            "button_label": "Veja Mais",
+            "link": "shopify:\/\/collections\/discos-de-vinil-de-pipo-pegoraro",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_CcYUK4": {
           "type": "slide",
           "settings": {
@@ -35,43 +53,6 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 50,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "8d405be0-553b-44cc-8396-1694c99d1916": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/aos_vivos.jpg",
-            "heading": "Aos Vivos",
-            "heading_size": "h1",
-            "subheading": "Primeiro disco de Chico César é relançado em Vinil",
-            "button_label": "Garanta o seu",
-            "link": "shopify:\/\/products\/chico-cesar-aos-vivos-disco-de-vinil-lp",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_PAHjtx": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/jagua_f4834e2c-2db0-45f4-b670-59e872d85dbd.jpg",
-            "heading": "No Embalo do Carimbó",
-            "heading_size": "h1",
-            "subheading": "Trouxemos direto do Pará uma seleção exclusiva de Carimbós e música autêntica paranese",
-            "button_label": "Veja Mais",
-            "link": "shopify:\/\/collections\/musica-paraense",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 60,
             "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
@@ -97,9 +78,8 @@
       },
       "block_order": [
         "slide_mmrrip",
+        "slide_JyfY8d",
         "slide_CcYUK4",
-        "8d405be0-553b-44cc-8396-1694c99d1916",
-        "slide_PAHjtx",
         "slide_pcUfDF"
       ],
       "settings": {
