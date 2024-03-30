@@ -59,6 +59,7 @@
         },
         "slide_pcUfDF": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/novos.jpg",
             "heading": "Discos novos a partir de R$69,90",
