@@ -179,6 +179,67 @@
         "padding_bottom": 100
       }
     },
+    "ss_testimonials_2_8qD96j": {
+      "type": "ss-testimonials-2",
+      "blocks": {
+        "card_x4PQq8": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p> Add customer reviews and testimonials to showcase your store’s happy customers.  <\/p>",
+            "author": "author",
+            "info": "New Info"
+          }
+        },
+        "card_wXqN6B": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p> Add customer reviews and testimonials to showcase your store’s happy customers.  <\/p>",
+            "author": "author",
+            "info": "New Info"
+          }
+        },
+        "card_m893tc": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p> Add customer reviews and testimonials to showcase your store’s happy customers.  <\/p>",
+            "author": "author",
+            "info": "New Info"
+          }
+        }
+      },
+      "block_order": [
+        "card_x4PQq8",
+        "card_wXqN6B",
+        "card_m893tc"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "title_align": "center",
+        "text_align": "center",
+        "autoplay_delay": 5,
+        "autoplay_disable_on_interaction": true,
+        "heading_font_size": 30,
+        "p_font_size": 18,
+        "author_font_size": 19,
+        "info_font_size": 17,
+        "image_size": 65,
+        "image_border_radius": 50,
+        "text_color": "#000000",
+        "background-color": "#f9f9f9",
+        "card_color": "#FFFFFF",
+        "header_color": "#000000",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_x": 0,
+        "padding_x_desktop": 0,
+        "margin_top": 4,
+        "margin_bottom": 4,
+        "section-width": 160
+      }
+    },
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d": {
       "type": "featured-collection",
       "settings": {
@@ -558,6 +619,7 @@
     "slideshow",
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
+    "ss_testimonials_2_8qD96j",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
     "featured_collection_JmNfBF",
