@@ -249,7 +249,7 @@
         "h2 {color: rgb(89, 107, 80) !important; font-family: Prompt, sans-serif !important; font-size: 48px !important;}"
       ],
       "settings": {
-        "heading": "O que nossos clientes pensam sobre nós",
+        "heading": "O que nossos clientes falam sobre nós",
         "title_align": "center",
         "text_align": "center",
         "autoplay_delay": 8,
