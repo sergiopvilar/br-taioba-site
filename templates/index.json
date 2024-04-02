@@ -245,6 +245,9 @@
         "card_PDNQ9m",
         "card_zBaPFx"
       ],
+      "custom_css": [
+        "h2 {color: rgb(89, 107, 80) !important; font-family: Prompt, sans-serif!important; font-size: 48px!important;}"
+      ],
       "settings": {
         "heading": "O que nossos clientes pensam sobre nós",
         "title_align": "center",
