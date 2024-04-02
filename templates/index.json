@@ -364,7 +364,7 @@
         "heading_Wknjpn": {
           "type": "heading",
           "settings": {
-            "heading": "Confira nosso conteúdo no Instagram",
+            "heading": "Acompanhe a gente no Instagram!",
             "heading_size": "h1"
           }
         }
@@ -401,6 +401,33 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "rich_text_NHWxw3": {
+      "type": "rich-text",
+      "blocks": {
+        "button_kpKXWm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Seguir @taiobadiscos no Instagram",
+            "button_link": "https:\/\/instagram.com\/taiobadiscos",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_kpKXWm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     },
     "bef47704-19ac-43ea-a3fa-4471acb7ded1": {
@@ -657,6 +684,7 @@
     "image-with-text",
     "rich_text_rhGURb",
     "17075788101be2c20d",
+    "rich_text_NHWxw3",
     "bef47704-19ac-43ea-a3fa-4471acb7ded1",
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
     "featured_collection_JmNfBF",
