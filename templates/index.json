@@ -301,6 +301,136 @@
         "section-width": 160
       }
     },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "af185e6f-857f-41bf-a713-462c440e7336": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "curadoria minuciosa",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A melhor Música Brasileira",
+            "heading_size": "h1"
+          }
+        },
+        "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "48f060b7-07ec-436a-a502-2629f13a3815": {
+          "type": "button",
+          "settings": {
+            "button_label": "Confira os títulos",
+            "button_link": "shopify:\/\/collections\/discos-de-vinil-mais-vendidos",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "af185e6f-857f-41bf-a713-462c440e7336",
+        "heading",
+        "4499fc7d-7470-457a-8da9-8d31e471aeb2",
+        "48f060b7-07ec-436a-a502-2629f13a3815"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
+        "height": "medium",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "background-1",
+        "color_scheme": "accent-2",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_rhGURb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Wknjpn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Confira nosso conteúdo no Instagram",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wknjpn"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 0
+      }
+    },
+    "17075788101be2c20d": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_3P4Tmg": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "margin_top": 20,
+            "margin_bottom": 40,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_3P4Tmg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "bef47704-19ac-43ea-a3fa-4471acb7ded1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Música Brasileira para todos os gostos",
+        "heading_size": "h1",
+        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "discos-de-vinil",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e": {
       "type": "image-with-text",
       "blocks": {
@@ -460,136 +590,6 @@
         "padding_bottom": 36
       }
     },
-    "bef47704-19ac-43ea-a3fa-4471acb7ded1": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Música Brasileira para todos os gostos",
-        "heading_size": "h1",
-        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "discos-de-vinil",
-        "products_to_show": 12,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 36
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "af185e6f-857f-41bf-a713-462c440e7336": {
-          "type": "caption",
-          "disabled": true,
-          "settings": {
-            "caption": "curadoria minuciosa",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "A melhor Música Brasileira",
-            "heading_size": "h1"
-          }
-        },
-        "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "48f060b7-07ec-436a-a502-2629f13a3815": {
-          "type": "button",
-          "settings": {
-            "button_label": "Confira os títulos",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil-mais-vendidos",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "af185e6f-857f-41bf-a713-462c440e7336",
-        "heading",
-        "4499fc7d-7470-457a-8da9-8d31e471aeb2",
-        "48f060b7-07ec-436a-a502-2629f13a3815"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
-        "height": "medium",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "background-1",
-        "color_scheme": "accent-2",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 72,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_rhGURb": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Wknjpn": {
-          "type": "heading",
-          "settings": {
-            "heading": "Confira nosso conteúdo no Instagram",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Wknjpn"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 0
-      }
-    },
-    "17075788101be2c20d": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_3P4Tmg": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "margin_top": 20,
-            "margin_bottom": 40,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_3P4Tmg"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "014d76be-b0fa-4c26-ba8f-acdec03fa31a": {
       "type": "collection-list",
       "blocks": {
@@ -654,14 +654,14 @@
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "ss_testimonials_2_8qD96j",
+    "image-with-text",
+    "rich_text_rhGURb",
+    "17075788101be2c20d",
+    "bef47704-19ac-43ea-a3fa-4471acb7ded1",
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
     "featured_collection_JmNfBF",
     "image-with-text-1",
     "206f9da7-430f-4347-bce1-8b15a0ce03ea",
-    "bef47704-19ac-43ea-a3fa-4471acb7ded1",
-    "image-with-text",
-    "rich_text_rhGURb",
-    "17075788101be2c20d",
     "014d76be-b0fa-4c26-ba8f-acdec03fa31a",
     "348133a0-e988-4d57-92dc-45f3507b241d"
   ]
