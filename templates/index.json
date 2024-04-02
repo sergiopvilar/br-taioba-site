@@ -113,6 +113,34 @@
         "accessibility_info": "Slideshow about our brand."
       }
     },
+    "358cb348-8eb4-406d-8106-7d3f2602dcd0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Novidades",
+        "heading_size": "h1",
+        "description": "<p>Confira o que acabou de chegar por aqui!<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "novidades",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 100
+      }
+    },
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c": {
       "type": "collage",
       "blocks": {
@@ -149,34 +177,6 @@
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "358cb348-8eb4-406d-8106-7d3f2602dcd0": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Novidades",
-        "heading_size": "h1",
-        "description": "<p>Confira o que acabou de chegar por aqui!<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "novidades",
-        "products_to_show": 12,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 100
       }
     },
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d": {
@@ -650,8 +650,8 @@
   },
   "order": [
     "slideshow",
-    "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
+    "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "ss_testimonials_2_8qD96j",
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
