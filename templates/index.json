@@ -280,7 +280,7 @@
         "heading": "O que nossos clientes pensam sobre nós",
         "title_align": "center",
         "text_align": "center",
-        "autoplay_delay": 10.5,
+        "autoplay_delay": 8,
         "autoplay_disable_on_interaction": true,
         "heading_font_size": 30,
         "p_font_size": 18,
