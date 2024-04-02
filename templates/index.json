@@ -182,41 +182,71 @@
     "ss_testimonials_2_8qD96j": {
       "type": "ss-testimonials-2",
       "blocks": {
-        "card_x4PQq8": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p> Add customer reviews and testimonials to showcase your store’s happy customers.  <\/p>",
-            "author": "author",
-            "info": "New Info"
-          }
-        },
         "card_wXqN6B": {
           "type": "card",
           "settings": {
             "icon": "5 stars",
-            "title": "<p> Add customer reviews and testimonials to showcase your store’s happy customers.  <\/p>",
-            "author": "author",
-            "info": "New Info"
+            "title": "<p>Continuem a oferecer-nos bons discos com um bom preço.<\/p>",
+            "author": "",
+            "info": ""
           }
         },
         "card_m893tc": {
           "type": "card",
           "settings": {
             "icon": "5 stars",
-            "title": "<p> Add customer reviews and testimonials to showcase your store’s happy customers.  <\/p>",
-            "author": "author",
-            "info": "New Info"
+            "title": "<p>Tive uma ótima experiência com a loja desde aquisição pelo site ao preparo e envio do pedido. O produto é exatamente como descrito. <br\/>Mantenham a paixão e atenção para com que se propõem e já será incrível. Obrigado. <\/p>",
+            "author": "",
+            "info": ""
+          }
+        },
+        "card_x4PQq8": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p>Parabéns pelo cuidado com nossa música.<\/p>",
+            "author": "",
+            "info": ""
+          }
+        },
+        "card_npChbV": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p>Obrigado pelo ótimo atendimento! Com certeza voltarei a comprar no site.<\/p>",
+            "author": "",
+            "info": ""
+          }
+        },
+        "card_PDNQ9m": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p>Chegou tudo otimo! Muito boa a loja realmente <\/p>",
+            "author": "",
+            "info": ""
+          }
+        },
+        "card_zBaPFx": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p>Vocês são massa!<br\/>Mereço desconto na próxima vez.<\/p>",
+            "author": "",
+            "info": ""
           }
         }
       },
       "block_order": [
-        "card_x4PQq8",
         "card_wXqN6B",
-        "card_m893tc"
+        "card_m893tc",
+        "card_x4PQq8",
+        "card_npChbV",
+        "card_PDNQ9m",
+        "card_zBaPFx"
       ],
       "settings": {
-        "heading": "Testimonials",
+        "heading": "O que nossos clientes pensam sobre nós",
         "title_align": "center",
         "text_align": "center",
         "autoplay_delay": 5,
