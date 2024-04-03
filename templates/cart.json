@@ -10,15 +10,38 @@
     },
     "1712109932697ddb1a": {
       "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1712110933e0ddd66e": {
+      "type": "apps",
       "blocks": {
-        "simply_shipping_protection_simply_widget_TFG3U3": {
-          "type": "shopify:\/\/apps\/simply-shipping-protection\/blocks\/simply-widget\/e9bd463f-26d8-4126-9497-0375dca0f009",
+        "navidium_shipping_protection_shipping_protection_gMiVmP": {
+          "type": "shopify:\/\/apps\/navidium-shipping-protection\/blocks\/shipping_protection\/f134d7db-6260-495c-9b27-9c4372bc2cf3",
           "settings": {
+            "enableWidget": true,
+            "nvdCurrency": "{{ shop.money_format | strip_html }}",
+            "subtotal_item": "subtotal_class_here",
+            "checkoutBtns": "[name='checkout']",
+            "clickTriggers": "button[name='add']",
+            "changeTrigger": "onchange_input_class_here",
+            "cursorControl": ".nvd-mini",
+            "iosDeviceListener": "click",
+            "showConsoleMessage": false,
+            "trackWidget": false,
+            "forceClick": true,
+            "forceCheckout": false,
+            "upsellOff": true,
+            "noProtection": false,
+            "enablejQuery": false,
+            "rawjQuery": false,
+            "customCode": ""
           }
         }
       },
       "block_order": [
-        "simply_shipping_protection_simply_widget_TFG3U3"
+        "navidium_shipping_protection_shipping_protection_gMiVmP"
       ],
       "settings": {
         "include_margins": true
@@ -52,6 +75,7 @@
   "order": [
     "cart-items",
     "1712109932697ddb1a",
+    "1712110933e0ddd66e",
     "cart-footer"
   ]
 }

@@ -172,12 +172,6 @@
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Olá. Em caso de dúvidas, envie uma mensagem. Estamos à disposição para ajudar."
         }
-      },
-      "16843599010748508989": {
-        "type": "shopify:\/\/apps\/simply-shipping-protection\/blocks\/simply-insurance\/e9bd463f-26d8-4126-9497-0375dca0f009",
-        "disabled": false,
-        "settings": {
-        }
       }
     },
     "color_schemes": {
