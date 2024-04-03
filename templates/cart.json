@@ -8,6 +8,22 @@
         "padding_bottom": 36
       }
     },
+    "1712109932697ddb1a": {
+      "type": "apps",
+      "blocks": {
+        "simply_shipping_protection_simply_widget_TFG3U3": {
+          "type": "shopify:\/\/apps\/simply-shipping-protection\/blocks\/simply-widget\/e9bd463f-26d8-4126-9497-0375dca0f009",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "simply_shipping_protection_simply_widget_TFG3U3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -35,6 +51,7 @@
   },
   "order": [
     "cart-items",
+    "1712109932697ddb1a",
     "cart-footer"
   ]
 }
