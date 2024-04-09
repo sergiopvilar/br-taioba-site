@@ -501,7 +501,8 @@
       ".installments-plugin-snippet {font-size: 14px;}",
       "#insta-feed h2 {display: none;}",
       "#promo-taioba {background: #fe924a; color: white; padding: 15px 20px; font-size: 16px; border-radius: 10px; max-width: 80%; text-align: center;}",
-      "#promo-taioba span {font-weight: bold;}"
+      "#promo-taioba span {font-weight: bold;}",
+      "#promo-taioba a {color: white;}"
     ]
   }
 }
