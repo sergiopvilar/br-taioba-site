@@ -6,14 +6,14 @@
         "heading_MpdTLL": {
           "type": "heading",
           "settings": {
-            "heading": "Aumente sua coleção com 50% de desconto!",
+            "heading": "Aumente sua coleção pagando metade!",
             "heading_size": "h0"
           }
         },
         "text_pKHRQg": {
           "type": "text",
           "settings": {
-            "text": "Ao levar dois discos usados ganhe 50% de de desconto em um disco desta página.",
+            "text": "Ao levar dois discos usados ganhe 50% de de desconto em um disco desta página. O desconto é aplicado automaticamente no checkout.",
             "text_style": "body"
           }
         },
