@@ -74,7 +74,7 @@
         "custom_liquid_QnPFUX": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.tags contains 'Garimpo' and product.price < 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Você pode ganhar 50% de desconto neste disco! <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">Clique aqui<\/a> para saber mais.<\/div>\n{% endif %}\n\n{% if product.tags contains 'Garimpo' and product.price >= 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Leve 2 discos usados como este e pague apenas 50% em um disco <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">desta lista<\/a>.<\/div>\n{% endif %}"
+            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% if product.tags contains 'Garimpo' and product.price < 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Você pode ganhar 50% de desconto neste disco! <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">Clique aqui<\/a> para saber mais.<\/div>\n{% endif %}\n\n{% if product.tags contains 'Garimpo' and product.price >= 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Leve 2 discos usados como este e pague apenas 50% em um disco <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">desta lista<\/a>.<\/div>\n{% endif %}\n\n{% endif %}"
           }
         },
         "buy_buttons": {
