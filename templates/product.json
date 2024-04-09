@@ -71,6 +71,12 @@
             "page": ""
           }
         },
+        "custom_liquid_QnPFUX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.tags contains 'Garimpo' %}\n<div id=\"promo-taioba\">Leve 2 discos usados e ganhe 50% de desconto no terceiro disco abaixo de 100 reais.<\/div>\n{% endif %}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -101,19 +107,6 @@
           "settings": {
             "share_label": "Compartilhar"
           }
-        },
-        "custom_liquid_QnPFUX": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": ""
-          }
-        },
-        "popup_wz4HcV": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": "contato"
-          }
         }
       },
       "block_order": [
@@ -127,12 +120,11 @@
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
         "collapsible_tab_YpRLCM",
         "collapsible_tab_bacWeA",
+        "custom_liquid_QnPFUX",
         "buy_buttons",
         "description",
         "complementary_4XtNmH",
-        "share",
-        "custom_liquid_QnPFUX",
-        "popup_wz4HcV"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
