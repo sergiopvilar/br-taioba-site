@@ -27,10 +27,58 @@
         "padding_top": 36,
         "padding_bottom": 60
       }
+    },
+    "image_with_text_Pi9eWp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Pw8nDm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Aumente sua coleção pagando metade",
+            "heading_size": "h1"
+          }
+        },
+        "text_VhfVYL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Leve dois discos usados e pague apenas metade no terceiro.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_W4bytz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Saiba mais",
+            "button_link": "shopify:\/\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pw8nDm",
+        "text_VhfVYL",
+        "button_W4bytz"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0430.original_2183x_ea4a572c-1075-4895-b175-2ba70d5931a2.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "accent-1",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "image_with_text_Pi9eWp"
   ]
 }
