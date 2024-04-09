@@ -3,6 +3,24 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slide_yEfcYw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0430.original_2183x_ea4a572c-1075-4895-b175-2ba70d5931a2.webp",
+            "heading": "Aumente sua coleção pagando metade!",
+            "heading_size": "h1",
+            "subheading": "Leve dois discos usados e pague apenas metade no terceiro.",
+            "button_label": "Saiba mais",
+            "link": "shopify:\/\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 60,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_GNAwQA": {
           "type": "slide",
           "settings": {
@@ -74,33 +92,14 @@
             "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_pcUfDF": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/novos.jpg",
-            "heading": "Discos novos a partir de R$69,90",
-            "heading_size": "h1",
-            "subheading": "Confira já nossas promoções e não perca a chance de aumentar sua coleção pagando menos!",
-            "button_label": "Confira todas Promoções",
-            "link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 50,
-            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
+        "slide_yEfcYw",
         "slide_GNAwQA",
         "slide_JyfY8d",
         "slide_mmrrip",
-        "slide_CcYUK4",
-        "slide_pcUfDF"
+        "slide_CcYUK4"
       ],
       "settings": {
         "layout": "full_bleed",
