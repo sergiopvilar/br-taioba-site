@@ -74,7 +74,7 @@
         "custom_liquid_QnPFUX": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.tags contains 'Garimpo' %}\n<div id=\"promo-taioba\">Leve 2 discos usados e ganhe 50% de desconto no terceiro disco abaixo de 100 reais.<\/div>\n{% endif %}"
+            "custom_liquid": "{% if product.tags contains 'Garimpo' %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Leve 2 discos usados e ganhe 50% de desconto no terceiro disco abaixo de 100 reais.<\/div>\n{% endif %}"
           }
         },
         "buy_buttons": {
