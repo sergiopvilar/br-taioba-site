@@ -101,6 +101,19 @@
           "settings": {
             "share_label": "Compartilhar"
           }
+        },
+        "custom_liquid_QnPFUX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "popup_wz4HcV": {
+          "type": "popup",
+          "settings": {
+            "text": "Pop-up link text",
+            "page": "contato"
+          }
         }
       },
       "block_order": [
@@ -117,7 +130,9 @@
         "buy_buttons",
         "description",
         "complementary_4XtNmH",
-        "share"
+        "share",
+        "custom_liquid_QnPFUX",
+        "popup_wz4HcV"
       ],
       "settings": {
         "enable_sticky_info": true,
