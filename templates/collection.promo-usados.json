@@ -13,7 +13,7 @@
         "text_pKHRQg": {
           "type": "text",
           "settings": {
-            "text": "Ao levar dois discos usados ganhe 50% de de desconto em um disco desta página. O desconto é aplicado automaticamente no checkout.",
+            "text": "Ao levar dois discos usados ganhe 50% de de desconto em um disco desta página. O desconto é aplicado ao disco elegível de menor valor automaticamente no checkout.",
             "text_style": "body"
           }
         },
