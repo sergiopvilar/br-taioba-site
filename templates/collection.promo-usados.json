@@ -51,10 +51,43 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false,
         "color_scheme": "background-1"
+      }
+    },
+    "rich_text_n87L7a": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xJ67a6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Já tem dois discos usados no carrinho?",
+            "heading_size": "h1"
+          }
+        },
+        "caption_h6MWE6": {
+          "type": "caption",
+          "settings": {
+            "caption": "Escolha um destes para pagar apenas metade do preço",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xJ67a6",
+        "caption_h6MWE6"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 0
       }
     },
     "product-grid": {
@@ -81,6 +114,7 @@
   "order": [
     "image_banner_JmUNai",
     "banner",
+    "rich_text_n87L7a",
     "product-grid"
   ]
 }
