@@ -1,5 +1,54 @@
 {
   "sections": {
+    "image_banner_JmUNai": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_MpdTLL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Aumente sua coleção com 50% de desconto!",
+            "heading_size": "h0"
+          }
+        },
+        "text_pKHRQg": {
+          "type": "text",
+          "settings": {
+            "text": "Ao levar dois discos da nossa seção \"Garimpo\", ganhe 50% de de desconto em um disco desta página.",
+            "text_style": "body"
+          }
+        },
+        "buttons_PFVpDN": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MpdTLL",
+        "text_pKHRQg",
+        "buttons_PFVpDN"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0430.original_2183x_ea4a572c-1075-4895-b175-2ba70d5931a2.webp",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -30,6 +79,7 @@
     }
   },
   "order": [
+    "image_banner_JmUNai",
     "banner",
     "product-grid"
   ]
