@@ -65,6 +65,12 @@
             "page": ""
           }
         },
+        "custom_liquid_ELcfiP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% if product.tags contains 'Garimpo' and product.price < 2000 %}\n<div id=\"promo-taioba\">You can get a 50% discount on this record!<br \/><a href=\"https:\/\/taiobarecords.com\/collections\/buy-2-get-1-for-50\" target=\"_blank\">Click here<\/a> to learn more.<\/div>\n{% endif %}\n\n{% if product.tags contains 'Garimpo' and product.price >= 2000 %}\n<div id=\"promo-taioba\">Buy 2 used records like this one<br \/>and get a 50% discount in a <a href=\"https:\/\/taiobarecords.com\/collections\/buy-2-get-1-for-50\" target=\"_blank\">record from this list<\/a>.<\/div>\n{% endif %}\n\n{% endif %}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -107,6 +113,7 @@
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
         "collapsible_tab_Ci83tQ",
         "collapsible_tab_EbWwf8",
+        "custom_liquid_ELcfiP",
         "buy_buttons",
         "description",
         "complementary_N6y9dW",

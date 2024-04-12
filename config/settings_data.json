@@ -481,7 +481,10 @@
       ".BarMessageContainer {color: #317337 !important;}",
       ".BarMessageContainer > .money {color: #fe9148 !important;}",
       ".badge.color-inverse:not(.price__badge-sold-out) {background-color: #317337 !important;}",
-      ".installments-plugin-snippet {font-size: 14px;}"
+      ".installments-plugin-snippet {font-size: 14px;}",
+      "#promo-taioba {background: #fe924a; color: white; padding: 15px 20px; font-size: 16px; border-radius: 10px; max-width: 44rem; text-align: center;}",
+      "#promo-taioba span {font-weight: bold;}",
+      "#promo-taioba a {color: white;}"
     ]
   }
 }
