@@ -99,7 +99,7 @@
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
         "enable_filtering": true,
