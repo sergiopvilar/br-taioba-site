@@ -24,6 +24,7 @@
         "announcement-bar-0",
         "announcement_XJhGbw"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-2",
         "show_line_separator": true,
@@ -40,7 +41,7 @@
         "sections--21803059740989__fb9e02cb-a231-43f4-b606-176aa4bff5e3-announcement-1": {
           "type": "announcement",
           "settings": {
-            "text": "Estamos em recesso de Carnaval, envios serão retomados no dia 20 de Fevereiro.",
+            "text": "Devido a um breve recesso, pedidos serão enviados em 22 de abril.",
             "link": ""
           }
         }
@@ -48,7 +49,6 @@
       "block_order": [
         "sections--21803059740989__fb9e02cb-a231-43f4-b606-176aa4bff5e3-announcement-1"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
