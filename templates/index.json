@@ -41,6 +41,7 @@
         },
         "slide_iq7iAr": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/novos.jpg",
             "heading": "New records starting on $14.90",

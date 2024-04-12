@@ -6,14 +6,14 @@
         "heading_MpdTLL": {
           "type": "heading",
           "settings": {
-            "heading": "Aumente sua coleção pagando metade!",
+            "heading": "Increase your collection paying only 50%!",
             "heading_size": "h0"
           }
         },
         "text_pKHRQg": {
           "type": "text",
           "settings": {
-            "text": "Ao levar dois discos usados, ganhe 50% de desconto em um terceiro disco desta página. O desconto é aplicado automaticamente no checkout ao disco elegível de menor valor no pedido.",
+            "text": "Buy two used records and get 50% discount on a third record on this page. The discount is automatically applied on Checkout to the The discount is automatically applied at checkout to the eligible record of lesser value in your cart.",
             "text_style": "body"
           }
         },
@@ -36,7 +36,7 @@
         "buttons_PFVpDN"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_0430.original_2183x_ea4a572c-1075-4895-b175-2ba70d5931a2.webp",
+        "image": "shopify:\/\/shop_images\/IMG_0430.original_2183x_14c1fe08-1e27-438f-aa3b-f672cf9b0e65.webp",
         "image_overlay_opacity": 40,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -64,14 +64,14 @@
         "heading_xJ67a6": {
           "type": "heading",
           "settings": {
-            "heading": "Já tem dois discos usados no carrinho?",
+            "heading": "Already have two used records in the cart?",
             "heading_size": "h1"
           }
         },
         "caption_h6MWE6": {
           "type": "caption",
           "settings": {
-            "caption": "Escolha um destes para pagar apenas metade do preço",
+            "caption": "Choose one of these to pay only half the price.",
             "text_style": "caption-with-letter-spacing",
             "text_size": "large"
           }
