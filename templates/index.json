@@ -21,6 +21,24 @@
             "text_alignment_mobile": "center"
           }
         },
+        "slide_DgMPTP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Site_header_2.jpg",
+            "heading": "Increase your collection paying only 50%!",
+            "heading_size": "h1",
+            "subheading": "Buy two used records and get 50% discount on the third one.",
+            "button_label": "Learn more",
+            "link": "shopify:\/\/collections\/buy-2-get-1-for-50",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 60,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_74cDwP": {
           "type": "slide",
           "settings": {
@@ -61,6 +79,7 @@
       },
       "block_order": [
         "slide_namRFt",
+        "slide_DgMPTP",
         "slide_74cDwP",
         "slide_iq7iAr"
       ],
