@@ -161,22 +161,24 @@
         "settings": {
         }
       },
-      "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+      "7856480075841494758": {
+        "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/floating-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
         "disabled": false,
         "settings": {
+        }
+      },
+      "15683396631634586217": {
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
           "button_color": "#00752f",
+          "secondary_color": "#FFFFFF",
+          "ternary_color": "#6A6A6A",
           "button_icon": "question_mark",
           "button_text": "need_help",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Olá. Em caso de dúvidas, envie uma mensagem. Estamos à disposição para ajudar."
-        }
-      },
-      "7856480075841494758": {
-        "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/floating-widget\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
-        "disabled": false,
-        "settings": {
         }
       }
     },
