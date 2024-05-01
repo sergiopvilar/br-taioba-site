@@ -107,6 +107,12 @@
           "settings": {
             "share_label": "Compartilhar"
           }
+        },
+        "custom_liquid_BVXq8g": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign mensagem = product.metafields.taioba.destaque.value %}\n\n{% if mensagem %}\n<div id=\"promo-taioba\">{{mensagem}}<\/div>\n{% endif %}\n\n{% endif %}"
+          }
         }
       },
       "block_order": [
@@ -124,7 +130,8 @@
         "buy_buttons",
         "description",
         "complementary_N6y9dW",
-        "share"
+        "share",
+        "custom_liquid_BVXq8g"
       ],
       "settings": {
         "enable_sticky_info": true,
