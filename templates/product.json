@@ -71,6 +71,12 @@
             "custom_liquid": "{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<p style=\"color:#e69148\">Ships within {{ diffDays }} days.<\/p>\n{% endif %}"
           }
         },
+        "custom_liquid_BVXq8g": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign mensagem = product.metafields.taioba.destaque.value %}\n\n{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% if mensagem %}\n<div id=\"promo-taioba\">{{mensagem}}<\/div>\n{% endif %}\n\n{% endif %}"
+          }
+        },
         "custom_liquid_ELcfiP": {
           "type": "custom_liquid",
           "settings": {
@@ -107,12 +113,6 @@
           "settings": {
             "share_label": "Compartilhar"
           }
-        },
-        "custom_liquid_BVXq8g": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign mensagem = product.metafields.taioba.destaque.value %}\n\n{% if mensagem %}\n<div id=\"promo-taioba\">{{mensagem}}<\/div>\n{% endif %}\n\n{% endif %}"
-          }
         }
       },
       "block_order": [
@@ -126,12 +126,12 @@
         "collapsible_tab_Ci83tQ",
         "collapsible_tab_EbWwf8",
         "custom_liquid_39kBQN",
+        "custom_liquid_BVXq8g",
         "custom_liquid_ELcfiP",
         "buy_buttons",
         "description",
         "complementary_N6y9dW",
-        "share",
-        "custom_liquid_BVXq8g"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
