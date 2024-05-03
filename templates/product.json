@@ -77,6 +77,12 @@
             "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% if product.tags contains 'Garimpo' and product.price < 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Você pode ganhar 50% de desconto neste disco! <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">Clique aqui<\/a> para saber mais.<\/div>\n{% endif %}\n\n{% if product.tags contains 'Garimpo' and product.price >= 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Leve 2 discos usados como este e pague apenas 50% em um <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">disco desta lista<\/a>.<\/div>\n{% endif %}\n\n{% endif %}"
           }
         },
+        "custom_liquid_D4BnWR": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<div id=\"promo-taioba\"><span>Pré-venda: <\/span> Seu pedido será enviado em {{ voltaFerias | date: '%d\/%m\/%Y'}}.<\/div>\n{% endif %}\n\n{% endif %}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -107,12 +113,6 @@
           "settings": {
             "share_label": "Compartilhar"
           }
-        },
-        "custom_liquid_D4BnWR": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<div id=\"promo-taioba\"><span>Pré-venda: <\/span> envio dentro de {{ diffDays }} dias.<\/div>\n{% endif %}\n\n{% endif %}"
-          }
         }
       },
       "block_order": [
@@ -127,11 +127,11 @@
         "collapsible_tab_YpRLCM",
         "collapsible_tab_bacWeA",
         "custom_liquid_QnPFUX",
+        "custom_liquid_D4BnWR",
         "buy_buttons",
         "description",
         "complementary_4XtNmH",
-        "share",
-        "custom_liquid_D4BnWR"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
