@@ -111,7 +111,7 @@
         "custom_liquid_D4BnWR": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<div class=\"promo-taioba\"><span>Pré-venda: <\/span> envio dentro de {{ diffDays }} dias.<\/div>\n{% endif %}\n\n{% endif %}"
+            "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<div id=\"promo-taioba\"><span>Pré-venda: <\/span> envio dentro de {{ diffDays }} dias.<\/div>\n{% endif %}\n\n{% endif %}"
           }
         }
       },
