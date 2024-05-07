@@ -88,7 +88,7 @@
                 {% if card_collection == blank %}
                   role="link" aria-disabled="true"
                 {% else %}
-                  href="{{ card_collection.url }}"
+                  href="{{ card_collection.url }}?filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling"
                 {% endif %}
                 class="full-unstyled-link"
               >
@@ -120,7 +120,7 @@
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
               {% else %}
-                href="{{ card_collection.url }}"
+                href="{{ card_collection.url }}?filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling"
               {% endif %}
               class="full-unstyled-link"
             >
