@@ -136,7 +136,7 @@
             "collection": "eita-forro-danado-de-bom"
           }
         },
-        "b0aced97-7087-45d3-ba43-120e438d2ce5": {
+        "collection_XcD7wt": {
           "type": "collection",
           "settings": {
             "collection": "mpb"
@@ -146,7 +146,7 @@
       "block_order": [
         "collection_NFtfpc",
         "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1",
-        "b0aced97-7087-45d3-ba43-120e438d2ce5"
+        "collection_XcD7wt"
       ],
       "settings": {
         "heading": "",
