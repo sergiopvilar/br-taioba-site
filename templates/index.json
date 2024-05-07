@@ -215,6 +215,24 @@
             "author": "",
             "info": ""
           }
+        },
+        "card_tmDcPw": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p>Muito satisfeito com a compra.<\/p>",
+            "author": "",
+            "info": ""
+          }
+        },
+        "card_6Yd6rw": {
+          "type": "card",
+          "settings": {
+            "icon": "5 stars",
+            "title": "<p>Adorei a embalagem.<\/p>",
+            "author": "",
+            "info": ""
+          }
         }
       },
       "block_order": [
@@ -223,7 +241,9 @@
         "card_x4PQq8",
         "card_npChbV",
         "card_PDNQ9m",
-        "card_zBaPFx"
+        "card_zBaPFx",
+        "card_tmDcPw",
+        "card_6Yd6rw"
       ],
       "custom_css": [
         "h2 {color: rgb(89, 107, 80) !important; font-family: Prompt, sans-serif !important; font-size: 48px !important;}"
