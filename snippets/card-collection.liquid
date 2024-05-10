@@ -88,7 +88,11 @@
                 {% if card_collection == blank %}
                   role="link" aria-disabled="true"
                 {% else %}
-                  href="{{ card_collection.url }}?filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling"
+                  {% unless card_collection.url contains "recomenda" %}
+                    href="{{ card_collection.url }}?filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling"
+                  {% else %}
+                    href="{{ card_collection.url }}"
+                  {% endunless %}
                 {% endif %}
                 class="full-unstyled-link"
               >
@@ -120,7 +124,11 @@
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
               {% else %}
-                href="{{ card_collection.url }}?filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling"
+                {% unless card_collection.url contains "recomenda" %}
+                  href="{{ card_collection.url }}?filter.v.availability=1&filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling"
+                {% else %}
+                  href="{{ card_collection.url }}"
+                {% endunless %}
               {% endif %}
               class="full-unstyled-link"
             >
