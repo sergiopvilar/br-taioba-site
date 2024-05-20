@@ -85,6 +85,7 @@
         },
         "frete_no_produto_empreender_shipping_calculator_7KfM6L": {
           "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/shipping_calculator\/31419da2-d36b-478b-b343-989a0e842a1c",
+          "disabled": true,
           "settings": {
             "shipping_calculator": true,
             "background_color_container": "transparent",
@@ -104,6 +105,7 @@
         },
         "frete_no_produto_empreender_estimate_shipping_iM984U": {
           "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/estimate_shipping\/31419da2-d36b-478b-b343-989a0e842a1c",
+          "disabled": true,
           "settings": {
             "estimate_shipping": true,
             "type_date": "days",
