@@ -87,9 +87,9 @@
           "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/shipping_calculator\/31419da2-d36b-478b-b343-989a0e842a1c",
           "settings": {
             "shipping_calculator": true,
-            "background_color_container": "transparent",
-            "btnshipping": "#ff9240",
-            "color_text": "#ffffff",
+            "background_color_container": "rgba(0,0,0,0)",
+            "btnshipping": "#c5deb7",
+            "color_text": "#596b50",
             "padding_external": 0,
             "text": "Calcular Frete",
             "pickup": ""
