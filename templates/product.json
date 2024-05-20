@@ -83,11 +83,35 @@
             "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<div id=\"promo-taioba\"><span>Pré-venda: <\/span> Seu pedido será enviado em {{ voltaFerias | date: '%d\/%m\/%Y'}}.<\/div>\n{% endif %}\n\n{% endif %}"
           }
         },
+        "frete_no_produto_empreender_shipping_calculator_7KfM6L": {
+          "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/shipping_calculator\/31419da2-d36b-478b-b343-989a0e842a1c",
+          "settings": {
+            "shipping_calculator": true,
+            "background_color_container": "transparent",
+            "btnshipping": "#ff9240",
+            "color_text": "#ffffff",
+            "padding_external": 16,
+            "text": "Calcular Frete",
+            "pickup": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "frete_no_produto_empreender_estimate_shipping_iM984U": {
+          "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/estimate_shipping\/31419da2-d36b-478b-b343-989a0e842a1c",
+          "settings": {
+            "estimate_shipping": true,
+            "type_date": "days",
+            "type_days": "úteis",
+            "days": 10,
+            "days_until": 15,
+            "estimate_text": "<p>Estimativa de entrega entre os dias (DAYS) e (DAYS_UNTIL)<\/p>",
+            "align_text": "center"
           }
         },
         "description": {
@@ -128,7 +152,9 @@
         "collapsible_tab_bacWeA",
         "custom_liquid_QnPFUX",
         "custom_liquid_D4BnWR",
+        "frete_no_produto_empreender_shipping_calculator_7KfM6L",
         "buy_buttons",
+        "frete_no_produto_empreender_estimate_shipping_iM984U",
         "description",
         "complementary_4XtNmH",
         "share"
