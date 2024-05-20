@@ -517,7 +517,8 @@
       "#promo-taioba {background: #fe924a; color: white; padding: 15px 20px; font-size: 16px; border-radius: 10px; max-width: 44rem; text-align: center;}",
       "#promo-taioba span {font-weight: bold;}",
       "#promo-taioba a {color: white;}",
-      ".calculoFrete {max-width: 44rem; padding: 30px 0; box-shadow: none !important; outline: none !important;}"
+      ".calculoFrete:focus-visible {box-shadow: none !important; outline: none !important;}",
+      ".calculoFrete {max-width: 44rem; padding: 30px 0;}"
     ]
   }
 }
