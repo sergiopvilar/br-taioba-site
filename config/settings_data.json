@@ -516,7 +516,8 @@
       "#insta-feed h2 {display: none;}",
       "#promo-taioba {background: #fe924a; color: white; padding: 15px 20px; font-size: 16px; border-radius: 10px; max-width: 44rem; text-align: center;}",
       "#promo-taioba span {font-weight: bold;}",
-      "#promo-taioba a {color: white;}"
+      "#promo-taioba a {color: white;}",
+      ".calculoFrete {max-width: 44rem; padding: 30px 0;}"
     ]
   }
 }
