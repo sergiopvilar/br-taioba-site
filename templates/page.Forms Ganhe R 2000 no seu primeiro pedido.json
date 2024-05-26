@@ -14,14 +14,14 @@
         "heading_mrwXiB": {
           "type": "heading",
           "settings": {
-            "heading": "Ganhe R$ 20,00 em seu primeiro pedido",
+            "heading": "Achou o frete caro?",
             "heading_size": "h1"
           }
         },
         "text_7qeQxE": {
           "type": "text",
           "settings": {
-            "text": "<p>Preencha seus dados abaixo para receber seu cupom de desconto.<\/p>"
+            "text": "<p>Preencha seus dados abaixo para receber seu cupom de <strong>desconto de R$ 20,00<\/strong> em sua primeira compra e pague menos no frete!<\/p>"
           }
         }
       },
