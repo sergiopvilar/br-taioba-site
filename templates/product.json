@@ -98,7 +98,7 @@
         "custom_liquid_gFFAkg": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"padding-top:0\" class=\"content-taioba\">\nQuer pagar menos no frete? <br \/><a href=\"https:\/\/taiobadiscos.com.br\/pages\/ganhe-20-reais-no-seu-primeiro-pedido\" target\"_blank\">Clique aqui<\/a> e ganhe R$ 20,00 de desconto!\n<\/div>"
+            "custom_liquid": "<div style=\"padding-top:0\" class=\"content-taioba\">\nQuer pagar menos no frete? <br \/><a href=\"https:\/\/taiobadiscos.com.br\/pages\/ganhe-20-reais-no-seu-primeiro-pedido\" target=\"_blank\">Clique aqui<\/a> e ganhe R$ 20,00 de desconto!\n<\/div>"
           }
         },
         "buy_buttons": {
