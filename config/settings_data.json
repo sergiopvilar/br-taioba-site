@@ -514,12 +514,14 @@
       ".badge.color-inverse:not(.price__badge-sold-out) {background-color: #317337 !important;}",
       ".installments-plugin-snippet {font-size: 14px;}",
       "#insta-feed h2 {display: none;}",
+      ".content-taioba {max-width: 44rem; padding: 10px 0; font-size: 14px;}",
+      ".content-taioba a {color: rgb(49, 115, 55);}",
       "#promo-taioba {background: #fe924a; color: white; padding: 15px 20px; font-size: 16px; border-radius: 10px; max-width: 44rem; text-align: center;}",
       "#promo-taioba span {font-weight: bold;}",
       "#promo-taioba a {color: white;}",
       ".calculoFrete:focus-visible {box-shadow: none !important; outline: none !important;}",
       ".calculoFrete {max-width: 44rem; padding: 30px 0;}",
-      "*:focus-visible {outline: none!important; box-shadow: none!important;}"
+      "*:focus-visible {outline: none !important; box-shadow: none !important;}"
     ]
   }
 }
