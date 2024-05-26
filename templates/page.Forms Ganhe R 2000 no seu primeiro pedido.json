@@ -1,12 +1,61 @@
 {
   "sections": {
+    "84669063-935b-46ac-84ee-823e7761f0eb": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_QkdPcR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mrwXiB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ganhe R$ 20,00 em seu primeiro pedido",
+            "heading_size": "h1"
+          }
+        },
+        "text_7qeQxE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Preencha seus dados abaixo para receber seu cupom de desconto.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mrwXiB",
+        "text_7qeQxE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "forms": {
       "type": "apps",
       "blocks": {
         "c2c4f67b-abf2-4161-b3ff-2c19d061e904": {
           "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "form_id": "115399"
+            "form_id": "115399",
+            "text_color": "#202020",
+            "button_background_color": "#317337",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 64,
+            "padding_right": 0,
+            "padding_left": 0
           }
         }
       },
@@ -14,16 +63,13 @@
         "c2c4f67b-abf2-4161-b3ff-2c19d061e904"
       ],
       "settings": {
-      }
-    },
-    "84669063-935b-46ac-84ee-823e7761f0eb": {
-      "type": "main-page",
-      "settings": {
+        "include_margins": true
       }
     }
   },
   "order": [
     "84669063-935b-46ac-84ee-823e7761f0eb",
+    "rich_text_QkdPcR",
     "forms"
   ]
 }
