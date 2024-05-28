@@ -49,6 +49,7 @@
         },
         "collapsible_tab_Ci83tQ": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Release Information",
             "icon": "clipboard",
@@ -58,6 +59,7 @@
         },
         "collapsible_tab_EbWwf8": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Record State and Grading",
             "icon": "box",
@@ -67,20 +69,28 @@
         },
         "custom_liquid_39kBQN": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<p style=\"color:#e69148\">Ships within {{ diffDays }} days.<\/p>\n{% endif %}\n\n{% endif %}"
           }
         },
         "custom_liquid_BVXq8g": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% assign mensagem = product.metafields.taioba.destaque.value %}\n\n{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% if mensagem %}\n<div id=\"promo-taioba\">{{mensagem}}<\/div>\n{% endif %}\n\n{% endif %}"
           }
         },
         "custom_liquid_ELcfiP": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% if product.tags contains 'Garimpo' and product.price < 2000 %}\n<div id=\"promo-taioba\">You can get a 50% discount on this record!<br \/><a href=\"https:\/\/taiobarecords.com\/collections\/buy-2-get-1-for-50\" target=\"_blank\">Click here<\/a> to learn more.<\/div>\n{% endif %}\n\n{% if product.tags contains 'Garimpo' and product.price >= 2000 %}\n<div id=\"promo-taioba\">Buy 2 used records like this one<br \/>and get a 50% discount in a <a href=\"https:\/\/taiobarecords.com\/collections\/buy-2-get-1-for-50\" target=\"_blank\">record from this list<\/a>.<\/div>\n{% endif %}\n\n{% endif %}"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
           }
         },
         "buy_buttons": {
@@ -88,11 +98,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "complementary_N6y9dW": {
@@ -117,10 +122,10 @@
         "subscriptions_app_block_EXQg6a": {
           "type": "shopify:\/\/apps\/subscriptions\/blocks\/app-block\/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
-            "color_text_title": "#6D7175",
-            "color_text_body": "#6D7175",
-            "dividers_color": "#8F8D8D",
-            "bacgkround_color": "#FFFFFF",
+            "color_text_title": "#6d7175",
+            "color_text_body": "#6d7175",
+            "dividers_color": "#8f8d8d",
+            "bacgkround_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
             "supporting_text_title": "Purchase options",
@@ -142,8 +147,8 @@
         "custom_liquid_39kBQN",
         "custom_liquid_BVXq8g",
         "custom_liquid_ELcfiP",
-        "buy_buttons",
         "description",
+        "buy_buttons",
         "complementary_N6y9dW",
         "share",
         "subscriptions_app_block_EXQg6a"
