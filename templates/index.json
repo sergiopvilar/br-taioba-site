@@ -159,6 +159,78 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_rhGURb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Wknjpn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Acompanhe a gente no Instagram!",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wknjpn"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 0
+      }
+    },
+    "17075788101be2c20d": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_3P4Tmg": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "margin_top": 20,
+            "margin_bottom": 40,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_3P4Tmg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_pY6FVW": {
+      "type": "rich-text",
+      "blocks": {
+        "button_LJGkt7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Seguir @taiobadiscos no Instagram",
+            "button_link": "https:\/\/instagram.com\/taiobadiscos",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_LJGkt7"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
     "ss_testimonials_2_8qD96j": {
       "type": "ss-testimonials-2",
       "blocks": {
@@ -356,51 +428,6 @@
         "swipe_on_mobile": false,
         "padding_top": 72,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_rhGURb": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Wknjpn": {
-          "type": "heading",
-          "settings": {
-            "heading": "Acompanhe a gente no Instagram!",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Wknjpn"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 0
-      }
-    },
-    "17075788101be2c20d": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_3P4Tmg": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "margin_top": 20,
-            "margin_bottom": 40,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_3P4Tmg"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "rich_text_NHWxw3": {
@@ -715,11 +742,12 @@
     "slideshow",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
+    "rich_text_rhGURb",
+    "17075788101be2c20d",
+    "rich_text_pY6FVW",
     "ss_testimonials_2_8qD96j",
     "image-with-text",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
-    "rich_text_rhGURb",
-    "17075788101be2c20d",
     "rich_text_NHWxw3",
     "image-with-text-1",
     "206f9da7-430f-4347-bce1-8b15a0ce03ea",
