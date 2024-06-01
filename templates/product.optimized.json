@@ -26,6 +26,24 @@
             "picker_type": "button"
           }
         },
+        "collapsible_tab_zkUxnd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Condição e Estado de Conservação",
+            "icon": "box",
+            "content": "<ul><li><strong>Condição:  <\/strong>{{ product.metafields.vinyl.state.value }}<\/li><li><strong>Estado da Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Estado do Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>O que significa o estado da capa e do disco? <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">Veja aqui<\/a>.<\/h6>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_JyCkJH": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Informações sobre o disco",
+            "icon": "clipboard",
+            "content": "<p>{{ product.metafields.vinyl.release_info | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
         "4aa4f1cd-6d52-45f3-a4b8-c01c87f0cb29": {
           "type": "custom_liquid",
           "settings": {
@@ -56,28 +74,23 @@
           "settings": {
           }
         },
+        "complementary_A7YTii": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Este disco combina com:",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Compartilhar"
-          }
-        },
-        "collapsible_tab_zkUxnd": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Condição e Estado de Conservação",
-            "icon": "box",
-            "content": "<ul><li><strong>Condição:  <\/strong>{{ product.metafields.vinyl.state.value }}<\/li><li><strong>Estado da Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Estado do Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>O que significa o estado da capa e do disco? <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">Veja aqui<\/a>.<\/h6>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_JyCkJH": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Informações sobre o disco",
-            "icon": "clipboard",
-            "content": "<p>{{ product.metafields.vinyl.release_info | metafield_tag }}<\/p>",
-            "page": ""
           }
         }
       },
@@ -86,13 +99,14 @@
         "title",
         "price",
         "variant_picker",
+        "collapsible_tab_zkUxnd",
+        "collapsible_tab_JyCkJH",
         "4aa4f1cd-6d52-45f3-a4b8-c01c87f0cb29",
         "frete_no_produto_empreender_shipping_calculator_qAFrBa",
         "buy_buttons",
         "description",
-        "share",
-        "collapsible_tab_zkUxnd",
-        "collapsible_tab_JyCkJH"
+        "complementary_A7YTii",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
