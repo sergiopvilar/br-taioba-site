@@ -51,11 +51,19 @@
             "heading": "Institucional",
             "menu": "footer"
           }
+        },
+        "text_4fkCjL": {
+          "type": "text",
+          "settings": {
+            "heading": "Como nos encontrar",
+            "subtext": "<h5>Av. José Jardim, 180, Sala 03<br\/>Ipês, João Pessoa, Paraíba<br\/><br\/>(83) 98123-8642<\/h5>"
+          }
         }
       },
       "block_order": [
         "fb34fc51-b7d7-4367-b26d-fb60d0767441",
-        "link_list_hYPATp"
+        "link_list_hYPATp",
+        "text_4fkCjL"
       ],
       "settings": {
         "color_scheme": "scheme-381e901e-9931-4e70-9888-e0fbf8fcabd3",
