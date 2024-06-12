@@ -159,6 +159,80 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_FGwMD6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YbwVQ6": {
+          "type": "heading",
+          "settings": {
+            "heading": "A mais nova Loja de Discos de João Pessoa",
+            "heading_size": "h1"
+          }
+        },
+        "text_NPXfEg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A partir de 06 de julho de 2024, João Pessoa recebe sua mais nova Loja de Discos de Vinil, a Taioba Discos!<br\/><br\/>Estamos muito animados em compartilhar essa novidade com você! Fique de olho em nossas redes sociais e faça-nos uma visita.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_HXCcm3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Siga @taiobadiscos no Instagram",
+            "button_link": "https:\/\/instagram.com\/taiobadiscos",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YbwVQ6",
+        "text_NPXfEg",
+        "button_HXCcm3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GIRLS74WIAAHnnb_1.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "accent-1",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "ss_map_m4F33D": {
+      "type": "ss-map",
+      "settings": {
+        "heading": "Onde nos encontrar",
+        "address": "<p>Av. José Jardim, 180<br\/>Ipês, João Pessoa, Brasil<\/p><p>Quarta a Sexta das 14:00 às 19:00<br\/>Sábado das 9:00 às 17:00<\/p>",
+        "map_address": "Av. José Jardim, 180 - Sala 03 - Bairro dos Ipês, João Pessoa - PB, 58028-160",
+        "google_map_api_key": "AIzaSyC8dswCvS81bU2FDtb3FFC9xGPQ3LNFa80",
+        "show_get_directions_button": false,
+        "lazy_loading": true,
+        "heading_size": 24,
+        "address_size": 18,
+        "button_size": 12,
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "card_background_color": "#ffffff",
+        "btn_text_color": "#ffffff",
+        "btn_background_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_x": 0,
+        "padding_x_desktop": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "full_width": true,
+        "section_width": 120
+      }
+    },
     "rich_text_rhGURb": {
       "type": "rich-text",
       "blocks": {
@@ -709,77 +783,14 @@
         "padding_top": 72,
         "padding_bottom": 88
       }
-    },
-    "image_with_text_FGwMD6": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_YbwVQ6": {
-          "type": "heading",
-          "settings": {
-            "heading": "A mais nova Loja de Discos de João Pessoa",
-            "heading_size": "h1"
-          }
-        },
-        "text_NPXfEg": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A partir de 06 de julho de 2024, João Pessoa recebe sua mais nova Loja de Discos de Vinil, a Taioba Discos!<br\/><br\/>Estamos muito animados em compartilhar essa novidade com você! Fique de olho em nossas redes sociais e faça-nos uma visita.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_YbwVQ6",
-        "text_NPXfEg"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/GIRLS74WIAAHnnb_1.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "accent-1",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
-    },
-    "ss_map_m4F33D": {
-      "type": "ss-map",
-      "settings": {
-        "heading": "Onde nos encontrar",
-        "address": "<p>Av. José Jardim, 180<br\/>Ipês, João Pessoa, Brasil<\/p><p>Quarta a Sexta das 14:00 às 19:00<br\/>Sábado das 9:00 às 17:00<\/p>",
-        "map_address": "Av. José Jardim, 180 - Sala 03 - Bairro dos Ipês, João Pessoa - PB, 58028-160",
-        "google_map_api_key": "AIzaSyC8dswCvS81bU2FDtb3FFC9xGPQ3LNFa80",
-        "show_get_directions_button": false,
-        "lazy_loading": true,
-        "heading_size": 24,
-        "address_size": 18,
-        "button_size": 12,
-        "background_color": "#ffffff",
-        "text_color": "#000000",
-        "card_background_color": "#ffffff",
-        "btn_text_color": "#ffffff",
-        "btn_background_color": "#000000",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_x": 0,
-        "padding_x_desktop": 0,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "full_width": true,
-        "section_width": 120
-      }
     }
   },
   "order": [
     "slideshow",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
     "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
+    "image_with_text_FGwMD6",
+    "ss_map_m4F33D",
     "rich_text_rhGURb",
     "17075788101be2c20d",
     "rich_text_pY6FVW",
@@ -794,8 +805,6 @@
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
     "featured_collection_JmNfBF",
     "rich_text_HWQGa3",
-    "348133a0-e988-4d57-92dc-45f3507b241d",
-    "image_with_text_FGwMD6",
-    "ss_map_m4F33D"
+    "348133a0-e988-4d57-92dc-45f3507b241d"
   ]
 }
