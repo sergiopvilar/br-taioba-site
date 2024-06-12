@@ -40,10 +40,10 @@
       "type": "ss-map",
       "settings": {
         "heading": "Onde nos encontrar",
-        "address": "<p> Havnegade 12<br\/> Copenhagen, Denmark <\/p><p>  Mon - Thur, 8:30am - 5:30pm <br\/>  Fri-Sat, 8:30am - 11:30pm<br\/> Sunday, 8:30am - 4:30pm  <\/p>",
+        "address": "<p>Av. José Jardim, 180<br\/>Ipês, João Pessoa, Brasil<\/p><p>Quarta a Sexta das 14:00 às 19:00<br\/>Sábado das 9:00 às 17:00<\/p>",
         "map_address": "Avenida José Jardim, 180, João Pessoa, Brasil",
         "google_map_api_key": "AIzaSyC8dswCvS81bU2FDtb3FFC9xGPQ3LNFa80",
-        "show_get_directions_button": true,
+        "show_get_directions_button": false,
         "lazy_loading": true,
         "heading_size": 24,
         "address_size": 18,
