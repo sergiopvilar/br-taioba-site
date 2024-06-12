@@ -710,6 +710,44 @@
         "padding_bottom": 88
       }
     },
+    "image_with_text_FGwMD6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YbwVQ6": {
+          "type": "heading",
+          "settings": {
+            "heading": "A mais nova Loja de Discos de João Pessoa",
+            "heading_size": "h1"
+          }
+        },
+        "text_NPXfEg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A partir de 06 de julho de 2024, João Pessoa recebe sua mais nova Loja de Discos de Vinil, a Taioba Discos!<br\/><br\/>Estamos muito animados em compartilhar essa novidade com você! Fique de olho em nossas redes sociais e faça-nos uma visita.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YbwVQ6",
+        "text_NPXfEg"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GIRLS74WIAAHnnb_1.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "accent-1",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "ss_map_m4F33D": {
       "type": "ss-map",
       "settings": {
@@ -757,6 +795,7 @@
     "featured_collection_JmNfBF",
     "rich_text_HWQGa3",
     "348133a0-e988-4d57-92dc-45f3507b241d",
+    "image_with_text_FGwMD6",
     "ss_map_m4F33D"
   ]
 }
