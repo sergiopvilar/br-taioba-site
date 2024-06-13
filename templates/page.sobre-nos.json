@@ -2,9 +2,20 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "page_nnTUaW": {
+      "type": "page",
+      "settings": {
+        "page": "sobre-nos",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_FfXJKn": {
@@ -186,6 +197,7 @@
   },
   "order": [
     "main",
+    "page_nnTUaW",
     "image_with_text_FfXJKn",
     "ss_map_jVNA8U",
     "collapsible_content_FYHNCa",
