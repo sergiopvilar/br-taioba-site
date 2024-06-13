@@ -98,7 +98,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Na Internet",
-            "icon": "none",
+            "icon": "plant",
             "row_content": "",
             "page": "iniciativas-na-internet"
           }
@@ -107,7 +107,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "No Mundo Real",
-            "icon": "none",
+            "icon": "map_pin",
             "row_content": "",
             "page": "iniciativas-no-mundo-real"
           }
