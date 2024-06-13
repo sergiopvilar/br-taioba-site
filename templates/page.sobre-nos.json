@@ -6,9 +6,133 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collapsible_content_FYHNCa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_cJEqqR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Na Internet",
+            "icon": "none",
+            "row_content": "<h2>Taioba Discos<\/h2><p>Loja online de discos de vinil que se destaca na curadoria de qualidade para entregar as melhores opções de discos de vinil de música brasileira.<\/p><ul><li><a href=\"https:\/\/taiobadiscos.com.br\/\" target=\"_blank\">https:\/\/taiobadiscos.com.br<\/a><\/li><\/ul><h3><\/h3><h2>Taioba Records<\/h2><p>Loja online voltada para o público fora do Brasil. Possui todo o catálogo da Taioba Discos traduzido para o Inglês, Espanhol e Japonês.<\/p><ul><li><a href=\"https:\/\/taiobarecords.com\/\" target=\"_blank\">https:\/\/taiobarecords.com<\/a><\/li><\/ul><h2><\/h2><h2>Sebo do Vinil<\/h2><p>Loja online exclusiva para discos de vinil usados, com melhores condições de frete e descontos.<\/p><ul><li><a href=\"https:\/\/sebodovinil.com.br\/\" target=\"_blank\">https:\/\/sebodovinil.com.br<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CHy4gA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_UAQ3tc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_cHn8qm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_cJEqqR",
+        "collapsible_row_CHy4gA",
+        "collapsible_row_UAQ3tc",
+        "collapsible_row_cHn8qm"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Iniciativas",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_VF4LDQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_nc7Wg7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Jornal da Paraíba",
+            "icon": "chat_bubble",
+            "row_content": "<ul><li><a href=\"https:\/\/jornaldaparaiba.com.br\/guia-qualaboa\/dia-do-disco-selo-independente-resgata-trabalhos-da-musica-paraibana-em-vinil\/\" target=\"_blank\">Selo independente resgata trabalhos da música paraibana em vinil<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HxptDD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "F5 Online",
+            "icon": "chat_bubble",
+            "row_content": "<ul><li><a href=\"https:\/\/f5online.com.br\/dia-do-disco-empreendedor-leva-musica-paraibana-em-vinil-para-alem-das-fronteiras-do-brasil\/\" target=\"_blank\">Empreendedor leva música paraibana em vinil para além das fronteiras do Brasil<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mfqw6g": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Espaço PB",
+            "icon": "chat_bubble",
+            "row_content": "<ul><li><a href=\"https:\/\/espacopb.com.br\/v\/dia-do-disco-musica-paraibana-e-levada-para-alem-das-fronteiras-do-brasil\" target=\"_blank\">Música paraibana é levada para além das fronteiras do Brasil<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UNg99T": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Blog do Clubinho",
+            "icon": "chat_bubble",
+            "row_content": "<ul><li><a href=\"https:\/\/blogdoclubinho.com\/2024\/04\/20\/dia-do-disco-taioba-discos-leva-musica-paraibana-para-alem-das-fronteiras-do-brasil\/\" target=\"_blank\">Taioba Discos leva música paraibana para além das fronteiras do Brasil<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_nc7Wg7",
+        "collapsible_row_HxptDD",
+        "collapsible_row_mfqw6g",
+        "collapsible_row_UNg99T"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Na Mídia",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_content_FYHNCa",
+    "collapsible_content_VF4LDQ"
   ]
 }
