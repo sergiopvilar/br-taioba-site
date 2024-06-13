@@ -122,44 +122,6 @@
         "padding_bottom": 100
       }
     },
-    "54f4838c-88dd-4852-9cc3-ff2e4437f13c": {
-      "type": "collage",
-      "blocks": {
-        "collection_NFtfpc": {
-          "type": "collection",
-          "settings": {
-            "collection": "sergio-recomenda-15-discos-de-sua-colecao"
-          }
-        },
-        "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "eita-forro-danado-de-bom"
-          }
-        },
-        "collection_XcD7wt": {
-          "type": "collection",
-          "settings": {
-            "collection": "mpb"
-          }
-        }
-      },
-      "block_order": [
-        "collection_NFtfpc",
-        "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1",
-        "collection_XcD7wt"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "desktop_layout": "right",
-        "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_FGwMD6": {
       "type": "image-with-text",
       "blocks": {
@@ -205,6 +167,44 @@
         "mobile_content_alignment": "left",
         "padding_top": 72,
         "padding_bottom": 72
+      }
+    },
+    "54f4838c-88dd-4852-9cc3-ff2e4437f13c": {
+      "type": "collage",
+      "blocks": {
+        "collection_NFtfpc": {
+          "type": "collection",
+          "settings": {
+            "collection": "sergio-recomenda-15-discos-de-sua-colecao"
+          }
+        },
+        "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "eita-forro-danado-de-bom"
+          }
+        },
+        "collection_XcD7wt": {
+          "type": "collection",
+          "settings": {
+            "collection": "mpb"
+          }
+        }
+      },
+      "block_order": [
+        "collection_NFtfpc",
+        "template--21803093328189__54f4838c-88dd-4852-9cc3-ff2e4437f13c-collection-1",
+        "collection_XcD7wt"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 72,
+        "padding_bottom": 36
       }
     },
     "rich_text_rhGURb": {
@@ -762,8 +762,8 @@
   "order": [
     "slideshow",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
-    "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
     "image_with_text_FGwMD6",
+    "54f4838c-88dd-4852-9cc3-ff2e4437f13c",
     "rich_text_rhGURb",
     "17075788101be2c20d",
     "rich_text_pY6FVW",
