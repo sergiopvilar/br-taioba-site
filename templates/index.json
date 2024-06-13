@@ -23,6 +23,7 @@
         },
         "slide_GNAwQA": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Site_header_1.jpg",
             "heading": "Caetano Veloso",
