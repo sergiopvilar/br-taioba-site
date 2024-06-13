@@ -25,33 +25,13 @@
             "heading": "No Mundo Real",
             "icon": "none",
             "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_UAQ3tc": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_cHn8qm": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
+            "page": "iniciativas-no-mundo-real"
           }
         }
       },
       "block_order": [
         "collapsible_row_cJEqqR",
-        "collapsible_row_CHy4gA",
-        "collapsible_row_UAQ3tc",
-        "collapsible_row_cHn8qm"
+        "collapsible_row_CHy4gA"
       ],
       "settings": {
         "caption": "",
