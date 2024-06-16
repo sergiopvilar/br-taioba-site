@@ -117,7 +117,7 @@
     "currency_code_enabled": false,
     "cart_type": "notification",
     "show_vendor": true,
-    "show_cart_note": false,
+    "show_cart_note": true,
     "cart_drawer_collection": "",
     "cart_color_scheme": "background-1",
     "checkout_logo_image": "shopify:\/\/shop_images\/taiobadeitada.png",
