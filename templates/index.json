@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "slideshow": {
@@ -154,7 +163,7 @@
         "button_HXCcm3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/GIRLS74WIAAHnnb_1.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_4831_ae92bb70-490e-4f82-b466-90fb4d2fa2c6.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
