@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -39,7 +48,7 @@
         "button_tWgDCr"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/GIRLS74WIAAHnnb_1.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_4831_ae92bb70-490e-4f82-b466-90fb4d2fa2c6.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -98,7 +107,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Na Internet",
-            "icon": "plant",
+            "icon": "leaf",
             "row_content": "",
             "page": "iniciativas-na-internet"
           }
@@ -135,6 +144,15 @@
     "collapsible_content_VF4LDQ": {
       "type": "collapsible-content",
       "blocks": {
+        "collapsible_row_j3QVLV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Parlamento PB",
+            "icon": "chat_bubble",
+            "row_content": "<ul><li><a href=\"https:\/\/parlamentopb.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\" target=\"_blank\" title=\"https:\/\/parlamentopb.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\">Taioba Discos inaugura primeira loja física em JP com Soft Opening exclusivo<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
         "collapsible_row_nc7Wg7": {
           "type": "collapsible_row",
           "settings": {
@@ -173,6 +191,7 @@
         }
       },
       "block_order": [
+        "collapsible_row_j3QVLV",
         "collapsible_row_nc7Wg7",
         "collapsible_row_HxptDD",
         "collapsible_row_mfqw6g",
