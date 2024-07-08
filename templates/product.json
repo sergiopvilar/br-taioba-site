@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -40,10 +49,9 @@
         },
         "1bf7cb1b-7064-44f4-aa98-25a7b65eb559": {
           "type": "inventory",
-          "disabled": true,
           "settings": {
-            "text_style": "body",
-            "inventory_threshold": 4,
+            "text_style": "uppercase",
+            "inventory_threshold": 1,
             "show_inventory_quantity": false
           }
         },
