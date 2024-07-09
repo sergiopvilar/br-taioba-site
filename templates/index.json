@@ -15,7 +15,6 @@
         "slide_yEfcYw": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Site_header_2.jpg",
             "heading": "Aumente sua coleção pagando metade!",
             "heading_size": "h1",
             "subheading": "Leve dois discos usados e pague apenas metade no terceiro.",
@@ -34,7 +33,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Site_header_1.jpg",
             "heading": "Caetano Veloso",
             "heading_size": "h1",
             "subheading": "Torne sua coleção ainda mais incrível com o clássico \"Transa\" em capa tripla",
@@ -51,8 +49,8 @@
         },
         "slide_JyfY8d": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Site_header.jpg",
             "heading": "Pipo Pegoraro",
             "heading_size": "h1",
             "subheading": "Os aclamados discos \"Táxi Imã\" e \"Mergulhar, Mergulhei\" já chegaram na Taioba!",
@@ -70,7 +68,6 @@
         "slide_CcYUK4": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/garimpo.jpg",
             "heading": "Garimpe na Taioba!",
             "heading_size": "h1",
             "subheading": "Uma incrível seleção de música brasileira com discos de época prontos para irem à vitrola",
@@ -92,6 +89,7 @@
         "slide_JyfY8d",
         "slide_CcYUK4"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -163,7 +161,6 @@
         "button_HXCcm3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_4831_ae92bb70-490e-4f82-b466-90fb4d2fa2c6.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -230,6 +227,7 @@
       "block_order": [
         "heading_Wknjpn"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -241,22 +239,7 @@
     },
     "17075788101be2c20d": {
       "type": "apps",
-      "blocks": {
-        "instafeed_app_block_3P4Tmg": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "margin_top": 20,
-            "margin_bottom": 40,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_3P4Tmg"
-      ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -279,6 +262,7 @@
       "block_order": [
         "button_LJGkt7"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -374,6 +358,7 @@
         "card_tmDcPw",
         "card_6Yd6rw"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {color: rgb(89, 107, 80) !important; font-family: Prompt, sans-serif !important; font-size: 48px !important;}"
       ],
@@ -444,7 +429,6 @@
         "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
         "height": "medium",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -519,7 +503,6 @@
         "8959909e-1bba-4c78-9e95-0b8a35c5c5f1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/black_friday.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -680,7 +663,6 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-text-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/rpm5.webp",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
