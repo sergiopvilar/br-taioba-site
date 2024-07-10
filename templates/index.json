@@ -110,8 +110,8 @@
         "show_description": false,
         "description_style": "body",
         "collection": "novidades",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "products_to_show": 10,
+        "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -341,62 +341,6 @@
         "section-width": 160
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "af185e6f-857f-41bf-a713-462c440e7336": {
-          "type": "caption",
-          "disabled": true,
-          "settings": {
-            "caption": "curadoria minuciosa",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "A melhor Música Brasileira",
-            "heading_size": "h1"
-          }
-        },
-        "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "48f060b7-07ec-436a-a502-2629f13a3815": {
-          "type": "button",
-          "settings": {
-            "button_label": "Confira os títulos",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "af185e6f-857f-41bf-a713-462c440e7336",
-        "heading",
-        "4499fc7d-7470-457a-8da9-8d31e471aeb2",
-        "48f060b7-07ec-436a-a502-2629f13a3815"
-      ],
-      "settings": {
-        "height": "medium",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "background-1",
-        "color_scheme": "accent-2",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
-    },
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d": {
       "type": "featured-collection",
       "settings": {
@@ -406,8 +350,8 @@
         "show_description": false,
         "description_style": "body",
         "collection": "musica-internacional",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -439,14 +383,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Discos em Promoção",
+            "heading": "Discos Promocionais",
             "heading_size": "h1"
           }
         },
         "8959909e-1bba-4c78-9e95-0b8a35c5c5f1": {
           "type": "text",
           "settings": {
-            "text": "<p>Aumente sua coleção com estas ofertas imperdíveis!<\/p>",
+            "text": "<p>Aumente sua coleção com discos a partir de R$10,00!<\/p>",
             "text_style": "body"
           }
         }
@@ -457,6 +401,7 @@
         "8959909e-1bba-4c78-9e95-0b8a35c5c5f1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/crate-digging.webp",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -712,7 +657,6 @@
     "17075788101be2c20d",
     "rich_text_pY6FVW",
     "ss_testimonials_2_8qD96j",
-    "image-with-text",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "image-with-text-1",
     "206f9da7-430f-4347-bce1-8b15a0ce03ea",
