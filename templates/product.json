@@ -78,6 +78,30 @@
           "settings": {
           }
         },
+        "frete_no_produto_empreender_shipping_calculator_ECn4xh": {
+          "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/shipping_calculator\/31419da2-d36b-478b-b343-989a0e842a1c",
+          "settings": {
+            "shipping_calculator": true,
+            "background_color_container": "transparent",
+            "btnshipping": "#3b6978",
+            "color_text": "#ffffff",
+            "padding_external": 16,
+            "text": "Calcular Frete",
+            "pickup": ""
+          }
+        },
+        "frete_no_produto_empreender_estimate_shipping_CiftWF": {
+          "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/estimate_shipping\/31419da2-d36b-478b-b343-989a0e842a1c",
+          "settings": {
+            "estimate_shipping": true,
+            "type_date": "days",
+            "type_days": "úteis",
+            "days": 10,
+            "days_until": 15,
+            "estimate_text": "<p>Estimativa de entrega entre os dias (DAYS) e (DAYS_UNTIL)<\/p>",
+            "align_text": "center"
+          }
+        },
         "custom_liquid_QnPFUX": {
           "type": "custom_liquid",
           "disabled": true,
@@ -137,6 +161,8 @@
         "collapsible_tab_YpRLCM",
         "collapsible_tab_bacWeA",
         "description",
+        "frete_no_produto_empreender_shipping_calculator_ECn4xh",
+        "frete_no_produto_empreender_estimate_shipping_CiftWF",
         "custom_liquid_QnPFUX",
         "custom_liquid_D4BnWR",
         "custom_liquid_gFFAkg",
