@@ -87,6 +87,7 @@
         },
         "custom_liquid_gFFAkg": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div style=\"padding-top:0\" class=\"content-taioba\">\nGanhe R$20 de desconto no frete! <a href=\"https:\/\/taiobadiscos.com.br\/pages\/ganhe-20-reais-no-seu-primeiro-pedido\" target=\"_blank\">Saiba mais<\/a>\n<\/div>"
           }
