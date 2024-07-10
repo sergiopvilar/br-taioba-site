@@ -14,6 +14,7 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -82,7 +83,7 @@
           "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/shipping_calculator\/31419da2-d36b-478b-b343-989a0e842a1c",
           "settings": {
             "shipping_calculator": true,
-            "background_color_container": "transparent",
+            "background_color_container": "rgba(0,0,0,0)",
             "btnshipping": "#3b6978",
             "color_text": "#ffffff",
             "padding_external": 16,
