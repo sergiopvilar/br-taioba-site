@@ -46,7 +46,7 @@
           "settings": {
             "text_style": "uppercase",
             "inventory_threshold": 1,
-            "show_inventory_quantity": false
+            "show_inventory_quantity": true
           }
         },
         "bb8159a3-b411-478a-8627-73c5e7f57bf8": {
