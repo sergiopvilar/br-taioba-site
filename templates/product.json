@@ -73,14 +73,21 @@
             "page": ""
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "custom_liquid_QnPFUX": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% if product.tags contains 'Garimpo' and product.price < 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Você pode ganhar 50% de desconto neste disco! <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">Clique aqui<\/a> para saber mais.<\/div>\n{% endif %}\n\n{% if product.tags contains 'Garimpo' and product.price >= 10000 %}\n<div id=\"promo-taioba\"><span>Promoção:<\/span> Leve 2 discos usados como este e pague apenas 50% em um <a href=\"https:\/\/taiobadiscos.com.br\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro\" target=\"_blank\">disco desta lista<\/a>.<\/div>\n{% endif %}\n\n{% endif %}"
           }
         },
         "custom_liquid_D4BnWR": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<div id=\"promo-taioba\"><span>Pré-venda: <\/span> Seu pedido será enviado em {{ voltaFerias | date: '%d\/%m\/%Y'}}.<\/div>\n{% endif %}\n\n{% endif %}"
           }
@@ -97,11 +104,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "complementary_4XtNmH": {
@@ -134,11 +136,11 @@
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
         "collapsible_tab_YpRLCM",
         "collapsible_tab_bacWeA",
+        "description",
         "custom_liquid_QnPFUX",
         "custom_liquid_D4BnWR",
         "custom_liquid_gFFAkg",
         "buy_buttons",
-        "description",
         "complementary_4XtNmH",
         "share"
       ],
