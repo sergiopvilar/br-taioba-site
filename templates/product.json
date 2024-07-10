@@ -24,12 +24,6 @@
           "settings": {
           }
         },
-        "188cdecb-369f-41a1-8f76-ee154276965f": {
-          "type": "shopify:\/\/apps\/reviewbit-whatsapp-reviews\/blocks\/star-rating\/09ca4c84-3fa3-4137-892d-9161fe93aa1a",
-          "settings": {
-            "show_count": "left"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -66,7 +60,7 @@
           "settings": {
             "heading": "Condição e Estado de Conservação",
             "icon": "box",
-            "content": "<ul><li><strong>Condição:  <\/strong>{{ product.metafields.vinyl.state.value }}<\/li><li><strong>Estado da Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Estado do Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>O que significa o estado da capa e do disco? <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">Veja aqui<\/a>.<\/h6>",
+            "content": "<ul><li><strong>Condição:  <\/strong>Usado<\/li><li><strong>Estado da Capa: <\/strong>{{ product.metafields.garimpo.estado_capa.value }}<\/li><li><strong>Estado do Disco: <\/strong>{{ product.metafields.garimpo.estado_midia.value }}<\/li><\/ul><h6>O que significa o estado da capa e do disco? <a href=\"https:\/\/taiobadiscos.com.br\/classificacao\" target=\"_blank\" title=\"https:\/\/taiobadiscos.com.br\/classificacao\">Veja aqui<\/a>.<\/h6>",
             "page": ""
           }
         },
@@ -91,18 +85,6 @@
             "custom_liquid": "{% if product.first_available_variant.inventory_quantity > 0 %}\n\n{% assign voltaFerias = product.metafields.taioba.ships_on.value %}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if voltaFerias %}\n<div id=\"promo-taioba\"><span>Pré-venda: <\/span> Seu pedido será enviado em {{ voltaFerias | date: '%d\/%m\/%Y'}}.<\/div>\n{% endif %}\n\n{% endif %}"
           }
         },
-        "frete_no_produto_empreender_shipping_calculator_7KfM6L": {
-          "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/shipping_calculator\/31419da2-d36b-478b-b343-989a0e842a1c",
-          "settings": {
-            "shipping_calculator": true,
-            "background_color_container": "rgba(0,0,0,0)",
-            "btnshipping": "#c5deb7",
-            "color_text": "#596b50",
-            "padding_external": 0,
-            "text": "Calcular Frete",
-            "pickup": ""
-          }
-        },
         "custom_liquid_gFFAkg": {
           "type": "custom_liquid",
           "settings": {
@@ -114,19 +96,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "frete_no_produto_empreender_estimate_shipping_iM984U": {
-          "type": "shopify:\/\/apps\/frete-no-produto-empreender\/blocks\/estimate_shipping\/31419da2-d36b-478b-b343-989a0e842a1c",
-          "disabled": true,
-          "settings": {
-            "estimate_shipping": true,
-            "type_date": "days",
-            "type_days": "úteis",
-            "days": 10,
-            "days_until": 15,
-            "estimate_text": "<p>Estimativa de entrega entre os dias (DAYS) e (DAYS_UNTIL)<\/p>",
-            "align_text": "center"
           }
         },
         "description": {
@@ -157,7 +126,6 @@
       "block_order": [
         "vendor",
         "title",
-        "188cdecb-369f-41a1-8f76-ee154276965f",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -167,10 +135,8 @@
         "collapsible_tab_bacWeA",
         "custom_liquid_QnPFUX",
         "custom_liquid_D4BnWR",
-        "frete_no_produto_empreender_shipping_calculator_7KfM6L",
         "custom_liquid_gFFAkg",
         "buy_buttons",
-        "frete_no_produto_empreender_estimate_shipping_iM984U",
         "description",
         "complementary_4XtNmH",
         "share"
