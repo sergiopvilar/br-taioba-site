@@ -183,6 +183,29 @@
         "section_width": 120
       }
     },
+    "rich_text_DPFaBK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8MN8Hi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8MN8Hi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "17208058281ad0e4fe": {
       "type": "apps",
       "blocks": {
@@ -192,8 +215,8 @@
             "themeId": "light",
             "autoscroll": true,
             "showReviewPhotos": true,
-            "writeReview": true,
-            "fixedReviewsHeight": false
+            "writeReview": false,
+            "fixedReviewsHeight": true
           }
         }
       },
@@ -342,6 +365,7 @@
     "image_with_text_FfXJKn",
     "slideshow_g89DzB",
     "ss_map_jVNA8U",
+    "rich_text_DPFaBK",
     "17208058281ad0e4fe",
     "page_nnTUaW",
     "collapsible_content_FYHNCa",
