@@ -15,11 +15,12 @@
         "slide_yEfcYw": {
           "type": "slide",
           "settings": {
-            "heading": "Aumente sua coleção pagando metade!",
+            "image": "shopify:\/\/shop_images\/Taioba-SO-11.jpg",
+            "heading": "Discos usados a partir de R$9,90",
             "heading_size": "h1",
-            "subheading": "Leve dois discos usados e pague apenas metade no terceiro.",
+            "subheading": "Aumente sua coleção com nossa seção de discos promocionais até R$29,90!",
             "button_label": "Saiba mais",
-            "link": "shopify:\/\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro",
+            "link": "shopify:\/\/collections\/dsicos-promocionais",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -89,7 +90,6 @@
         "slide_JyfY8d",
         "slide_CcYUK4"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
