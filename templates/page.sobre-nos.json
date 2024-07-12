@@ -36,8 +36,8 @@
         "button_tWgDCr": {
           "type": "button",
           "settings": {
-            "button_label": "Seguir @taiobadiscos no Instagram",
-            "button_link": "https:\/\/instagram.com\/taiobadiscos",
+            "button_label": "Veja como chegar na loja",
+            "button_link": "https:\/\/maps.app.goo.gl\/KPrSxJvhgS25TzSW9",
             "button_style_secondary": false
           }
         }
@@ -49,7 +49,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_4831_ae92bb70-490e-4f82-b466-90fb4d2fa2c6.png",
-        "height": "medium",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
@@ -61,6 +61,99 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "slideshow_g89DzB": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_mBzLAM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Taioba-SO-33.jpg",
+            "heading": "Um lugar aconchegante para falar de música",
+            "heading_size": "h1",
+            "subheading": "Faça-nos uma visita e compartilhe da nossa paixão pela música brasileira",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_fawUaB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Taioba-SO-06.jpg",
+            "heading": "Os últimos lançamentos do mundo do vinil",
+            "heading_size": "h1",
+            "subheading": "Torne sua coleção ainda mais incrível com nosso catálogo de lançamentos sempre atualizado",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 40,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_qzbb3W": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_8890.jpg",
+            "heading": "Uma loja de discos pensada em você",
+            "heading_size": "h1",
+            "subheading": "Concebemos uma loja de discos pensada nos mínimos detalhes para sua melhor experiência",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_dMA98L": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Taioba-SO-07.jpg",
+            "heading": "Discos a partir de R$10,00",
+            "heading_size": "h1",
+            "subheading": "Aumente sua coleção com discos acessíveis e parcele em até 10x sem juros",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_mBzLAM",
+        "slide_fawUaB",
+        "slide_qzbb3W",
+        "slide_dMA98L"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "ss_map_jVNA8U": {
@@ -226,6 +319,7 @@
   "order": [
     "main",
     "image_with_text_FfXJKn",
+    "slideshow_g89DzB",
     "ss_map_jVNA8U",
     "page_nnTUaW",
     "collapsible_content_FYHNCa",
