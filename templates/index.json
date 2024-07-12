@@ -12,6 +12,24 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slide_JGeexk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Taioba-SO-21_b36602df-6293-497b-8279-800a55ea5478.jpg",
+            "heading": "Chegamos a João Pessoa!",
+            "heading_size": "h1",
+            "subheading": "A mais nova loja de discos da cidade é diferente de tudo que você já viu!",
+            "button_label": "Saiba Mais",
+            "link": "shopify:\/\/pages\/sobre-nos",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 40,
+            "color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_yEfcYw": {
           "type": "slide",
           "settings": {
@@ -87,6 +105,7 @@
         }
       },
       "block_order": [
+        "slide_JGeexk",
         "slide_yEfcYw",
         "slide_GNAwQA",
         "slide_JyfY8d",
