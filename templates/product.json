@@ -152,6 +152,14 @@
           "settings": {
             "share_label": "Compartilhar"
           }
+        },
+        "google_reviews_compact_slider_widget_block_HJwFKa": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/compact-slider-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right"
+          }
         }
       },
       "block_order": [
@@ -173,7 +181,8 @@
         "frete_no_produto_empreender_estimate_shipping_iM984U",
         "description",
         "complementary_4XtNmH",
-        "share"
+        "share",
+        "google_reviews_compact_slider_widget_block_HJwFKa"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -189,51 +198,6 @@
         "enable_video_looping": false,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "rich_text_FXUTx3": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_YLHN68": {
-          "type": "heading",
-          "settings": {
-            "heading": "Como nos avaliam",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_YLHN68"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "17208062008528088c": {
-      "type": "apps",
-      "blocks": {
-        "google_reviews_carousel_widget_block_mHhxMP": {
-          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "autoscroll": true,
-            "showRating": true,
-            "showReviewPhotos": true,
-            "writeReview": false,
-            "fixedReviewsHeight": false
-          }
-        }
-      },
-      "block_order": [
-        "google_reviews_carousel_widget_block_mHhxMP"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "related-products": {
@@ -257,8 +221,6 @@
   },
   "order": [
     "main",
-    "rich_text_FXUTx3",
-    "17208062008528088c",
     "related-products"
   ]
 }
