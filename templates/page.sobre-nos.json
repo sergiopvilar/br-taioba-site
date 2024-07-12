@@ -183,6 +183,27 @@
         "section_width": 120
       }
     },
+    "17208058281ad0e4fe": {
+      "type": "apps",
+      "blocks": {
+        "google_reviews_carousel_widget_static_plate_block_Maiaar": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-static-plate-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showReviewPhotos": true,
+            "writeReview": true,
+            "fixedReviewsHeight": false
+          }
+        }
+      },
+      "block_order": [
+        "google_reviews_carousel_widget_static_plate_block_Maiaar"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "page_nnTUaW": {
       "type": "page",
       "settings": {
@@ -321,6 +342,7 @@
     "image_with_text_FfXJKn",
     "slideshow_g89DzB",
     "ss_map_jVNA8U",
+    "17208058281ad0e4fe",
     "page_nnTUaW",
     "collapsible_content_FYHNCa",
     "collapsible_content_VF4LDQ"
