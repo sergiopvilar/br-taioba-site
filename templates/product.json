@@ -152,14 +152,6 @@
           "settings": {
             "share_label": "Compartilhar"
           }
-        },
-        "google_reviews_compact_slider_widget_block_HJwFKa": {
-          "type": "shopify:\/\/apps\/google-reviews\/blocks\/compact-slider-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "verticalPositionId": "bottom",
-            "horizontalPositionId": "right"
-          }
         }
       },
       "block_order": [
@@ -181,8 +173,7 @@
         "frete_no_produto_empreender_estimate_shipping_iM984U",
         "description",
         "complementary_4XtNmH",
-        "share",
-        "google_reviews_compact_slider_widget_block_HJwFKa"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
