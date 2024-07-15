@@ -796,7 +796,7 @@
             "autoscroll": true,
             "showRating": true,
             "showReviewPhotos": true,
-            "writeReview": true,
+            "writeReview": false,
             "fixedReviewsHeight": false
           }
         }
