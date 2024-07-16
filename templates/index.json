@@ -307,118 +307,49 @@
         "padding_bottom": 52
       }
     },
-    "ss_testimonials_2_8qD96j": {
-      "type": "ss-testimonials-2",
+    "rich_text_HfKDrG": {
+      "type": "rich-text",
       "blocks": {
-        "card_wXqN6B": {
-          "type": "card",
+        "heading_KCGQqF": {
+          "type": "heading",
           "settings": {
-            "icon": "5 stars",
-            "title": "<p>Continuem a oferecer-nos bons discos com um bom preço.<\/p>",
-            "author": "",
-            "info": ""
-          }
-        },
-        "card_m893tc": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p>Tive uma ótima experiência com a loja desde aquisição pelo site ao preparo e envio do pedido. O produto é exatamente como descrito. <br\/>Mantenham a paixão e atenção para com que se propõem e já será incrível. Obrigado. <\/p>",
-            "author": "",
-            "info": ""
-          }
-        },
-        "card_x4PQq8": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p>Parabéns pelo cuidado com nossa música.<\/p>",
-            "author": "",
-            "info": ""
-          }
-        },
-        "card_npChbV": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p>Obrigado pelo ótimo atendimento! Com certeza voltarei a comprar no site.<\/p>",
-            "author": "",
-            "info": ""
-          }
-        },
-        "card_PDNQ9m": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p>Chegou tudo otimo! Muito boa a loja realmente <\/p>",
-            "author": "",
-            "info": ""
-          }
-        },
-        "card_zBaPFx": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p>Queria elogiar o comprometimento com o atendimento e a identidade visual da página.<\/p>",
-            "author": "",
-            "info": ""
-          }
-        },
-        "card_tmDcPw": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p>Muito satisfeito com a compra.<\/p>",
-            "author": "",
-            "info": ""
-          }
-        },
-        "card_6Yd6rw": {
-          "type": "card",
-          "settings": {
-            "icon": "5 stars",
-            "title": "<p>Adorei a embalagem.<\/p>",
-            "author": "",
-            "info": ""
+            "heading": "O que falam de nós",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "card_wXqN6B",
-        "card_m893tc",
-        "card_x4PQq8",
-        "card_npChbV",
-        "card_PDNQ9m",
-        "card_zBaPFx",
-        "card_tmDcPw",
-        "card_6Yd6rw"
-      ],
-      "custom_css": [
-        "h2 {color: rgb(89, 107, 80) !important; font-family: Prompt, sans-serif !important; font-size: 48px !important;}"
+        "heading_KCGQqF"
       ],
       "settings": {
-        "heading": "O que nossos clientes falam sobre nós",
-        "title_align": "center",
-        "text_align": "center",
-        "autoplay_delay": 8,
-        "autoplay_disable_on_interaction": true,
-        "heading_font_size": 30,
-        "p_font_size": 18,
-        "author_font_size": 19,
-        "info_font_size": 17,
-        "image_size": 65,
-        "image_border_radius": 50,
-        "text_color": "#596b50",
-        "background-color": "#ffffff",
-        "card_color": "#ffffff",
-        "header_color": "#596b50",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_x": 0,
-        "padding_x_desktop": 0,
-        "margin_top": 4,
-        "margin_bottom": 4,
-        "section-width": 160
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "17208057736128c1a3": {
+      "type": "apps",
+      "blocks": {
+        "google_reviews_carousel_widget_block_RDYkhQ": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": true,
+            "writeReview": false,
+            "fixedReviewsHeight": false
+          }
+        }
+      },
+      "block_order": [
+        "google_reviews_carousel_widget_block_RDYkhQ"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "image-with-text": {
@@ -785,28 +716,6 @@
         "padding_top": 72,
         "padding_bottom": 88
       }
-    },
-    "17208057736128c1a3": {
-      "type": "apps",
-      "blocks": {
-        "google_reviews_carousel_widget_block_RDYkhQ": {
-          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "autoscroll": true,
-            "showRating": true,
-            "showReviewPhotos": true,
-            "writeReview": false,
-            "fixedReviewsHeight": false
-          }
-        }
-      },
-      "block_order": [
-        "google_reviews_carousel_widget_block_RDYkhQ"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -817,7 +726,8 @@
     "rich_text_rhGURb",
     "17075788101be2c20d",
     "rich_text_pY6FVW",
-    "ss_testimonials_2_8qD96j",
+    "rich_text_HfKDrG",
+    "17208057736128c1a3",
     "image-with-text",
     "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "image-with-text-1",
@@ -828,7 +738,6 @@
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
     "featured_collection_JmNfBF",
     "rich_text_HWQGa3",
-    "348133a0-e988-4d57-92dc-45f3507b241d",
-    "17208057736128c1a3"
+    "348133a0-e988-4d57-92dc-45f3507b241d"
   ]
 }
