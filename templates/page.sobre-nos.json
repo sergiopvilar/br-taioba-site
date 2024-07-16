@@ -305,7 +305,25 @@
           "settings": {
             "heading": "F5 Online",
             "icon": "chat_bubble",
-            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/f5online.com.br\/dia-do-disco-empreendedor-leva-musica-paraibana-em-vinil-para-alem-das-fronteiras-do-brasil\/\" target=\"_blank\">Empreendedor leva música paraibana em vinil para além das fronteiras do Brasil<\/a><\/li><li><a href=\"https:\/\/f5online.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\" target=\"_blank\" title=\"https:\/\/f5online.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\">Taioba Discos inaugura primeira loja física em João Pessoa com soft opening exclusivo<\/a><\/li><\/ul>",
+            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/f5online.com.br\/dia-do-disco-empreendedor-leva-musica-paraibana-em-vinil-para-alem-das-fronteiras-do-brasil\/\" target=\"_blank\">Empreendedor leva música paraibana em vinil para além das fronteiras do Brasil<\/a><\/li><li><a href=\"https:\/\/f5online.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\" target=\"_blank\" title=\"https:\/\/f5online.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\">Taioba Discos inaugura primeira loja física em João Pessoa com soft opening exclusivo<\/a><\/li><li><a href=\"https:\/\/f5online.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/\" target=\"_blank\" title=\"https:\/\/f5online.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/\">Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DKXT9U": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Paraíba em Notícia",
+            "icon": "chat_bubble",
+            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/www.paraibaemnoticia.com\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira\/\" target=\"_blank\" title=\"https:\/\/www.paraibaemnoticia.com\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira\/\">Taioba Discos abre sua primeira loja física em João pessoa nesta quarta-feira<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Uxr9xG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Fora do Eixo.rec",
+            "icon": "chat_bubble",
+            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/foradoeixo.rec.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-jp\/\" target=\"_blank\" title=\"https:\/\/foradoeixo.rec.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-jp\/\">Taioba Discos abre sua primeira loja física em JP<\/a><\/li><\/ul>",
             "page": ""
           }
         },
@@ -341,6 +359,8 @@
         "collapsible_row_j3QVLV",
         "collapsible_row_nc7Wg7",
         "collapsible_row_HxptDD",
+        "collapsible_row_DKXT9U",
+        "collapsible_row_Uxr9xG",
         "collapsible_row_mfqw6g",
         "collapsible_row_CHdYTK",
         "collapsible_row_UNg99T"
