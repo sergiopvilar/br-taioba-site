@@ -287,7 +287,7 @@
           "settings": {
             "heading": "Parlamento PB",
             "icon": "chat_bubble",
-            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/parlamentopb.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\" target=\"_blank\" title=\"https:\/\/parlamentopb.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\">Taioba Discos inaugura primeira loja física em JP com Soft Opening exclusivo<\/a><\/li><\/ul>",
+            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/parlamentopb.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\" target=\"_blank\" title=\"https:\/\/parlamentopb.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\">Taioba Discos inaugura primeira loja física em JP com Soft Opening exclusivo<\/a><\/li><li><a href=\"https:\/\/parlamentopb.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta\/\" target=\"_blank\" title=\"https:\/\/parlamentopb.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta\/\">Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta<\/a><\/li><\/ul>",
             "page": ""
           }
         },
@@ -306,6 +306,15 @@
             "heading": "F5 Online",
             "icon": "chat_bubble",
             "row_content": "<p><\/p><ul><li><a href=\"https:\/\/f5online.com.br\/dia-do-disco-empreendedor-leva-musica-paraibana-em-vinil-para-alem-das-fronteiras-do-brasil\/\" target=\"_blank\">Empreendedor leva música paraibana em vinil para além das fronteiras do Brasil<\/a><\/li><li><a href=\"https:\/\/f5online.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\" target=\"_blank\" title=\"https:\/\/f5online.com.br\/taioba-discos-inaugura-primeira-loja-fisica-em-joao-pessoa-com-soft-opening-exclusivo\/\">Taioba Discos inaugura primeira loja física em João Pessoa com soft opening exclusivo<\/a><\/li><li><a href=\"https:\/\/f5online.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/\" target=\"_blank\" title=\"https:\/\/f5online.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/\">Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JzaCYi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "WSCOM",
+            "icon": "chat_bubble",
+            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/wscom.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/\" target=\"_blank\" title=\"https:\/\/wscom.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/\">Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)<\/a><\/li><\/ul>",
             "page": ""
           }
         },
@@ -336,6 +345,15 @@
             "page": ""
           }
         },
+        "collapsible_row_mJrUxh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Mais Turismo & Cultura",
+            "icon": "chat_bubble",
+            "row_content": "<p><\/p><ul><li><a href=\"https:\/\/www.maisturismoecultura.com.br\/taioba-discos-abre-primeira-loja-fisica-em-joao-pessoa\/\" target=\"_blank\" title=\"https:\/\/www.maisturismoecultura.com.br\/taioba-discos-abre-primeira-loja-fisica-em-joao-pessoa\/\">Taioba Discos abre primeira loja física em João Pessoa<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
         "collapsible_row_CHdYTK": {
           "type": "collapsible_row",
           "settings": {
@@ -359,9 +377,11 @@
         "collapsible_row_j3QVLV",
         "collapsible_row_nc7Wg7",
         "collapsible_row_HxptDD",
+        "collapsible_row_JzaCYi",
         "collapsible_row_DKXT9U",
         "collapsible_row_Uxr9xG",
         "collapsible_row_mfqw6g",
+        "collapsible_row_mJrUxh",
         "collapsible_row_CHdYTK",
         "collapsible_row_UNg99T"
       ],
