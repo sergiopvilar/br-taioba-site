@@ -157,6 +157,62 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "multicolumn_GpWYEC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UBtYGt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unnamed-16.jpg",
+            "title": "Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)",
+            "text": "<p>wscom.com.br<\/p>",
+            "link_label": "Leia mais",
+            "link": "https:\/\/wscom.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/"
+          }
+        },
+        "column_fzhK7t": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/whatsapp-image-2024-07-16-at-16.03.42.jpg",
+            "title": "Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta",
+            "text": "<p>parlamentopb.com.br<\/p>",
+            "link_label": "Leia mais",
+            "link": "https:\/\/parlamentopb.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta\/"
+          }
+        },
+        "column_h6cgzw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4e3dd31a53dad303fb9b773263882abf.webp",
+            "title": "Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)",
+            "text": "<p>f5online.com.br<\/p>",
+            "link_label": "Leia mais",
+            "link": "https:\/\/f5online.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/"
+          }
+        }
+      },
+      "block_order": [
+        "column_UBtYGt",
+        "column_fzhK7t",
+        "column_h6cgzw"
+      ],
+      "settings": {
+        "title": "Destaques na Mídia",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
     "ss_map_jVNA8U": {
       "type": "ss-map",
       "settings": {
@@ -405,6 +461,7 @@
     "main",
     "image_with_text_FfXJKn",
     "slideshow_g89DzB",
+    "multicolumn_GpWYEC",
     "ss_map_jVNA8U",
     "rich_text_DPFaBK",
     "17208058281ad0e4fe",
