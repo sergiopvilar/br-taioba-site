@@ -132,6 +132,18 @@
             "enable_quick_add": true
           }
         },
+        "icon_with_text_fWTLJB": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "Capas livres de poeira",
+            "icon_2": "return",
+            "heading_2": "Devolva se não gostar",
+            "icon_3": "box",
+            "heading_3": "Embalagem reforçada"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -156,6 +168,7 @@
         "custom_liquid_gFFAkg",
         "buy_buttons",
         "complementary_4XtNmH",
+        "icon_with_text_fWTLJB",
         "share"
       ],
       "settings": {
