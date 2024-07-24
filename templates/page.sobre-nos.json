@@ -160,6 +160,16 @@
     "multicolumn_GpWYEC": {
       "type": "multicolumn",
       "blocks": {
+        "column_h6cgzw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jornal_em_PDF_24-07-24_CDEPC_page-0001.png",
+            "title": "Com abertura da Taioba Discos, agora João Pessoa conta com seis lojas, que vendem discos de vinil",
+            "text": "<p>Jornal A União<\/p>",
+            "link_label": "Leia mais",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/7555\/0781\/files\/Jornal_em_PDF_24-07-24_CDEPC_page-0001.png?v=1721823361"
+          }
+        },
         "column_UBtYGt": {
           "type": "column",
           "settings": {
@@ -179,22 +189,12 @@
             "link_label": "Leia mais",
             "link": "https:\/\/parlamentopb.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta\/"
           }
-        },
-        "column_h6cgzw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4e3dd31a53dad303fb9b773263882abf.webp",
-            "title": "Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)",
-            "text": "<p>f5online.com.br<\/p>",
-            "link_label": "Leia mais",
-            "link": "https:\/\/f5online.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/"
-          }
         }
       },
       "block_order": [
+        "column_h6cgzw",
         "column_UBtYGt",
-        "column_fzhK7t",
-        "column_h6cgzw"
+        "column_fzhK7t"
       ],
       "settings": {
         "title": "Destaques na Mídia",
