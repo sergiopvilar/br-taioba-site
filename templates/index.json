@@ -291,81 +291,6 @@
         "padding_bottom": 100
       }
     },
-    "image_with_text_Drckke": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_hpxdT8": {
-          "type": "heading",
-          "settings": {
-            "heading": "Crate Digging",
-            "heading_size": "h1"
-          }
-        },
-        "text_PmAbAU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Check out our section of used records, meticulously sanitized and evaluated. With detailed curation, our used records are ready to go straight to the turntable.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_tGWQUQ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Check out all records",
-            "button_link": "shopify:\/\/collections\/crate-digging",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_hpxdT8",
-        "text_PmAbAU",
-        "button_tGWQUQ"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/rpm5_34d806fe-bdf5-4c6e-bd1d-ef32231996f1.webp",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-baf29e36-aae7-4a5b-87b7-db6b5d26604f",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "206f9da7-430f-4347-bce1-8b15a0ce03ea": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "crate-digging",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 72
-      }
-    },
     "image-with-text-1": {
       "type": "image-with-text",
       "blocks": {
@@ -628,8 +553,6 @@
     "image_with_text_mWgf7V",
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
-    "image_with_text_Drckke",
-    "206f9da7-430f-4347-bce1-8b15a0ce03ea",
     "image-with-text-1",
     "featured_collection_Qz3YmG",
     "bef47704-19ac-43ea-a3fa-4471acb7ded1",
