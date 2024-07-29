@@ -272,17 +272,18 @@
     "17222917264073d3fd": {
       "type": "apps",
       "blocks": {
-        "testimonials_slider_carousel_cards_widget_block_e84Xpd": {
-          "type": "shopify:\/\/apps\/testimonials-slider\/blocks\/carousel-cards-widget-block\/cd756d38-7c3d-4332-af00-4ff87263e921",
+        "testimonials_slider_carousel_widget_block_WWDb3n": {
+          "type": "shopify:\/\/apps\/testimonials-slider\/blocks\/carousel-widget-block\/cd756d38-7c3d-4332-af00-4ff87263e921",
           "settings": {
             "themeId": "light",
             "autoscroll": true,
+            "showAvatar": true,
             "configNumber": "1"
           }
         }
       },
       "block_order": [
-        "testimonials_slider_carousel_cards_widget_block_e84Xpd"
+        "testimonials_slider_carousel_widget_block_WWDb3n"
       ],
       "settings": {
         "include_margins": true
