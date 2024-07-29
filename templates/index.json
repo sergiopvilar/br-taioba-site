@@ -549,34 +549,6 @@
         "padding_bottom": 36
       }
     },
-    "a9e5db15-6a69-47db-a5fc-caaa88f9701d": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Coming Soon",
-        "heading_size": "h1",
-        "description": "<p>Keep an eye out for what's arriving in the coming weeks!<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "coming-soon",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-27168b15-58df-4cd7-be3d-4ec7ec764f68",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 36
-      }
-    },
     "348133a0-e988-4d57-92dc-45f3507b241d": {
       "type": "featured-blog",
       "settings": {
@@ -616,7 +588,6 @@
     "bef47704-19ac-43ea-a3fa-4471acb7ded1",
     "image-with-text",
     "014d76be-b0fa-4c26-ba8f-acdec03fa31a",
-    "a9e5db15-6a69-47db-a5fc-caaa88f9701d",
     "348133a0-e988-4d57-92dc-45f3507b241d",
     "17222910935ebd004f"
   ]
