@@ -272,8 +272,8 @@
     "17222917264073d3fd": {
       "type": "apps",
       "blocks": {
-        "testimonials_slider_carousel_widget_block_WWDb3n": {
-          "type": "shopify:\/\/apps\/testimonials-slider\/blocks\/carousel-widget-block\/cd756d38-7c3d-4332-af00-4ff87263e921",
+        "testimonials_slider_slider_widget_block_UGifiK": {
+          "type": "shopify:\/\/apps\/testimonials-slider\/blocks\/slider-widget-block\/cd756d38-7c3d-4332-af00-4ff87263e921",
           "settings": {
             "themeId": "light",
             "autoscroll": true,
@@ -283,7 +283,7 @@
         }
       },
       "block_order": [
-        "testimonials_slider_carousel_widget_block_WWDb3n"
+        "testimonials_slider_slider_widget_block_UGifiK"
       ],
       "settings": {
         "include_margins": true
