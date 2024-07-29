@@ -269,6 +269,29 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_g9aRjL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nL4Lxi": {
+          "type": "heading",
+          "settings": {
+            "heading": "What our customers say",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nL4Lxi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "17222917264073d3fd": {
       "type": "apps",
       "blocks": {
@@ -585,6 +608,7 @@
     "image_with_text_mWgf7V",
     "17222910947901ab5d",
     "62e245e8-ecdf-4c76-a114-3690eaa5c33e",
+    "rich_text_g9aRjL",
     "17222917264073d3fd",
     "358cb348-8eb4-406d-8106-7d3f2602dcd0",
     "image-with-text-1",
