@@ -23,7 +23,7 @@
         "heading_RWCE38": {
           "type": "heading",
           "settings": {
-            "heading": "Conheça Pipo Pegoraro",
+            "heading": "Pipo Pegoraro",
             "heading_size": "h1"
           }
         },
@@ -40,7 +40,7 @@
         "text_8fWQWE"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ppti_IMG_4997p.jpg",
+        "image": "shopify:\/\/shop_images\/Pip-Pegoraro-e1710259285314.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -57,6 +57,7 @@
     },
     "video_4CfTbp": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Pipo Pegoraro no Programa Ensaio",
         "heading_size": "h2",
@@ -103,6 +104,7 @@
         "text_N9nCd3",
         "button_inepHX"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -112,116 +114,30 @@
         "padding_bottom": 52
       }
     },
-    "featured_product_ri4Kch": {
-      "type": "featured-product",
-      "blocks": {
-        "text_jDLyTr": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_7TkdrW": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_77CctP": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_m8qeUX": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "buy_buttons_8QtAqH": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        }
-      },
-      "block_order": [
-        "text_jDLyTr",
-        "title_7TkdrW",
-        "price_77CctP",
-        "variant_picker_m8qeUX",
-        "buy_buttons_8QtAqH"
-      ],
+    "featured_collection_GzmQ6d": {
+      "type": "featured-collection",
       "settings": {
-        "product": "pipo-pegoraro-taxi-ima-disco-de-vinil-lp",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_product_yMhPTH": {
-      "type": "featured-product",
-      "blocks": {
-        "text_CYd8zf": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_gUGaDB": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_mXQCyV": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_MVLCjd": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "buy_buttons_GjaqXN": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        }
-      },
-      "block_order": [
-        "text_CYd8zf",
-        "title_gUGaDB",
-        "price_mXQCyV",
-        "variant_picker_MVLCjd",
-        "buy_buttons_GjaqXN"
-      ],
-      "settings": {
-        "product": "pipo-pegoraro-mergulhar-mergulhei-disco-de-vinil-lp",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "discos-de-vinil-de-pipo-pegoraro",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-27168b15-58df-4cd7-be3d-4ec7ec764f68",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -232,7 +148,6 @@
     "image_with_text_Qc6cQH",
     "video_4CfTbp",
     "rich_text_YdwafP",
-    "featured_product_ri4Kch",
-    "featured_product_yMhPTH"
+    "featured_collection_GzmQ6d"
   ]
 }
