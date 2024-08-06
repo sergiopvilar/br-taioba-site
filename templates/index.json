@@ -32,6 +32,7 @@
         },
         "slide_yEfcYw": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Site_header_2.jpg",
             "heading": "Aumente sua coleção pagando metade!",
@@ -364,6 +365,7 @@
         "google_reviews_carousel_widget_block_RDYkhQ": {
           "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
+            "contentIndex": "1",
             "themeId": "light",
             "autoscroll": true,
             "showRating": true,
