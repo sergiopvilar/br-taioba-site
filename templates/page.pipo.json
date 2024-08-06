@@ -15,9 +15,140 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "video_4CfTbp": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/mnCB-lqeJx4?si=40XPv3a847pcE3DA&t=29",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_ri4Kch": {
+      "type": "featured-product",
+      "blocks": {
+        "text_jDLyTr": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_7TkdrW": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_77CctP": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_m8qeUX": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons_8QtAqH": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "text_jDLyTr",
+        "title_7TkdrW",
+        "price_77CctP",
+        "variant_picker_m8qeUX",
+        "buy_buttons_8QtAqH"
+      ],
+      "settings": {
+        "product": "pipo-pegoraro-taxi-ima-disco-de-vinil-lp",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_yMhPTH": {
+      "type": "featured-product",
+      "blocks": {
+        "text_CYd8zf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_gUGaDB": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_mXQCyV": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_MVLCjd": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons_GjaqXN": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "text_CYd8zf",
+        "title_gUGaDB",
+        "price_mXQCyV",
+        "variant_picker_MVLCjd",
+        "buy_buttons_GjaqXN"
+      ],
+      "settings": {
+        "product": "pipo-pegoraro-mergulhar-mergulhei-disco-de-vinil-lp",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "video_4CfTbp",
+    "featured_product_ri4Kch",
+    "featured_product_yMhPTH"
   ]
 }
