@@ -11,23 +11,105 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
+    "image_with_text_Qc6cQH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RWCE38": {
+          "type": "heading",
+          "settings": {
+            "heading": "Conheça Pipo Pegoraro",
+            "heading_size": "h1"
+          }
+        },
+        "text_8fWQWE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pipo Pegoraro é músico, compositor e produtor conhecido por sua abordagem inovadora à música, combinando rock, MPB e música experimental.<\/p><p>Pipo venceu o<strong> Grammy Latino<\/strong> de 2023 na categoria de Melhor Álbum de Música Pop Contemporânea em Língua Portuguesa como produtor do álbum \"Em Nome da Estrela\" de Xenia França, e tem outras três indicações ao Grammy. <\/p><p>Seu compromisso em explorar novos sons solidifica sua posição na música indie contemporânea.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RWCE38",
+        "text_8fWQWE"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ppti_IMG_4997p.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "video_4CfTbp": {
       "type": "video",
       "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
+        "heading": "Pipo Pegoraro no Programa Ensaio",
+        "heading_size": "h2",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/mnCB-lqeJx4?si=40XPv3a847pcE3DA&t=29",
+        "cover_image": "shopify:\/\/shop_images\/maxresdefault_1.jpg",
         "description": "",
         "full_width": false,
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_YdwafP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dGha9C": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_N9nCd3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_inepHX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dGha9C",
+        "text_N9nCd3",
+        "button_inepHX"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "featured_product_ri4Kch": {
@@ -74,7 +156,7 @@
       ],
       "settings": {
         "product": "pipo-pegoraro-taxi-ima-disco-de-vinil-lp",
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "secondary_background": false,
         "media_size": "small",
         "constrain_to_viewport": true,
@@ -147,7 +229,9 @@
   },
   "order": [
     "main",
+    "image_with_text_Qc6cQH",
     "video_4CfTbp",
+    "rich_text_YdwafP",
     "featured_product_ri4Kch",
     "featured_product_yMhPTH"
   ]
