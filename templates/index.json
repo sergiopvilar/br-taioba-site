@@ -298,6 +298,7 @@
             "alignment": "center",
             "margin_top": 20,
             "margin_bottom": 40,
+            "background_color": "",
             "html_area": ""
           }
         }
@@ -369,7 +370,7 @@
             "themeId": "light",
             "autoscroll": true,
             "showRating": true,
-            "showReviewPhotos": true,
+            "showReviewPhotos": false,
             "writeReview": false,
             "fixedReviewsHeight": false
           }
