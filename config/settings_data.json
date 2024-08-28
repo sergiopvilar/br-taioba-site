@@ -547,7 +547,9 @@
       "#promo-taioba a {color: white;}",
       ".calculoFrete:focus-visible {box-shadow: none !important; outline: none !important;}",
       ".calculoFrete {max-width: 44rem; padding: 30px 0;}",
-      "*:focus-visible {outline: none !important; box-shadow: none !important;}"
+      "*:focus-visible {outline: none !important; box-shadow: none !important;}",
+      "#pagamento-seguro {text-align: center; padding: 30px 0; background-color: #f3f3f3;}",
+      "#pagamento-seguro img {width: 50%; max-width: 400px; margin: 0 auto;}"
     ]
   }
 }
