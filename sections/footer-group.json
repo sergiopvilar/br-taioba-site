@@ -45,6 +45,15 @@
         "padding_bottom": 92
       }
     },
+    "custom_liquid_3hGqeP": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"pagamento-seguro\"><img src=\"https:\/\/i.imgur.com\/HDSO1Ot.png\" \/><\/div>",
+        "color_scheme": "scheme-381e901e-9931-4e70-9888-e0fbf8fcabd3",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -92,6 +101,7 @@
   },
   "order": [
     "newsletter",
+    "custom_liquid_3hGqeP",
     "footer"
   ]
 }
