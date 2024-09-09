@@ -363,21 +363,18 @@
     "17208057736128c1a3": {
       "type": "apps",
       "blocks": {
-        "google_reviews_carousel_widget_block_RDYkhQ": {
-          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+        "google_reviews_masonry_widget_block_wGXpHn": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/masonry-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
             "contentIndex": "1",
             "themeId": "light",
-            "autoscroll": true,
-            "showRating": true,
-            "showReviewPhotos": false,
-            "writeReview": false,
-            "fixedReviewsHeight": false
+            "showReviewPhotos": true,
+            "writeReview": false
           }
         }
       },
       "block_order": [
-        "google_reviews_carousel_widget_block_RDYkhQ"
+        "google_reviews_masonry_widget_block_wGXpHn"
       ],
       "settings": {
         "include_margins": true
