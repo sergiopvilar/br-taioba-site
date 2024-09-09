@@ -215,6 +215,7 @@
     },
     "ss_map_jVNA8U": {
       "type": "ss-map",
+      "disabled": true,
       "settings": {
         "heading": "Como nos encontrar",
         "address": "<p>Av. José Jardim, 180<br\/>Ipês, João Pessoa, Brasil<\/p><p>Quarta a Sexta das 14:00 às 19:00<br\/>Sábado das 10:00 às 18:00<\/p>",
