@@ -211,8 +211,8 @@
         "button_HXCcm3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Taioba-SO-24_87c2cb76-8fcb-46b4-9228-47cdd41d164d.png",
-        "height": "medium",
+        "image": "shopify:\/\/shop_images\/Taioba-SO-24_aaaaa1.png",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
