@@ -160,6 +160,16 @@
     "multicolumn_GpWYEC": {
       "type": "multicolumn",
       "blocks": {
+        "column_TDzYrY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Imagem_do_WhatsApp_de_2024-09-09_a_s_07.32.47_14d5526e.png",
+            "title": "Chico Correa lança <em>single <\/em>na Taioba Discos",
+            "text": "<p>Jornal A União<\/p>",
+            "link_label": "Leia Mais",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/7555\/0781\/files\/jornal-em-pdf-07-09-2024-cdepc-11-26.pdf?v=1725878282"
+          }
+        },
         "column_h6cgzw": {
           "type": "column",
           "settings": {
@@ -179,22 +189,12 @@
             "link_label": "Leia mais",
             "link": "https:\/\/wscom.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/"
           }
-        },
-        "column_fzhK7t": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/whatsapp-image-2024-07-16-at-16.03.42.jpg",
-            "title": "Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta",
-            "text": "<p>parlamentopb.com.br<\/p>",
-            "link_label": "Leia mais",
-            "link": "https:\/\/parlamentopb.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta\/"
-          }
         }
       },
       "block_order": [
+        "column_TDzYrY",
         "column_h6cgzw",
-        "column_UBtYGt",
-        "column_fzhK7t"
+        "column_UBtYGt"
       ],
       "settings": {
         "title": "Destaques na Mídia",
@@ -270,6 +270,7 @@
         "google_reviews_carousel_widget_static_plate_block_Maiaar": {
           "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-static-plate-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
+            "contentIndex": "1",
             "themeId": "light",
             "autoscroll": true,
             "showReviewPhotos": true,
