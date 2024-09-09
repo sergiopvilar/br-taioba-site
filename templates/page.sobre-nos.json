@@ -268,20 +268,18 @@
     "17208058281ad0e4fe": {
       "type": "apps",
       "blocks": {
-        "google_reviews_carousel_widget_static_plate_block_Maiaar": {
-          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-static-plate-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+        "google_reviews_masonry_widget_block_6gwcCW": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/masonry-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
             "contentIndex": "1",
             "themeId": "light",
-            "autoscroll": true,
             "showReviewPhotos": true,
-            "writeReview": false,
-            "fixedReviewsHeight": true
+            "writeReview": false
           }
         }
       },
       "block_order": [
-        "google_reviews_carousel_widget_static_plate_block_Maiaar"
+        "google_reviews_masonry_widget_block_6gwcCW"
       ],
       "settings": {
         "include_margins": true
