@@ -23,6 +23,7 @@
         },
         "announcement_XJhGbw": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "🎵 Interessado em discos usados? Confira nosso Sebo do Vinil!",
             "link": "https:\/\/sebodovinil.com.br"
