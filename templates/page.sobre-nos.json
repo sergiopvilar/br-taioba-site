@@ -64,6 +64,109 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_GpWYEC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TDzYrY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Imagem_do_WhatsApp_de_2024-09-09_a_s_07.32.47_14d5526e.png",
+            "title": "Chico Correa lança <em>single <\/em>na Taioba Discos",
+            "text": "<p>Jornal A União<\/p>",
+            "link_label": "Leia Mais",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/7555\/0781\/files\/jornal-em-pdf-07-09-2024-cdepc-11-26.pdf?v=1725878282"
+          }
+        },
+        "column_h6cgzw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jornal_em_PDF_24-07-24_CDEPC_page-0001.png",
+            "title": "Com abertura da Taioba Discos, agora João Pessoa conta com seis lojas, que vendem discos de vinil",
+            "text": "<p>Jornal A União<\/p>",
+            "link_label": "Leia mais",
+            "link": "https:\/\/auniao.pb.gov.br\/noticias\/caderno_cultura\/mantendo-vivos-os-bolachoes-1"
+          }
+        },
+        "column_UBtYGt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unnamed-16.jpg",
+            "title": "Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)",
+            "text": "<p>wscom.com.br<\/p>",
+            "link_label": "Leia mais",
+            "link": "https:\/\/wscom.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/"
+          }
+        }
+      },
+      "block_order": [
+        "column_TDzYrY",
+        "column_h6cgzw",
+        "column_UBtYGt"
+      ],
+      "settings": {
+        "title": "Destaques na Mídia",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "image_with_text_HTXmV7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DUfwDj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tardes Taioba",
+            "heading_size": "h1"
+          }
+        },
+        "text_YNC3zt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>O Tardes Taioba é um evento promovido pela Taioba Discos com o objetivo de diminuir as barreiras entre artistas e o público consumidor de música. Trazendo para a loja, diversos artistas da cena local.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_FkWRWw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Saiba Mais",
+            "button_link": "https:\/\/taiobadiscos.com.br\/blogs\/blog\/tardes-taioba-chico-correa-filosofino",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DUfwDj",
+        "text_YNC3zt",
+        "button_FkWRWw"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/RAV09501.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "slideshow_g89DzB": {
       "type": "slideshow",
       "blocks": {
@@ -155,62 +258,6 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "multicolumn_GpWYEC": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_TDzYrY": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Imagem_do_WhatsApp_de_2024-09-09_a_s_07.32.47_14d5526e.png",
-            "title": "Chico Correa lança <em>single <\/em>na Taioba Discos",
-            "text": "<p>Jornal A União<\/p>",
-            "link_label": "Leia Mais",
-            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/7555\/0781\/files\/jornal-em-pdf-07-09-2024-cdepc-11-26.pdf?v=1725878282"
-          }
-        },
-        "column_h6cgzw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Jornal_em_PDF_24-07-24_CDEPC_page-0001.png",
-            "title": "Com abertura da Taioba Discos, agora João Pessoa conta com seis lojas, que vendem discos de vinil",
-            "text": "<p>Jornal A União<\/p>",
-            "link_label": "Leia mais",
-            "link": "https:\/\/auniao.pb.gov.br\/noticias\/caderno_cultura\/mantendo-vivos-os-bolachoes-1"
-          }
-        },
-        "column_UBtYGt": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/unnamed-16.jpg",
-            "title": "Taioba Discos abre sua primeira loja física em João Pessoa nesta quarta-feira (17)",
-            "text": "<p>wscom.com.br<\/p>",
-            "link_label": "Leia mais",
-            "link": "https:\/\/wscom.com.br\/taioba-discos-abre-sua-primeira-loja-fisica-em-joao-pessoa-nesta-quarta-feira-17\/"
-          }
-        }
-      },
-      "block_order": [
-        "column_TDzYrY",
-        "column_h6cgzw",
-        "column_UBtYGt"
-      ],
-      "settings": {
-        "title": "Destaques na Mídia",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "inverse",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 72
       }
     },
     "ss_map_jVNA8U": {
@@ -461,8 +508,9 @@
   "order": [
     "main",
     "image_with_text_FfXJKn",
-    "slideshow_g89DzB",
     "multicolumn_GpWYEC",
+    "image_with_text_HTXmV7",
+    "slideshow_g89DzB",
     "ss_map_jVNA8U",
     "rich_text_DPFaBK",
     "17208058281ad0e4fe",
