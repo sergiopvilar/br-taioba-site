@@ -590,12 +590,33 @@
           "settings": {
             "collection": "musica-paraense"
           }
+        },
+        "featured_collection_b9wjxT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nova-musica-brasileira"
+          }
+        },
+        "featured_collection_rarJCf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "raizes-do-brasil"
+          }
+        },
+        "featured_collection_6eyYN9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brasileiros-no-grammy-latino-2023"
+          }
         }
       },
       "block_order": [
         "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-1",
         "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-2",
-        "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-3"
+        "template--21803093328189__014d76be-b0fa-4c26-ba8f-acdec03fa31a-featured_collection-3",
+        "featured_collection_b9wjxT",
+        "featured_collection_rarJCf",
+        "featured_collection_6eyYN9"
       ],
       "settings": {
         "title": "Explore nossas coleções",
