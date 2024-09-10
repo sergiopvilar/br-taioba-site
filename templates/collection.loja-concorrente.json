@@ -9,6 +9,53 @@
 */
 {
   "sections": {
+    "image_with_text_jAB4rM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DMeTCD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Conheça a Taioba",
+            "heading_size": "h1"
+          }
+        },
+        "text_C7cfCG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A mais nova loja de discos de João Pessoa é diferente de tudo que você já viu. Localizada no Bairro dos Ipês, a Taioba Discos é especializada em música brasileira e possui um calendário de eventos culturais.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_9t6wXH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Quero conhecer",
+            "button_link": "shopify:\/\/pages\/sobre-nos",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DMeTCD",
+        "text_C7cfCG",
+        "button_9t6wXH"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Taioba-SO-24_aaaaa1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "accent-1",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -39,6 +86,7 @@
     }
   },
   "order": [
+    "image_with_text_jAB4rM",
     "banner",
     "product-grid"
   ]
