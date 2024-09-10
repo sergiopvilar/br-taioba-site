@@ -67,7 +67,7 @@
     "custom_liquid_kpfiqV": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script>\ndocument.title = \"Discos em João Pessoa\";\n<\/script>",
+        "custom_liquid": "<script>\ndocument.title = \"Discos de Vinil em João Pessoa\";\n<\/script>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
