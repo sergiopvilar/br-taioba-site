@@ -47,6 +47,7 @@
     },
     "custom_liquid_bM6hYr": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div id=\"pagamento-seguro\"><img src=\"https:\/\/i.imgur.com\/HDSO1Ot.png\" \/><\/div>",
         "color_scheme": "",
