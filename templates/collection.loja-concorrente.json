@@ -64,6 +64,15 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_kpfiqV": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script>\ndocument.title = \"Discos em João Pessoa\";\n<\/script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -88,6 +97,7 @@
   "order": [
     "banner",
     "image_with_text_jAB4rM",
+    "custom_liquid_kpfiqV",
     "product-grid"
   ]
 }
