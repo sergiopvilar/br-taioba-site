@@ -355,5 +355,8 @@
       <script src="{{ 'predictive-search.minified.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-  </body>
+  <!-- Don't Remove this code. CartPanda App code. -->
+{% capture cartX_snippet_content %}{% include 'cartxCheckoutSnippet' %}{% endcapture %} {% unless cartX_snippet_content contains 'Liquid error' %} {% include 'cartxCheckoutSnippet' %} {% endunless %}
+<!-- Don't Remove this code. CaCartPandartX App code. -->
+</body>
 </html>
