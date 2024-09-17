@@ -205,6 +205,50 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_GkhVDy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_N49KiK": {
+          "type": "heading",
+          "settings": {
+            "heading": "O que nossos clientes falam de nós",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_N49KiK"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 16
+      }
+    },
+    "17266038789cc0c53c": {
+      "type": "apps",
+      "blocks": {
+        "google_reviews_grid_widget_block_eUaKwU": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/grid-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "contentIndex": "1",
+            "themeId": "light",
+            "showReviewPhotos": true,
+            "writeReview": false,
+            "fixedReviewsHeight": false
+          }
+        }
+      },
+      "block_order": [
+        "google_reviews_grid_widget_block_eUaKwU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -226,6 +270,8 @@
   },
   "order": [
     "main",
+    "rich_text_GkhVDy",
+    "17266038789cc0c53c",
     "related-products"
   ]
 }
