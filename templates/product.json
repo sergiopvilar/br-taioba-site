@@ -110,6 +110,18 @@
             "custom_liquid": "<div style=\"padding-top:0\" class=\"content-taioba\">\nGanhe R$20 de desconto no frete! <a href=\"https:\/\/taiobadiscos.com.br\/pages\/ganhe-20-reais-no-seu-primeiro-pedido\" target=\"_blank\">Saiba mais<\/a>\n<\/div>"
           }
         },
+        "icon_with_text_U6ib7a": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "box",
+            "heading_1": "Embalagem reforçada",
+            "icon_2": "return",
+            "heading_2": "Devolva se não gostar",
+            "icon_3": "map_pin",
+            "heading_3": "Direto de nossa loja física"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -170,6 +182,7 @@
         "custom_liquid_D4BnWR",
         "frete_no_produto_empreender_shipping_calculator_7KfM6L",
         "custom_liquid_gFFAkg",
+        "icon_with_text_U6ib7a",
         "buy_buttons",
         "frete_no_produto_empreender_estimate_shipping_iM984U",
         "description",
