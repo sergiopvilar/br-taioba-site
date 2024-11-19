@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -15,12 +15,12 @@
         "8d405be0-553b-44cc-8396-1694c99d1916": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/aos_vivos.jpg",
+            "image": "shopify://shop_images/aos_vivos.jpg",
             "heading": "Aos Vivos",
             "heading_size": "h1",
             "subheading": "Primeiro disco de Chico César é relançado em Vinil",
             "button_label": "Garanta o seu",
-            "link": "shopify:\/\/products\/chico-cesar-aos-vivos-disco-de-vinil-lp",
+            "link": "shopify://products/chico-cesar-aos-vivos-disco-de-vinil-lp",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -33,12 +33,12 @@
         "e776d71f-baa2-45e6-b782-03ea221a0ab2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jagua.jpg",
+            "image": "shopify://shop_images/jagua.jpg",
             "heading": "Jaguatirica Print",
             "heading_size": "h1",
             "subheading": "O tecnobrega da potiguar de Luísa e os Alquimistas está de volta",
             "button_label": "Compre agora",
-            "link": "shopify:\/\/products\/luisa-e-os-alquimistas-jaguatirica-print-vinil-lp",
+            "link": "shopify://products/luisa-e-os-alquimistas-jaguatirica-print-vinil-lp",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -51,12 +51,12 @@
         "99fcfb0e-1a45-428a-86d9-75938d1f8550": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gilsons.jpg",
+            "image": "shopify://shop_images/gilsons.jpg",
             "heading": "Gilsons",
             "heading_size": "h0",
             "subheading": "Conseguimos a última cópia o \"Pra Gente Acordar\". Adicione esta raridade à sua coleção.",
             "button_label": "Compre agora",
-            "link": "shopify:\/\/products\/gilsons-pra-gente-acordar-lp-novo-lacrado",
+            "link": "shopify://products/gilsons-pra-gente-acordar-lp-novo-lacrado",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -69,12 +69,12 @@
         "a3eb1043-7387-4d7d-9785-443906fc4e47": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pethit_c28df8a4-66f9-47e5-b9bf-586ec3a73778.jpg",
+            "image": "shopify://shop_images/pethit_c28df8a4-66f9-47e5-b9bf-586ec3a73778.jpg",
             "heading": "Thiago Pethit",
             "heading_size": "h1",
             "subheading": "\"Estrela Decadente\" e \"Berlim, Texas\" autografados em últimas unidades",
             "button_label": "Garanta o Seu",
-            "link": "shopify:\/\/collections\/thiago-pethit",
+            "link": "shopify://collections/thiago-pethit",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -87,12 +87,12 @@
         "ae4298c2-af82-4a32-bd04-47c1045962ea": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/felh_feb7e466-0d38-451b-9da7-3f18ae2c7f5e.png",
+            "image": "shopify://shop_images/felh_feb7e466-0d38-451b-9da7-3f18ae2c7f5e.png",
             "heading": "Francisco, El Hombre",
             "heading_size": "h1",
             "subheading": "Comemore os 10 anos de banda com a edição especial de \"SOLTASBRUXA\"",
             "button_label": "Compre Já",
-            "link": "shopify:\/\/products\/francisco-el-hombre-soltasbruxa-disco-de-vinil-lp",
+            "link": "shopify://products/francisco-el-hombre-soltasbruxa-disco-de-vinil-lp",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -164,7 +164,7 @@
       "settings": {
         "title": "Novidades",
         "heading_size": "h1",
-        "description": "<p>Direto da fábrica: confira o que acabou de chegar por aqui!<\/p>",
+        "description": "<p>Direto da fábrica: confira o que acabou de chegar por aqui!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "novidades",
@@ -208,7 +208,7 @@
         "8959909e-1bba-4c78-9e95-0b8a35c5c5f1": {
           "type": "text",
           "settings": {
-            "text": "<p>Aumente sua coleção com estas ofertas imperdíveis!<\/p>",
+            "text": "<p>Aumente sua coleção com estas ofertas imperdíveis!</p>",
             "text_style": "body"
           }
         },
@@ -216,7 +216,7 @@
           "type": "button",
           "settings": {
             "button_label": "Confira todas promoções",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
+            "button_link": "shopify://collections/discos-de-vinil-em-promocao",
             "button_style_secondary": false
           }
         }
@@ -228,7 +228,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/black_friday.jpg",
+        "image": "shopify://shop_images/black_friday.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -276,10 +276,10 @@
       "settings": {
         "title": "Música Brasileira para todos os gostos",
         "heading_size": "h1",
-        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados<\/p>",
+        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "discos-de-vinil",
+        "collection": "disco-de-vinil",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
@@ -321,7 +321,7 @@
         "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
           "type": "text",
           "settings": {
-            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
+            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.</p>",
             "text_style": "body"
           }
         },
@@ -329,7 +329,7 @@
           "type": "button",
           "settings": {
             "button_label": "Confira os títulos",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil-mais-vendidos",
+            "button_link": "shopify://collections/discos-de-vinil-mais-vendidos",
             "button_style_secondary": false
           }
         }
@@ -341,7 +341,7 @@
         "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
+        "image": "shopify://shop_images/foto14cul-105-bruno-d26.jpg",
         "height": "medium",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -401,7 +401,7 @@
       "settings": {
         "title": "Chegando em Breve",
         "heading_size": "h1",
-        "description": "<p>Fique de olho no que está pra chegar nas próximas semanas<\/p>",
+        "description": "<p>Fique de olho no que está pra chegar nas próximas semanas</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "chegando-em-breve",
