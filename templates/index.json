@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -15,12 +15,12 @@
         "slide_JGeexk": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Taioba-SO-21_b36602df-6293-497b-8279-800a55ea5478.jpg",
+            "image": "shopify://shop_images/Taioba-SO-21_b36602df-6293-497b-8279-800a55ea5478.jpg",
             "heading": "Chegamos a João Pessoa!",
             "heading_size": "h1",
             "subheading": "A mais nova loja de discos da cidade é diferente de tudo que você já viu!",
             "button_label": "Saiba Mais",
-            "link": "shopify:\/\/pages\/sobre-nos",
+            "link": "shopify://pages/sobre-nos",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -34,12 +34,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Site_header_2.jpg",
+            "image": "shopify://shop_images/Site_header_2.jpg",
             "heading": "Aumente sua coleção pagando metade!",
             "heading_size": "h1",
             "subheading": "Leve dois discos usados e pague apenas metade no terceiro.",
             "button_label": "Saiba mais",
-            "link": "shopify:\/\/collections\/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro",
+            "link": "shopify://collections/garimpo-promocao-leve-2-e-ganhe-50-no-terceiro",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -53,12 +53,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Site_header_1.jpg",
+            "image": "shopify://shop_images/Site_header_1.jpg",
             "heading": "Caetano Veloso",
             "heading_size": "h1",
             "subheading": "Torne sua coleção ainda mais incrível com o clássico \"Transa\" em capa tripla",
             "button_label": "Conferir todos discos",
-            "link": "shopify:\/\/collections\/taioba-recomenda-caetano-veloso",
+            "link": "shopify://collections/taioba-recomenda-caetano-veloso",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -71,12 +71,12 @@
         "slide_JyfY8d": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Site_header.jpg",
+            "image": "shopify://shop_images/Site_header.jpg",
             "heading": "Pipo Pegoraro",
             "heading_size": "h1",
             "subheading": "Os aclamados discos \"Táxi Imã\" e \"Mergulhar, Mergulhei\" já chegaram na Taioba!",
             "button_label": "Veja Mais",
-            "link": "shopify:\/\/collections\/discos-de-vinil-de-pipo-pegoraro",
+            "link": "shopify://collections/discos-de-vinil-de-pipo-pegoraro",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -89,12 +89,12 @@
         "slide_CcYUK4": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/garimpo.jpg",
+            "image": "shopify://shop_images/garimpo.jpg",
             "heading": "Garimpe na Taioba!",
             "heading_size": "h1",
             "subheading": "Uma incrível seleção de música brasileira com discos de época prontos para irem à vitrola",
             "button_label": "Confira agora",
-            "link": "shopify:\/\/collections\/garimpo",
+            "link": "shopify://collections/garimpo",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -156,7 +156,7 @@
       "settings": {
         "title": "Novidades",
         "heading_size": "h1",
-        "description": "<p>Confira o que acabou de chegar por aqui!<\/p>",
+        "description": "<p>Confira o que acabou de chegar por aqui!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "novidades",
@@ -192,7 +192,7 @@
         "text_NPXfEg": {
           "type": "text",
           "settings": {
-            "text": "<p>A Taioba Discos abre as portas de sua primeira loja física na Avenida José Jardim, 180, no Bairro dos Ipês, em João Pessoa.<\/p><p>A nova loja promete ser um ponto de encontro para os amantes da música e da cultura, oferecendo uma experiência de compra diferenciada e um espaço para eventos culturais.<\/p>",
+            "text": "<p>A Taioba Discos abre as portas de sua primeira loja física na Avenida José Jardim, 180, no Bairro dos Ipês, em João Pessoa.</p><p>A nova loja promete ser um ponto de encontro para os amantes da música e da cultura, oferecendo uma experiência de compra diferenciada e um espaço para eventos culturais.</p>",
             "text_style": "body"
           }
         },
@@ -200,7 +200,7 @@
           "type": "button",
           "settings": {
             "button_label": "Saiba mais",
-            "button_link": "shopify:\/\/pages\/sobre-nos",
+            "button_link": "shopify://pages/sobre-nos",
             "button_style_secondary": false
           }
         }
@@ -211,7 +211,7 @@
         "button_HXCcm3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Taioba-SO-24_aaaaa1.png",
+        "image": "shopify://shop_images/Taioba-SO-24_aaaaa1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -291,7 +291,7 @@
       "type": "apps",
       "blocks": {
         "instafeed_app_block_3P4Tmg": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
@@ -317,7 +317,7 @@
           "type": "button",
           "settings": {
             "button_label": "Seguir @taiobadiscos no Instagram",
-            "button_link": "https:\/\/instagram.com\/taiobadiscos",
+            "button_link": "https://instagram.com/taiobadiscos",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -364,7 +364,7 @@
       "type": "apps",
       "blocks": {
         "google_reviews_masonry_widget_block_wGXpHn": {
-          "type": "shopify:\/\/apps\/google-reviews\/blocks\/masonry-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "type": "shopify://apps/google-reviews/blocks/masonry-widget-block/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
             "contentIndex": "1",
             "themeId": "light",
@@ -402,7 +402,7 @@
         "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
           "type": "text",
           "settings": {
-            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.<\/p>",
+            "text": "<p>Através de um processo detalhista, fazemos um minucioso trabalho de curadoria para trazer a você os melhores títulos em vinil da música brasileira.</p>",
             "text_style": "body"
           }
         },
@@ -410,7 +410,7 @@
           "type": "button",
           "settings": {
             "button_label": "Confira os títulos",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil",
+            "button_link": "shopify://collections/disco-de-vinil",
             "button_style_secondary": false
           }
         }
@@ -422,7 +422,7 @@
         "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
+        "image": "shopify://shop_images/foto14cul-105-bruno-d26.jpg",
         "height": "medium",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -458,7 +458,7 @@
         "8959909e-1bba-4c78-9e95-0b8a35c5c5f1": {
           "type": "text",
           "settings": {
-            "text": "<p>Aumente sua coleção com estas ofertas imperdíveis!<\/p>",
+            "text": "<p>Aumente sua coleção com estas ofertas imperdíveis!</p>",
             "text_style": "body"
           }
         }
@@ -470,7 +470,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/black_friday.jpg",
+        "image": "shopify://shop_images/black_friday.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -521,7 +521,7 @@
           "type": "button",
           "settings": {
             "button_label": "Conferir todas promoções",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
+            "button_link": "shopify://collections/discos-de-vinil-em-promocao",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -547,10 +547,10 @@
       "settings": {
         "title": "Para todos os gostos",
         "heading_size": "h1",
-        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados<\/p>",
+        "description": "<p>Mergulhe na imensa variedade da música brasileira com estes discos minuciosamente selecionados</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "discos-de-vinil",
+        "collection": "disco-de-vinil",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -644,7 +644,7 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Confira nossa seção de discos usados, minuciosamente higienizados e avaliados. Com curadoria detalhista, nossos discos usados são prontinhos para irem à vitrola.<\/p>",
+            "text": "<p>Confira nossa seção de discos usados, minuciosamente higienizados e avaliados. Com curadoria detalhista, nossos discos usados são prontinhos para irem à vitrola.</p>",
             "text_style": "body"
           }
         }
@@ -654,7 +654,7 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-text-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/rpm5.webp",
+        "image": "shopify://shop_images/rpm5.webp",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -704,7 +704,7 @@
           "type": "button",
           "settings": {
             "button_label": "Garimpar na Taioba",
-            "button_link": "shopify:\/\/collections\/garimpo",
+            "button_link": "shopify://collections/garimpo",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
