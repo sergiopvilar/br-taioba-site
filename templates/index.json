@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -15,12 +15,12 @@
         "slide_namRFt": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design.jpg",
-            "heading": "Várias Queixas by Gilsons",
+            "image": "shopify://shop_images/462585340_8371965842900497_6169698267570980547_n.jpg",
+            "heading": "Glue Trip",
             "heading_size": "h1",
-            "subheading": "The new Vinyl Record by Gilsons is here! Secure one of only 50 records available for overseas!",
+            "subheading": "The 10 year aniversary edition of the debut album is now on pre-order",
             "button_label": "Get yours now",
-            "link": "shopify:\/\/products\/gilsons-vinil-lp",
+            "link": "shopify://products/glue-trip-vinyl-lp",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -32,13 +32,14 @@
         },
         "slide_DgMPTP": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Site_header_2.jpg",
+            "image": "shopify://shop_images/Site_header_2.jpg",
             "heading": "Increase your collection paying only 50%!",
             "heading_size": "h1",
             "subheading": "Buy two used records and get 50% discount on the third one.",
             "button_label": "Learn more",
-            "link": "shopify:\/\/collections\/buy-2-get-1-for-50",
+            "link": "shopify://collections/buy-2-get-1-for-50",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -50,13 +51,14 @@
         },
         "slide_74cDwP": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/garimpo.jpg",
+            "image": "shopify://shop_images/garimpo.jpg",
             "heading": "Crate Digging",
             "heading_size": "h1",
             "subheading": "An incredible selection of Brazilian music with vintage records ready to go on the turntable",
             "button_label": "Check out now",
-            "link": "shopify:\/\/collections\/crate-digging",
+            "link": "shopify://collections/crate-digging",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -70,12 +72,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/novos.jpg",
+            "image": "shopify://shop_images/novos.jpg",
             "heading": "New records starting on $14.90",
             "heading_size": "h1",
             "subheading": "Check out our promotions now and don't miss the chance to expand your collection for less!",
             "button_label": "Check out all records on sale",
-            "link": "shopify:\/\/collections\/vinyl-records-on-sale",
+            "link": "shopify://collections/vinyl-records-on-sale",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -108,7 +110,7 @@
       "settings": {
         "title": "Records you don't want to miss out",
         "heading_size": "h1",
-        "description": "<p>Looking for brazilian limited edition records? Check these out!<\/p>",
+        "description": "<p>Looking for brazilian limited edition records? Check these out!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "highlights",
@@ -182,7 +184,7 @@
         "text_LgWY9V": {
           "type": "text",
           "settings": {
-            "text": "<p>Far from the big cities and located in Brazil's tropical northeast, Taioba is a store focused exclusively on Brazilian music. <br\/><br\/>Immersed in Brazilian culture, Taioba goes to the deeps of Brazil to seek out the best in regional and popular music, as well as the latest releases.<\/p>",
+            "text": "<p>Far from the big cities and located in Brazil's tropical northeast, Taioba is a store focused exclusively on Brazilian music. <br/><br/>Immersed in Brazilian culture, Taioba goes to the deeps of Brazil to seek out the best in regional and popular music, as well as the latest releases.</p>",
             "text_style": "body"
           }
         },
@@ -190,7 +192,7 @@
           "type": "button",
           "settings": {
             "button_label": "More about us",
-            "button_link": "shopify:\/\/pages\/about-us",
+            "button_link": "shopify://pages/about-us",
             "button_style_secondary": false
           }
         }
@@ -201,7 +203,7 @@
         "button_TtGC6B"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Captura_de_tela_2024-07-15_010721.png",
+        "image": "shopify://shop_images/Captura_de_tela_2024-07-15_010721.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -235,7 +237,7 @@
         "template--21803093328189__62e245e8-ecdf-4c76-a114-3690eaa5c33e-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Confira nossa seção de discos usados, minuciosamente higienizados e avaliados. Com curadoria detalhista, nossos discos usados são prontinhos para irem à vitrola.<\/p>",
+            "text": "<p>Confira nossa seção de discos usados, minuciosamente higienizados e avaliados. Com curadoria detalhista, nossos discos usados são prontinhos para irem à vitrola.</p>",
             "text_style": "body"
           }
         },
@@ -243,7 +245,7 @@
           "type": "button",
           "settings": {
             "button_label": "Veja Mais",
-            "button_link": "shopify:\/\/collections\/garimpo",
+            "button_link": "shopify://collections/garimpo",
             "button_style_secondary": false
           }
         }
@@ -296,12 +298,12 @@
       "type": "apps",
       "blocks": {
         "testimonials_slider_slider_widget_block_UGifiK": {
-          "type": "shopify:\/\/apps\/testimonials-slider\/blocks\/slider-widget-block\/cd756d38-7c3d-4332-af00-4ff87263e921",
+          "type": "shopify://apps/testimonials-slider/blocks/slider-widget-block/cd756d38-7c3d-4332-af00-4ff87263e921",
           "settings": {
             "themeId": "light",
+            "configNumber": "1",
             "autoscroll": true,
-            "showAvatar": true,
-            "configNumber": "1"
+            "showAvatar": true
           }
         }
       },
@@ -317,7 +319,7 @@
       "settings": {
         "title": "New Arrivals",
         "heading_size": "h1",
-        "description": "<p>Fresh off the press: Check out our latest arrivals!<\/p>",
+        "description": "<p>Fresh off the press: Check out our latest arrivals!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "vinyl-records-new-arrivals",
@@ -361,7 +363,7 @@
         "8959909e-1bba-4c78-9e95-0b8a35c5c5f1": {
           "type": "text",
           "settings": {
-            "text": "<p>Expand your collection with these must-have deals!<\/p>",
+            "text": "<p>Expand your collection with these must-have deals!</p>",
             "text_style": "body"
           }
         },
@@ -369,7 +371,7 @@
           "type": "button",
           "settings": {
             "button_label": "Explore all our deals!",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil-em-promocao",
+            "button_link": "shopify://collections/discos-de-vinil-em-promocao",
             "button_style_secondary": false
           }
         }
@@ -381,7 +383,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/black_friday.jpg",
+        "image": "shopify://shop_images/black_friday.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -429,7 +431,7 @@
       "settings": {
         "title": "Brazilian Music for every taste",
         "heading_size": "h1",
-        "description": "<p>Dive into the vast diversity of Brazilian music with these meticulously selected records!<\/p>",
+        "description": "<p>Dive into the vast diversity of Brazilian music with these meticulously selected records!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "brazilian-vinyl-records",
@@ -474,7 +476,7 @@
         "4499fc7d-7470-457a-8da9-8d31e471aeb2": {
           "type": "text",
           "settings": {
-            "text": "<p>Through a detailed process, we meticulously curate to bring you the best Brazilian music titles on vinyl.<\/p>",
+            "text": "<p>Through a detailed process, we meticulously curate to bring you the best Brazilian music titles on vinyl.</p>",
             "text_style": "body"
           }
         },
@@ -482,7 +484,7 @@
           "type": "button",
           "settings": {
             "button_label": "Check out the titles!",
-            "button_link": "shopify:\/\/collections\/discos-de-vinil-mais-vendidos",
+            "button_link": "shopify://collections/discos-de-vinil-mais-vendidos",
             "button_style_secondary": false
           }
         }
@@ -494,7 +496,7 @@
         "48f060b7-07ec-436a-a502-2629f13a3815"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/foto14cul-105-bruno-d26.jpg",
+        "image": "shopify://shop_images/foto14cul-105-bruno-d26.jpg",
         "height": "medium",
         "desktop_image_width": "small",
         "layout": "image_first",
