@@ -15,7 +15,7 @@
         "slide_namRFt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/462585340_8371965842900497_6169698267570980547_n.jpg",
+            "image": "shopify://shop_images/462596129_8371965829567165_4312146145227707701_n.jpg",
             "heading": "Glue Trip",
             "heading_size": "h1",
             "subheading": "The 10 year aniversary edition of the debut album is now on pre-order",
@@ -25,7 +25,7 @@
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 50,
+            "image_overlay_opacity": 30,
             "color_scheme": "accent-1",
             "text_alignment_mobile": "center"
           }
