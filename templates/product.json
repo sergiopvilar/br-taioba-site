@@ -54,6 +54,12 @@
             "custom_liquid": "{% assign voltaFerias = shop.metafields.vacation.return_date.value %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n\n{% if product.first_available_variant.inventory_quantity > 0 %}\n{% if shop.metafields.vacation.show_warning.value%}\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if diffdays > 2 %}\n<p style=\"color:#e69148\">Ships within {{ diffDays }} days.</p>\n{% endif %}\n\n{% endif %}{% endif %}"
           }
         },
+        "custom_liquid_39kBQN": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign mensagem = product.metafields.taioba.destaque.value %}\n{% assign voltaFerias = shop.metafields.vacation.return_date.value %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n{% if product.first_available_variant.inventory_quantity > 0 and mensagem == blank %}\n{% if shop.metafields.vacation.show_warning.value%}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if diffDays > 2 %}\n<p style=\"color:#e69148\"><strong>Holiday break:</strong> This record ships within {{ diffDays }} days.</p>\n{% endif %}\n\n\n{% endif %}{% endif %}"
+          }
+        },
         "collapsible_tab_Ci83tQ": {
           "type": "collapsible_tab",
           "settings": {
@@ -70,12 +76,6 @@
             "icon": "box",
             "content": "<ul><li><strong>State:</strong> {{ product.metafields.vinyl.state.value }}</li><li><strong>Sleeve Grading:</strong> {{ product.metafields.garimpo.estado_capa.value }}</li><li><strong>Record Grading: </strong>{{ product.metafields.garimpo.estado_midia.value }}</li></ul><h6>What does the Sleeve and Record grading mean? <a href=\"https://www.goldminemag.com/collector-resources/collecting-101-grading-your-records\" target=\"_blank\" title=\"https://www.goldminemag.com/collector-resources/collecting-101-grading-your-records\">Click here</a>.</h6>",
             "page": ""
-          }
-        },
-        "custom_liquid_39kBQN": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign mensagem = product.metafields.taioba.destaque.value %}\n{% assign voltaFerias = shop.metafields.vacation.return_date.value %}\n\n{% comment %}\nMostra prazo de envio quando estamos de férias\n{% endcomment %}\n\n{% if product.first_available_variant.inventory_quantity > 0 and mensagem == blank %}\n{% if shop.metafields.vacation.show_warning.value%}\n\n{% assign dateStart = voltaFerias | date: '%s' %}\n{% assign nowTimestamp = 'now' | date: '%s' %}\n\n{% comment %} difference in seconds {% endcomment %}\n{% assign diffSeconds = nowTimestamp | minus: dateStart %}\n\n{% comment %} difference in days {% endcomment %}\n{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | times: -1 %}\n\n{% if diffDays > 2 %}\n<p style=\"color:#e69148\"><strong>Holiday break:</strong> This record ships within {{ diffDays }} days.</p>\n{% endif %}\n\n\n{% endif %}{% endif %}"
           }
         },
         "custom_liquid_BVXq8g": {
@@ -129,9 +129,9 @@
         "quantity_selector",
         "1bf7cb1b-7064-44f4-aa98-25a7b65eb559",
         "bb8159a3-b411-478a-8627-73c5e7f57bf8",
+        "custom_liquid_39kBQN",
         "collapsible_tab_Ci83tQ",
         "collapsible_tab_EbWwf8",
-        "custom_liquid_39kBQN",
         "custom_liquid_BVXq8g",
         "custom_liquid_ELcfiP",
         "buy_buttons",
