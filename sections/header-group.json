@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_FLKCp7": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Holiday Break: Orders placed from 12/24 to 01/01 will be shipped on 01/02.",
             "link": ""
@@ -23,7 +24,6 @@
         },
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "🇧🇷 Shopping from Brazil? Check out our Brazilian website",
             "link": "https://taiobadiscos.com.br"
